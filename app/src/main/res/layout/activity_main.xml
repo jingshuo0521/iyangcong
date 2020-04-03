@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null">
+
+
+    <LinearLayout
+        android:id="@+id/all_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:orientation="vertical"
+        >
+
+        <include layout="@layout/layout_main_header" />
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_0"
+            android:layout_weight="1.0"
+            android:background="@color/background_color" />
+
+        <include layout="@layout/layout_main_footer" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/adv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/start_skip_count_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/space_30"
+        android:layout_marginRight="@dimen/space_20"
+        android:background="@drawable/bg_start_page_circle"
+        android:gravity="center"
+        android:text="跳过"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:visibility="gone"/>
+
+
+</FrameLayout>

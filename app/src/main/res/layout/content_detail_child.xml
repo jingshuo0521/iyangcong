@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/space_15"
+    android:layout_marginRight="@dimen/space_15"
+    android:orientation="horizontal"
+    android:background="@color/transparent">
+
+
+    <ImageView
+        android:id="@+id/iv_mine_head"
+        android:layout_width="@dimen/space_50"
+        android:layout_height="@dimen/space_50"
+        android:background="@drawable/ic_head_default" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_5"
+        android:layout_marginTop="@dimen/space_25"
+        >
+
+        <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:layout_alignBottom="@+id/ll_background"
+        android:layout_alignTop="@+id/ll_background"
+        android:background="@drawable/comment_background"
+        />
+
+        <LinearLayout
+            android:id="@+id/ll_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="@dimen/space_15"
+            android:padding="@dimen/space_15"
+            android:background="@color/transparent"
+            android:layout_marginBottom="@dimen/space_25"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="海绵宝宝爱吃菜"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/contentId"
+                android:background="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_gravity="left"
+                android:text="这是一个评论,这是一个测试评论。这是一个评论,这是一个测试评论。这是一个评论,这是一个测试评论。这是一个评论,这是一个测试评论。这是一个评论,这是一个测试评论。这是一个评论,这是一个测试评论。"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginVertical="@dimen/space_10"
+                android:layout_height="@dimen/space_1"
+                android:background="@color/gray4"
+                />
+            <LinearLayout
+                android:id="@+id/ll_content"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_20"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    >
+                    <ImageView
+                        android:id="@+id/img_huifu"
+                        android:layout_width="wrap_content"
+                        android:padding="@dimen/space_4"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_discover_heart"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvLike"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="12" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/img_huifu1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/space_3"
+                        android:src="@drawable/ic_discover_message" />
+                    <TextView
+                        android:id="@+id/tv_huifu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="12" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

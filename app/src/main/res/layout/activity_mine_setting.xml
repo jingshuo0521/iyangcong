@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mine_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.iyangcong.reader.activity.MineSettingActivity">
+
+    <include layout="@layout/layout_main_header" />
+
+    <com.iyangcong.reader.ui.SettingItem
+        style="@style/settings_item_layout_single"
+        android:layout_marginTop="@dimen/space_12"
+        android:layout_marginLeft="@dimen/space_12"
+        android:layout_marginRight="@dimen/space_12"
+        android:id="@+id/si_setting_receive_notice"
+        app:item_image="@drawable/ic_mine_setting_message"
+        app:item_showDivider="false"
+        app:item_accessoryType="switchbutton"
+        app:item_imgVisibility="true"
+        app:item_oneVisibility="true"
+        app:item_titleText="接收通知" />
+
+    <com.iyangcong.reader.ui.SettingItem
+        style="@style/settings_item_layout_single"
+        android:layout_marginLeft="@dimen/space_12"
+        android:layout_marginRight="@dimen/space_12"
+        android:id="@+id/si_setting_delete_cache"
+        app:item_image="@drawable/ic_mine_setting_cache"
+        app:item_showDivider="false"
+        app:item_imgVisibility="true"
+        app:item_titleText="清除缓存" />
+
+    <com.iyangcong.reader.ui.SettingItem
+        android:id="@+id/mine_setting_bind_item"
+        android:layout_marginLeft="@dimen/space_12"
+        android:layout_marginRight="@dimen/space_12"
+        style="@style/settings_item_layout_single"
+        app:item_accessoryType="arrow"
+        app:item_image="@drawable/ic_mine_setting_bind"
+        app:item_showDivider="false"
+        app:item_imgVisibility="true"
+        app:item_titleText="账号绑定" />
+    <com.iyangcong.reader.ui.SettingItem
+        android:id="@+id/mine_setting_about_item"
+        android:layout_marginLeft="@dimen/space_12"
+        android:layout_marginRight="@dimen/space_12"
+        style="@style/settings_item_layout_single"
+        app:item_accessoryType="arrow"
+        app:item_image="@drawable/ic_mine_setting_bind"
+        app:item_showDivider="false"
+        app:item_imgVisibility="true"
+        app:item_titleText="关于产品" />
+
+    <com.iyangcong.reader.ui.SettingItem
+        android:id="@+id/mine_setting_update"
+        android:layout_marginLeft="@dimen/space_12"
+        android:layout_marginRight="@dimen/space_12"
+        style="@style/settings_item_layout_single"
+        app:item_accessoryType="arrow"
+        app:item_image="@drawable/ic_mine_setting_bind"
+        app:item_showDivider="false"
+        app:item_imgVisibility="true"
+        app:item_titleText="检查更新" />
+
+    <com.iyangcong.reader.ui.button.FlatButton
+        android:id="@+id/fb_log_out"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_40"
+        android:layout_marginLeft="@dimen/space_20"
+        android:layout_marginRight="@dimen/space_20"
+        android:layout_marginTop="@dimen/space_12"
+        android:text="@string/log_out"
+        android:textColor="@color/white"
+        app:shadowEnabled="false" />
+
+</LinearLayout>

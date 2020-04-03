@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/layout_item_read_party_acitivity"
+    android:layout_height="45dip"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_read_party_activity_title"
+        style="@style/text_middle_large"
+        android:layout_width="@dimen/space_0"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_weight="1"
+        android:lines="1"
+        android:ellipsize="end"
+        android:text="【北京】莎士比亚与文艺复兴的故事" />
+
+    <TextView
+        android:id="@+id/tv_read_party_activity_btn"
+        style="@style/text_large"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/space_7"
+        android:background="@drawable/bg_text_label_selector"
+        android:paddingLeft="@dimen/space_10"
+        android:paddingRight="@dimen/space_10"
+        android:text="COMING" 
+        android:textColor="@color/text_color_orange"/>
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/space_10">
+
+    <com.iyangcong.reader.ui.InsertAbleGridView
+        android:id="@+id/iag"
+        android:layout_width="match_parent"
+        android:layout_height="113dip"
+        />
+
+    <TextView
+        android:id="@+id/i_check_box"
+        android:layout_width="@dimen/space_26"
+        android:layout_height="@dimen/space_26"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ic_unchecked"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/space_12"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iag">
+
+        <TextView
+            android:id="@+id/i_tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_5"
+            android:ellipsize="end"
+            android:gravity="left|top"
+            android:lines="2"
+            android:maxEms="7"
+            android:text="神秘陌生人的奇遇"
+            android:maxLines="2"
+            android:singleLine="false"
+            android:textColor="@color/text_color" />
+
+        <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+            android:id="@+id/pg_book_added"
+            android:layout_width="85dip"
+            android:layout_height="@dimen/space_5"
+            android:layout_alignLeft="@+id/i_tag"
+            android:layout_below="@+id/i_tag"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/space_5"
+            android:visibility="gone"
+            app:rcBackgroundColor="@color/bg_progress"
+            app:rcMax="100"
+            app:rcProgress="0"
+            app:rcProgressColor="@color/progress"
+            app:rcRadius="@dimen/space_20"
+            app:rcReverse="false" />
+
+        <TextView
+            android:layout_alignLeft="@+id/i_tag"
+            android:layout_alignStart="@+id/i_tag"
+            android:layout_below="@+id/i_tag"
+            android:layout_marginTop="@dimen/space_2"
+            android:id="@+id/tv_book_state"
+            style="@style/text_tiny"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已读" />
+
+        <TextView
+            android:id="@+id/tv_book_progress"
+            style="@style/text_tiny"
+            android:layout_below="@+id/i_tag"
+            android:layout_marginTop="@dimen/space_2"
+            android:layout_alignRight="@+id/i_tag"
+            android:layout_alignEnd="@+id/i_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0%"
+            />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

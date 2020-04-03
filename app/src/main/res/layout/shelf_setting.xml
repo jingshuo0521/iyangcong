@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/transparent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:background="@drawable/bottom_dialog"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="书架设置"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/space_7"
+            android:gravity="center"
+            android:textSize="@dimen/space_20"/>
+
+        <RelativeLayout
+            android:id="@+id/tv_hide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_30"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/tv_choosHide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_80"
+                android:text="隐藏已读完"
+                android:textSize="@dimen/space_18" />
+
+            <ImageView
+                android:id="@+id/im_hide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/space_80"
+                android:src="@drawable/ic_switch_off" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/show_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_25"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/tv_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_80"
+                android:text="显示进度"
+                android:textSize="@dimen/space_18"
+                />
+
+            <ImageView
+                android:id="@+id/iv_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/space_80"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_switch_off" />
+        </RelativeLayout>
+
+        <com.iyangcong.reader.ui.button.FlatButton
+            android:id="@+id/cancel"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="270dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/space_35"
+            android:layout_marginTop="@dimen/space_20"
+            android:text="取消"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            app:shadowEnabled="false"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

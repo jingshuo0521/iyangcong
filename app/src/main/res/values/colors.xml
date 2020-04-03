@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 爱洋葱主色调 -->
+    <color name="main_color">#ff8044</color>
+
+    <!--按钮色调-->
+    <color name="button_color">#ff8044</color>
+    <color name="button_book_details_default">#FDEEE9</color>
+    <!-- 主背景色值 -->
+    <color name="background_color">#f6f6f6</color>
+    <color name="status_bar_bg">#EF3A19</color>
+    <color name="main_header_bg">#EF3A19</color>
+    <color name="main_footer_bg">#FFFFFF</color>
+    <color name="click_bg">#ebebeb</color>
+    <color name="page_bg">#F8F8F8</color>
+    <color name="book_introduction_color">#F6F6F6</color>
+    <color name="tip_bg">#FEEFC8</color>
+    <color name="recite_bg">#E5E5E5</color>
+
+    <color name="circle_text">#C3C3C3</color>
+
+    <!-- 字体颜色值 -->
+    <color name="text_color_black">#333333</color>
+    <color name="text_color_gray">#585757</color>
+    <color name="text_color_blue">#51bce0</color>
+    <color name="text_color_green">#a0e25b</color>
+    <color name="text_color_orange">#ff8044</color>
+    <color name="text_color_light_orange">#ff8756</color>
+    <color name="text_color_lightgray">#969595</color>
+    <color name="text_color_hint">#969595</color>
+    <color name="navpage">#FFE1E8EB</color>
+
+    <color name="cal_signed_background">#fff7fcfe</color>
+    <color name="cal_signed_border">#ffb5e6f1</color>
+    <color name="cal_today_background">#ff0babd1</color>
+    <color name="transparent">#00000000</color>
+    <color name="halftransparent">#EEffffff</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="black1">#535353</color>
+    <color name="dark">#666666</color>
+    <color name="gray">#808080</color>
+    <color name="gray1">#dedede</color>
+    <color name="gray2">#f9f9f9</color>
+    <color name="gray_yibiao">#9e9e9e</color>
+    <color name="gray3">#f7f7f7</color>
+    <color name="gray4">#bababa</color>
+    <color name="red">#FF0000</color>
+    <color name="gold">#FFD700</color>
+    <color name="yellow">#FFFF00</color>
+
+    <color name="green">#008000</color>
+    <color name="green2">#5EB878</color>
+    <color name="darkgreen">#006400</color>
+    <color name="blue">#0000FF</color>
+    <color name="blue2">#229ACC</color>
+    <color name="purple">#800080</color>
+    <color name="pink">#FFC0CB</color>
+    <color name="lightpink">#FDEEE9</color>
+    <color name="orange">#FFA500</color>
+    <color name="lemonyellow">#FFFACD</color>
+    <color name="lightorange">#FFF5E9</color>
+    <color name="graywhite">#F5F5F5</color>
+    <color name="grayslate">#708090</color>
+    <color name="lightblue">#0083FF</color>
+    <color name="no_color">#00000000</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="alpha_05_black">#0D000000</color>
+
+    <!-- 分割线 -->
+    <color name="lightgray">#e6e5e5</color>
+    <!-- 控件颜色 -->
+    <!-- 进度条 -->
+    <color name="progress">#4DBD70</color>
+    <color name="bg_progress">#DCDCDC</color>
+    <color name="progress_complete">#DCDCDC</color>
+    <!-- 九宫格 -->
+    <color name="ic_default_bg_color">#33000000</color>
+    <color name="messagebell">#FDEEE9</color>
+
+    <!-- 阅读器 -->
+    <item name="primary" type="color">#444444</item>
+    <item name="middle_dark" type="color">#303030</item>
+    <item name="primary_dark" type="color">#222222</item>
+    <item name="night_dark" type="color">#383838</item>
+    <color name="read_bg_color">#F6F2E6</color>
+    <color name="text_color">#373737</color>
+    <color name="dlg_title">#51B9C7</color>
+    <color name="new_title_bg">#FFEE4D22</color>
+    <color name="dlg_text">#4C4C4C</color>
+    <color name="tangerine">#FFEE4D22</color>
+    <color name="text_color_middlegray">#626262</color>
+    <!-- 选择框颜色 -->
+    <color name="board_middle_color">#000000</color>
+    <color name="board_top_color">#000000</color>
+    <color name="board_bottom_color">#000000</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="line">#D9D9D9</color>
+    <color name="btn_press">#cccccc</color>
+    <color name="link">#FF04ABF6</color>
+
+
+</resources>
+

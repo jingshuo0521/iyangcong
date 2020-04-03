@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/layout_item_reply_second"
+        android:orientation="vertical"
+        android:background="@color/click_bg"
+        android:paddingLeft="@dimen/space_15"
+        android:paddingRight="@dimen/space_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_replyer_name"
+            style="@style/text_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            tools:text="sdadfasd"/>
+        <TextView
+            style="@style/text_small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_reply_content"
+            android:autoLink="web"
+            android:layout_marginLeft="@dimen/afc_10dp"
+            android:layout_toRightOf="@id/tv_replyer_name"
+            tools:text="asdfasdfasfs"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_below="@+id/tv_reply_content"
+            android:layout_height="@dimen/space_1"
+            android:background="@color/white">
+        </View>
+</RelativeLayout>

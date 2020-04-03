@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_discover_bar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/space_45"
+    android:background="@color/white">
+
+
+    <ImageView
+        android:id="@+id/iv_ring"
+        android:layout_width="@dimen/space_22"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/space_10"
+        android:padding="@dimen/space_5"
+        android:visibility="gone"
+        android:src="@drawable/ic_ring" />
+
+
+    <TextView
+        style="@style/text_middle_large"
+        android:id="@+id/tv_bar_title"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/space_15"
+        android:paddingTop="@dimen/space_5"
+        android:text="@string/hot_circle" />
+
+    <TextView
+        android:id="@+id/tv_more"
+        style="@style/text_small"
+        android:layout_width="wrap_content"
+        android:layout_toLeftOf="@+id/iv_more"
+        android:gravity="center_vertical"
+        android:layout_marginRight="@dimen/space_2"
+        android:paddingTop="@dimen/space_5"
+        android:text="更多"
+        android:textColor="@color/text_color_lightgray" />
+
+    <ImageView
+        android:id="@+id/iv_more"
+        android:layout_width="@dimen/space_20"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:paddingRight="@dimen/space_12"
+        android:paddingTop="@dimen/space_5"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_more_main_color" />
+    <ImageView
+        android:id="@+id/im_comment_edit"
+        android:layout_width="@dimen/space_30"
+        android:layout_height="@dimen/space_30"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/space_5"
+        android:layout_marginRight="@dimen/space_5"
+        android:paddingRight="@dimen/space_12"
+        android:visibility="gone"
+        android:src="@drawable/ic_edit" />
+
+    <ImageView
+        android:id="@+id/iv_bar_divide"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_0.5"
+        android:layout_marginTop="39dip"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10"
+        android:background="@drawable/line_divide" />
+
+</RelativeLayout>

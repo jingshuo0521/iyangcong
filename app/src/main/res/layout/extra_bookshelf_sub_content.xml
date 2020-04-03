@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/text_select_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:textSize="18sp"
+        android:visibility="gone"
+        tools:text="全选" />
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/dlg_text"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/space_10"
+        android:text="完成"
+        android:textColor="@color/dlg_text"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/edit_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/bg_i_reader_category_edit"
+        android:cursorVisible="true"
+        android:hint="分类名称最多显示10个字符"
+        android:textColor="#FFF"
+        android:textColorHint="#EEEEEE"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/sub_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/text_title"
+        android:layout_marginTop="10dp"
+        android:background="#FFF"
+        android:tag="sub_container">
+
+    </FrameLayout>
+</RelativeLayout>

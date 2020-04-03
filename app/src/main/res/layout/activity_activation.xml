@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_main_header" />
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+   <!-- <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">-->
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/image_login_background" />
+    <!--</FrameLayout>-->
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:id="@+id/userId_LinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/space_45"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/space_30">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/space_15"
+                android:src="@drawable/ic_phone" />
+
+            <AutoCompleteTextView
+                android:id="@+id/login_school"
+                android:layout_width="230dip"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/space_20"
+                android:background="@null"
+                android:ellipsize="middle"
+                android:singleLine="true"
+                android:hint="请输入学校"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/dark" />
+
+            <ImageView
+                android:id="@+id/login_more_user"
+                android:layout_width="@dimen/space_20"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/space_5"
+                android:src="@drawable/login_more_up" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/devide_line_1"
+            android:layout_height="@dimen/space_0.5"
+            android:layout_gravity="center"
+            android:background="@color/main_color" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/space_45"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/space_15">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/space_15"
+                android:src="@drawable/ic_phone" />
+
+            <EditText
+                android:id="@+id/login_school_number"
+                android:layout_width="250dip"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/space_20"
+                android:background="@null"
+                android:ellipsize="middle"
+                android:singleLine="true"
+                android:hint="请输入学号"
+                android:inputType="number"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/dark" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="@dimen/devide_line_1"
+            android:layout_height="@dimen/space_0.5"
+            android:layout_gravity="center"
+            android:background="@color/main_color" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/space_45"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/space_15">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/space_15"
+                android:src="@drawable/ic_phone" />
+
+            <EditText
+                android:id="@+id/login_name"
+                android:layout_width="250dip"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/space_20"
+                android:background="@null"
+                android:ellipsize="middle"
+                android:singleLine="true"
+                android:hint="请输入姓名"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/dark" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="@dimen/devide_line_1"
+            android:layout_height="@dimen/space_0.5"
+            android:layout_gravity="center"
+            android:background="@color/main_color" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/space_45"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/space_15">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/space_15"
+                android:src="@drawable/ic_lock" />
+
+            <EditText
+                android:id="@+id/login_activate_code"
+                android:layout_width="250dip"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/space_20"
+                android:background="@null"
+                android:ellipsize="middle"
+                android:singleLine="true"
+                android:inputType="number"
+                android:hint="请输入激活码"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/dark" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="@dimen/devide_line_1"
+            android:layout_height="@dimen/space_0.5"
+            android:layout_gravity="center"
+            android:background="@color/main_color" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/space_45"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/space_15">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/space_15"
+                android:src="@drawable/ic_lock" />
+
+            <EditText
+                android:id="@+id/login_activate_password"
+                android:layout_width="250dip"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/space_20"
+                android:background="@null"
+                android:ellipsize="middle"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:hint="请输入爱洋葱账号密码"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/dark" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/devide_line_1"
+            android:layout_height="@dimen/space_0.5"
+            android:layout_gravity="center"
+            android:background="@color/main_color" />
+
+        <com.iyangcong.reader.ui.button.FlatButton
+            android:id="@+id/activate_button"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="@dimen/main_button_width"
+            android:layout_height="@dimen/space_40"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/space_18"
+            android:text="下一步"
+            android:textColor="@color/white"
+            app:cub_riple_effect="false"
+            app:shadowEnabled="false"
+            app:shadowHeight="@dimen/space_0" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+</LinearLayout>

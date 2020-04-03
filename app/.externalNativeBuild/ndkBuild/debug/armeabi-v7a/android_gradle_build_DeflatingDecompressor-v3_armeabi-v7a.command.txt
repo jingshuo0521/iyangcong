@@ -1,0 +1,14 @@
+Executable : C:\Users\lenovo\AppData\Local\Android\Ndk\android-ndk-r16b\ndk-build.cmd
+arguments : 
+NDK_PROJECT_PATH=null
+APP_BUILD_SCRIPT=G:\iyangcong_android\app\src\main\jni\Android.mk
+NDK_APPLICATION_MK=G:\iyangcong_android\app\src\main\jni\Application.mk
+APP_ABI=armeabi-v7a
+NDK_ALL_ABIS=armeabi-v7a
+NDK_DEBUG=1
+APP_PLATFORM=android-19
+NDK_OUT=G:/iyangcong_android/app/build/intermediates/ndkBuild/debug/obj
+NDK_LIBS_OUT=G:\iyangcong_android\app\build\intermediates\ndkBuild\debug\lib
+G:/iyangcong_android/app/build/intermediates/ndkBuild/debug/obj/local/armeabi-v7a/libDeflatingDecompressor-v3.so
+jvmArgs : 
+

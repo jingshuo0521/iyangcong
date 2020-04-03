@@ -1,0 +1,173 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dip</dimen>
+    <dimen name="activity_vertical_margin">16dip</dimen>
+
+    <!-- 标题栏高度 -->
+    <dimen name="title_height">60dip</dimen>
+    <dimen name="item_margin">8dip</dimen>
+
+    <!-- font -->
+    <dimen name="font_tiny">10dip</dimen>
+    <dimen name="font_small">12dip</dimen>
+    <dimen name="font_normal">14dip</dimen>
+    <dimen name="font_normal2">16dip</dimen>
+    <dimen name="font_normal3">20dip</dimen>
+    <dimen name="font_large">24dip</dimen>
+    <dimen name="player_play_btn_size">50dp</dimen>
+    <dimen name="controller_time_text_size">14sp</dimen>
+    <dimen name="player_default_spacing">10dp</dimen>
+    <!-- 通用 -->
+    <dimen name="text_size_32">32.0dip</dimen>
+    <dimen name="text_size_31">31.0dip</dimen>
+    <dimen name="text_size_30">30.0dip</dimen>
+    <dimen name="text_size_29">29.0dip</dimen>
+    <dimen name="text_size_28">28.0dip</dimen>
+    <dimen name="text_size_27">27.0dip</dimen>
+    <dimen name="text_size_26">26.0dip</dimen>
+    <dimen name="text_size_25">25.0dip</dimen>
+    <dimen name="text_size_24">24.0dip</dimen>
+    <dimen name="text_size_23">23.0dip</dimen>
+    <dimen name="text_size_22">22.0dip</dimen>
+    <dimen name="text_size_21">21.0dip</dimen>
+    <dimen name="text_size_20">20.0dip</dimen>
+    <dimen name="text_size_19">19.0dip</dimen>
+    <dimen name="text_size_18">18.0dip</dimen>
+    <dimen name="text_size_17">17.0dip</dimen>
+    <dimen name="text_size_16">16.0dip</dimen>
+    <dimen name="text_size_15">15.0dip</dimen>
+    <dimen name="text_size_14">14.0dip</dimen>
+    <dimen name="text_size_13">13.0dip</dimen>
+    <dimen name="text_size_12">12.0dip</dimen>
+    <dimen name="text_size_11">11.0dip</dimen>
+    <dimen name="text_size_10">10.0dip</dimen>
+    <dimen name="text_size_9">9.0dip</dimen>
+    <dimen name="text_size_8">8.0dip</dimen>
+    <dimen name="text_size_7">7.0dip</dimen>
+    <dimen name="text_size_5">5.0dip</dimen>
+    <dimen name="space_220">220.0dip</dimen>
+    <dimen name="space_180">180.0dip</dimen>
+    <dimen name="space_160">160.0dip</dimen>
+    <dimen name="space_150">150.0dip</dimen>
+    <dimen name="space_120">120.0dip</dimen>
+    <dimen name="space_110">110.0dip</dimen>
+    <dimen name="space_100">100.0dip</dimen>
+    <dimen name="space_80">80.0dip</dimen>
+    <dimen name="space_75">75.0dip</dimen>
+    <dimen name="space_70">70.0dip</dimen>
+    <dimen name="space_65">65.0dip</dimen>
+    <dimen name="space_60">60.0dip</dimen>.
+    <dimen name="space_55">55.0dip</dimen>
+    <dimen name="space_50">50.0dip</dimen>
+    <dimen name="space_45">45.0dip</dimen>
+    <dimen name="space_40">40.0dip</dimen>
+    <dimen name="space_35">35.0dip</dimen>
+    <dimen name="space_30">30.0dip</dimen>
+    <dimen name="space_29">29.0dip</dimen>
+    <dimen name="space_28">28.0dip</dimen>
+    <dimen name="space_27">27.0dip</dimen>
+    <dimen name="space_26">26.0dip</dimen>
+    <dimen name="space_25">25.0dip</dimen>
+    <dimen name="space_24">24.0dip</dimen>
+    <dimen name="space_23">23.0dip</dimen>
+    <dimen name="space_22">22.0dip</dimen>
+    <dimen name="space_21">21.0dip</dimen>
+    <dimen name="space_20">20.0dip</dimen>
+    <dimen name="space_19">19.0dip</dimen>
+    <dimen name="space_18">18.0dip</dimen>
+    <dimen name="space_17">17.0dip</dimen>
+    <dimen name="space_16">16.0dip</dimen>
+    <dimen name="space_15">15.0dip</dimen>
+    <dimen name="space_14">14.0dip</dimen>
+    <dimen name="space_13">13.0dip</dimen>
+    <dimen name="space_12">12.0dip</dimen>
+    <dimen name="space_11">11.0dip</dimen>
+    <dimen name="space_10">10.0dip</dimen>
+    <dimen name="space_9.5">9.5dip</dimen>
+    <dimen name="space_9">9.0dip</dimen>
+    <dimen name="space_8">8.0dip</dimen>
+    <dimen name="space_7">7.0dip</dimen>
+    <dimen name="space_6">6.0dip</dimen>
+    <dimen name="space_5">5.0dip</dimen>
+    <dimen name="space_4">4.0dip</dimen>
+    <dimen name="space_3.5">3.5dip</dimen>
+    <dimen name="space_3">3.0dip</dimen>
+    <dimen name="space_2">2.0dip</dimen>
+    <dimen name="space_1">1.0dip</dimen>
+    <dimen name="space_0.5">0.5dip</dimen>
+    <dimen name="space_0">0dip</dimen>
+
+    <!--书城-->
+    <dimen name="market_banner_height">140.0dip</dimen>
+    <dimen name="market_category_height">90.0dip</dimen>
+    <dimen name="category_btn_height">40.0dip</dimen>
+    <dimen name="market_today_push_height">240.0dip</dimen>
+    <dimen name="market_brocast_image_height">100.0dip</dimen>
+    <dimen name="market_list_height">160.0dip</dimen>
+    <dimen name="market_book_image_height">120.0dip</dimen>
+    <dimen name="market_label_width">45.0dip</dimen>
+    <dimen name="market_book_topic_height">90.0dip</dimen>
+
+    <!-- 书架 -->
+    <dimen name="shelf_book_added_height">180dip</dimen>
+    <dimen name="shelf_rl_sign_height">42dip</dimen>
+    <dimen name="shelf_pull_height">30dip</dimen>
+    <!-- 发现 -->
+    <dimen name="discover_brocast_height">40dip</dimen>
+    <dimen name="discover_tab_height">50dip</dimen>
+    <dimen name="discover_tab_line_height">2.7dip</dimen>
+    <dimen name="discover_tab_matrix_width">180dip</dimen>
+
+    <!-- 设置item -->
+    <dimen name="settingitem_height">48dip</dimen>
+    <dimen name="settingitem_text_height">47dip</dimen>
+    <dimen name="settingitem_image_heightandwidth">40dip</dimen>
+
+    <!--登录页面-->
+    <dimen name="img_120">120dip</dimen>
+    <dimen name="border_2">2dip</dimen>
+    <dimen name="space_106">106dip</dimen>
+    <dimen name="space_72">72dip</dimen>
+    <dimen name="button_140">140dip</dimen>
+    <dimen name="button_45">45dip</dimen>
+    <dimen name="register_tab_line_height">10dip</dimen>
+    <dimen name="register_tab_matrix_width">65dip</dimen>
+    <dimen name="devide_line_1">280dip</dimen>
+    <dimen name="devide_line_2">90dip</dimen>
+    <dimen name="login_page">450dip</dimen>
+
+    <!--主按键-->
+    <dimen name="main_button_width">280dip</dimen>
+
+    <!-- 搜索框 -->
+    <dimen name="search_bar_height">40dip</dimen>
+    <!-- 我的购物车-->
+    <dimen name="shopping_btn_width">130dip</dimen>
+    <dimen name="shopping_btn_height">35dip</dimen>
+
+    <!-- 阅读器-->
+    <dimen name="popwindow_item_margin_left">30.0dip</dimen>
+    <dimen name="newword_item_margin_left">15.0dip</dimen>
+    <dimen name="popwindow_line_margin_top">10.0dip</dimen>
+    <dimen name="popwindow_newword_margin_right">25.0dip</dimen>
+
+    <!--新建圈子-->
+    <dimen name="label_rectangle_height">100.0dip</dimen>
+    <!--生词圈-->
+    <dimen name="newword_explain_view_height">290.0dip</dimen>
+    <dimen name="newword_reciteword_listview_height">400dip</dimen>
+    <dimen name="newword_bottombutton_paddingbottom">25dip</dimen>
+    <dimen name="newword_listview_item_magin_beside">15.0dip</dimen>
+    <dimen name="newword_reciteword_index_item_height">110.0dip</dimen>
+    <dimen name="newword_reciteword_index_item_margin_beside">35.0dip</dimen>
+    <dimen name="newword_reciteword_index_item_middle_margin">11.0dip</dimen>
+    <dimen name="newword_reciteword_index_item_marginTop">20.0dip</dimen>
+
+    <dimen name="reciteword_showword_view_max_height">360dip</dimen>
+    <dimen name="reciteword_firstreview_view_height">238.0dip</dimen>
+    <dimen name="second_know_word_view_height">340.0dip</dimen>
+    <dimen name="second_dontknow_word_view_height">300.0dip</dimen>
+    <dimen name="first_review_view_title_height">35.0dip</dimen>
+    <dimen name="myfavorite_know_word_view_height">400.0dip</dimen>
+    <dimen name="myfavorite_showword_view_max_height">420dip</dimen>
+</resources>

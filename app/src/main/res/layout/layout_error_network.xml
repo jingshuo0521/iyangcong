@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      android:id="@+id/layout_network_error"
+      android:orientation="vertical"
+      android:background="@color/white"
+      android:gravity="center"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+    <!--<include layout="@layout/layout_main_header"/>-->
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical"-->
+        <!--android:background="@color/yellow">-->
+        <ImageView
+            android:layout_width="@dimen/space_100"
+            android:layout_height="@dimen/space_100"
+            android:src="@drawable/network_error"
+            android:layout_gravity="center_horizontal"/>
+        <TextView
+            android:id="@+id/tv_load_failure"
+            android:layout_marginTop="@dimen/space_30"
+            style="@style/text_middle_large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="@string/data_load_failure"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/tv_makesure_internet_ok"
+            style="@style/text_middle"
+            android:layout_marginTop="@dimen/space_20"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/gray"
+            android:gravity="center"
+            android:text="@string/data_load_failure"/>
+        <com.iyangcong.reader.ui.button.FlatButton
+            android:visibility="gone"
+            android:id="@+id/btn_network_error"
+            style="@style/text_middle_large"
+            android:layout_marginTop="@dimen/space_20"
+            android:background="@color/main_color"
+            android:layout_width="@dimen/space_100"
+            android:layout_height="@dimen/space_40"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/load_again"/>
+    <!--</LinearLayout>-->
+
+</LinearLayout>

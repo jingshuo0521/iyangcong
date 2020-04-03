@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout_rv_discover_topic"
+    android:orientation="vertical">
+    <!--android:paddingTop="@dimen/space_10"-->
+
+    <include layout="@layout/ll_tab" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_ring"
+            android:layout_width="@dimen/space_22"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_10"
+
+            android:src="@drawable/ic_top" />
+        <TextView
+            style="@style/text_middle_large"
+            android:id="@+id/tv_bar_title"
+            android:layout_width="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/iv_ring"
+            android:layout_toRightOf="@+id/iv_ring"
+            android:paddingLeft="@dimen/space_5"
+            android:text="置顶话题" />
+        <ImageView
+            android:id="@+id/iv_bar_divide"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_0.5"
+            android:layout_marginTop="39dip"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_marginRight="@dimen/space_10"
+            android:background="@drawable/line_divide" />
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_discover_topic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

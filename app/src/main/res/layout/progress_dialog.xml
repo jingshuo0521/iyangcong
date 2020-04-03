@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    style="@style/progress_dialog"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/voice_rcd_btn_nor"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="@dimen/space_20">
+
+    <com.iyangcong.reader.ui.progressWheel.ProgressWheel
+        android:id="@+id/progress_wheel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        wheel:matProg_barColor="@color/text_color_orange"
+        wheel:matProg_progressIndeterminate="true" />
+
+    <TextView
+        android:id="@+id/loadingTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_10"
+        android:gravity="center_vertical"
+        android:text="@string/loading_tip"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_16" />
+
+</LinearLayout>

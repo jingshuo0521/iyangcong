@@ -1,0 +1,1831 @@
+[33mcommit 459fcc90128af5ff57930585337d8ce865976508[m
+Author: wangfang <wangyiwan@bupt.edu.cn>
+Date:   Tue Feb 28 16:04:16 2017 +0800
+
+    git test
+
+[33mcommit ddff75d727e3c554b722845415f3d449961ddf0f[m
+Merge: aeffa52 a31a3a8
+Author: 林俊伟 <491526974@qq.com>
+Date:   Mon Feb 27 17:17:48 2017 +0800
+
+    Merge branch 'wzp_discover' into 'master'
+    
+    Wzp discover
+    
+    See merge request !55
+
+[33mcommit a31a3a895ad4d70197cea5b7b674307c0c0419c4[m
+Author: wzp <1540132945@qq.com>
+Date:   Mon Feb 27 17:07:08 2017 +0800
+
+    修改了圈子界面
+
+[33mcommit e3b0ba390582400e660a5119ff571ecf1afb0212[m
+Merge: ac16435 aeffa52
+Author: wzp <1540132945@qq.com>
+Date:   Mon Feb 27 16:34:29 2017 +0800
+
+    Merge branch 'master' into wzp_discover
+
+[33mcommit ac1643522cbb20be61d64f766e3841981661be79[m
+Author: wzp <1540132945@qq.com>
+Date:   Mon Feb 27 16:25:46 2017 +0800
+
+    更新了网络错误时的提示，避免出现多次重复提示。
+
+[33mcommit 63a1dd4d43b1dfc8fc9f89b617a35ba0e1ef711a[m
+Author: wzp <1540132945@qq.com>
+Date:   Mon Feb 27 10:21:24 2017 +0800
+
+    备份
+
+[33mcommit 111c6a43698059f2aeb2e7c6c6bb83a96f8b3422[m
+Author: wzp <1540132945@qq.com>
+Date:   Mon Feb 27 10:19:31 2017 +0800
+
+    完成了圈子页面的标签信息地请求。
+
+[33mcommit aeffa52dd1c07148aacb0bef593d341805f126f5[m
+Merge: 2597db7 21360f2
+Author: 林俊伟 <491526974@qq.com>
+Date:   Sat Feb 25 09:40:04 2017 +0800
+
+    Merge branch 'ljw_reader' into 'master'
+    
+    Ljw reader
+    
+    九宫格 和 banner
+    
+    See merge request !54
+
+[33mcommit 21360f264a0b0f6e0326cc15249a193171a5b4f5[m
+Merge: 1c4c2ec 2597db7
+Author: 林俊伟 <491526974@qq.com>
+Date:   Sat Feb 25 09:30:41 2017 +0800
+
+    解决冲突
+
+[33mcommit 1c4c2ec23c5ef39417043e85e46cbf4e28b28d03[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Sat Feb 25 09:17:36 2017 +0800
+
+    banner加载改动
+
+[33mcommit d9197cc91e1d14f54c0a67e79f18261d8a43dd01[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Sat Feb 25 09:14:21 2017 +0800
+
+    tmp
+
+[33mcommit 3bbec96dcb90ab3df77f322d81a4ebbff7a3259c[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Sat Feb 25 09:07:14 2017 +0800
+
+    banner
+
+[33mcommit beb6a7f898824a8540a13ce6887615c55f2c7bd9[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Sat Feb 25 08:59:14 2017 +0800
+
+    九宫格加载图片
+
+[33mcommit 2597db711b4d1ef95facd760e76e8b086840feb5[m
+Merge: 3a9dddb 8026c6c
+Author: 林俊伟 <491526974@qq.com>
+Date:   Fri Feb 24 15:46:29 2017 +0800
+
+    Merge branch 'wzp_discover' into 'master'
+    
+    完成了发现页面的获取广播接口。
+    
+    See merge request !53
+
+[33mcommit 8026c6cb40cdf88d686ce707c37d68677cca56e0[m
+Merge: 5355efd 3a9dddb
+Author: wzp <1540132945@qq.com>
+Date:   Fri Feb 24 15:32:18 2017 +0800
+
+    Merge branch 'master' into wzp_discover
+
+[33mcommit 5355efd311d0622fedb017ee6f26e975969c1eef[m
+Author: wzp <1540132945@qq.com>
+Date:   Fri Feb 24 15:31:23 2017 +0800
+
+    0224提交
+
+[33mcommit aa57221f46c3534cb511308b8413f28e9f1be167[m
+Author: wzp <1540132945@qq.com>
+Date:   Fri Feb 24 15:23:41 2017 +0800
+
+    完成了发现首页热门话题接口地调试，需要测试每条热门话题图片数目不同时会不会遇到异常。
+
+[33mcommit 296db6d005f5ba7c7b2b5982fe9f98de28c24fd5[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Fri Feb 24 15:23:10 2017 +0800
+
+    0224_backup
+
+[33mcommit de583f91f1400149f00ecbd66a0bb91e68171d1c[m
+Author: wzp <1540132945@qq.com>
+Date:   Wed Feb 22 15:50:58 2017 +0800
+
+    完成了发现页面的获取广播接口。
+
+[33mcommit 58b7118328ba1f1af51a891bb383df044b8ad319[m
+Author: wzp <1540132945@qq.com>
+Date:   Wed Feb 22 15:28:47 2017 +0800
+
+    完成了发现页面的获取广播接口。
+
+[33mcommit 3a9dddb78228a99b1f23529bd47b34d6b1a2bcb7[m
+Merge: de963e9 5aae77c
+Author: 林俊伟 <491526974@qq.com>
+Date:   Wed Feb 22 15:15:31 2017 +0800
+
+    Merge branch 'ljw_reader' into 'master'
+    
+    配置ignore文件
+    
+    配置ignore文件
+    
+    See merge request !51
+
+[33mcommit de963e9229386e51b058bc2b8db83d594cd034d2[m
+Merge: 6994655 221297c
+Author: 林俊伟 <491526974@qq.com>
+Date:   Wed Feb 22 15:10:25 2017 +0800
+
+    Merge branch 'ljw_reader' into 'master'
+    
+    重复添加库
+    
+    重复添加库依赖
+    
+    See merge request !50
+
+[33mcommit 5aae77cf61cce9372f1b9ee7a5fc20e5e9e0c39a[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Wed Feb 22 15:06:22 2017 +0800
+
+    配置ignore文件
+
+[33mcommit 221297cf0f4a7e45c14ad9ea6332b5488d6cb3eb[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Wed Feb 22 15:00:16 2017 +0800
+
+    重复添加库
+
+[33mcommit 6994655cc69bd404114717ff3a9870f101e8ec71[m
+Merge: 2f98313 272e504
+Author: 林俊伟 <491526974@qq.com>
+Date:   Wed Feb 22 14:14:55 2017 +0800
+
+    Merge branch 'wzp_discover_hotgroup' into 'master'
+    
+    Wzp discover hotgroup
+    
+    完成了发现页面的接口调试，不过还没做异常处理。
+    
+    See merge request !49
+
+[33mcommit 2f98313abef509a1ab5caae11c7072b7848553f5[m
+Merge: 7e2f1e7 06aa29d
+Author: 林俊伟 <491526974@qq.com>
+Date:   Wed Feb 22 11:35:08 2017 +0800
+
+    Merge branch 'ligang_test' into 'master'
+    
+    Ligang test
+    
+    增加书架拖动合并功能
+    
+    See merge request !48
+
+[33mcommit 272e504f903b5d6e19c9128a03d14cb6751f8efc[m
+Author: wzp <1540132945@qq.com>
+Date:   Wed Feb 22 11:32:00 2017 +0800
+
+    完成了发现页面热门圈子接口地调试
+
+[33mcommit 06aa29d957d1e4c0b922065aa4b606e76bee985e[m
+Merge: 69fa36c 7e2f1e7
+Author: lg <522413904@qq.com>
+Date:   Wed Feb 22 11:22:24 2017 +0800
+
+    0222
+
+[33mcommit 69fa36c5979dd2a7d2ae46f0c107be6414c68752[m
+Author: lg <522413904@qq.com>
+Date:   Wed Feb 22 10:33:08 2017 +0800
+
+    0222
+
+[33mcommit 7e2f1e71f2a59c14a73fc4172e586763e1f72969[m
+Merge: 9f9b6ca 3e5bdeb
+Author: 林俊伟 <491526974@qq.com>
+Date:   Wed Feb 22 10:29:13 2017 +0800
+
+    Merge branch 'ljw_reader' into 'master'
+    
+    Ljw reader
+    
+    移除旧版阅读器，增加新版阅读器
+    
+    See merge request !47
+
+[33mcommit db5cea3407047b61fb39a2af4021930f2479b1b8[m
+Author: wzp <1540132945@qq.com>
+Date:   Wed Feb 22 10:21:33 2017 +0800
+
+    备份
+
+[33mcommit 3e5bdebfa771032efb0e56661f598535ab2976de[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Wed Feb 22 10:19:48 2017 +0800
+
+    新版阅读器
+
+[33mcommit 47232848f770c5c7cff7def24f7580d76fb2fcdc[m
+Merge: 678f79d 9f9b6ca
+Author: 林俊伟 <491526974@qq.com>
+Date:   Wed Feb 22 10:13:53 2017 +0800
+
+    Merge branch 'master' into ljw_reader
+
+[33mcommit 678f79d66cd91722b80b2b608252c1dc4856f924[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Wed Feb 22 10:11:51 2017 +0800
+
+    阅读器移植成功
+
+[33mcommit 9f9b6cab8d435ce0dcbf91baef419ad11d295436[m
+Merge: 2bbb385 5b2d5ee
+Author: 林俊伟 <491526974@qq.com>
+Date:   Wed Feb 22 08:54:59 2017 +0800
+
+    Merge branch 'wzp_broadcast' into 'master'
+    
+    Wzp broadcast
+    
+    接好了首页的广播接口
+    
+    See merge request !46
+
+[33mcommit 9b0e47a51a90f9f5120dfae6e20adf1bb8b77334[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Tue Feb 21 18:50:09 2017 +0800
+
+    移植代码成功一般
+
+[33mcommit fbf99bb7e043100eaddc847b29c481ea148a1479[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Tue Feb 21 17:24:08 2017 +0800
+
+    0221_17:24
+
+[33mcommit c4d9e49ea421707c3e6674d0cf80373a83bf14cb[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Tue Feb 21 16:38:04 2017 +0800
+
+    reader
+
+[33mcommit 5b2d5ee150de966c3a709a1002b68b9d86a50a90[m
+Author: wzp <1540132945@qq.com>
+Date:   Tue Feb 21 15:51:34 2017 +0800
+
+    这个xml提交的时候遗漏了
+
+[33mcommit 19aaa7761383a41550ffc16113c05bb45c4f1da8[m
+Merge: 4084787 2bbb385
+Author: wzp <1540132945@qq.com>
+Date:   Tue Feb 21 15:46:00 2017 +0800
+
+    1.完成了书城页面中洋葱公告的修改，去掉了原先的imageview，将图片直接放到了textview中。
+    2.完成了与后台的接口对接工作。
+    3.还没有做网络异常的处理。
+
+[33mcommit b1a4958d0c8f51ffddf8ceed160e3b2dabcb3996[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Tue Feb 21 11:21:43 2017 +0800
+
+    阅读器
+
+[33mcommit 408478750001bf2ca0a576f8a0227edf31ddc369[m
+Author: wzp <1540132945@qq.com>
+Date:   Tue Feb 21 09:44:23 2017 +0800
+
+    备份
+
+[33mcommit 4c3aba0672010298727be237ef28e7f58cc2bddc[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Tue Feb 21 09:31:45 2017 +0800
+
+    阅读器修改
+
+[33mcommit cfe35395392693f655daad60713116007930097d[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Mon Feb 20 21:26:33 2017 +0800
+
+    添加 FBReader
+
+[33mcommit e7b66dfc1583d8b8577854d74ae345347811fc38[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Mon Feb 20 15:35:42 2017 +0800
+
+    移除阅读器以及残余代码
+
+[33mcommit 18e53c0b44892e9474e19214db4eebbf4af562df[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Mon Feb 20 15:24:12 2017 +0800
+
+    移除阅读器
+
+[33mcommit 2bbb38592478999d7d4892a48ddcae5eea95a0d1[m
+Merge: 0b3dd6e 34fdaec
+Author: 林俊伟 <491526974@qq.com>
+Date:   Fri Feb 17 11:42:55 2017 +0800
+
+    Merge branch 'ljw_http_request_0210' into 'master'
+    
+    广播效果
+    
+    添加广播效果
+    
+    See merge request !45
+
+[33mcommit 34fdaec409e0bb6baf484561e646330f861a46e9[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Fri Feb 17 11:21:14 2017 +0800
+
+    广播效果
+
+[33mcommit e1bf8ca7261817565de26fb4bee8d35bafa61c23[m
+Author: lg <522413904@qq.com>
+Date:   Wed Feb 15 21:31:25 2017 +0800
+
+    test
+
+[33mcommit defa7f5124099240904674275f212e203d86276a[m
+Author: lg <522413904@qq.com>
+Date:   Wed Feb 15 17:10:54 2017 +0800
+
+    0215
+
+[33mcommit 0b3dd6e2a4a9d36d7bfccbe962ebc89a88c5600c[m
+Merge: 6320c35 3509e40
+Author: 林俊伟 <491526974@qq.com>
+Date:   Wed Feb 15 11:34:03 2017 +0800
+
+    Merge branch 'ljw_http_request_0210' into 'master'
+    
+    0215 背景色
+    
+    背景色
+    
+    See merge request !44
+
+[33mcommit 3509e40f16c91c2535b67bfcd5d1bc96c3c93000[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Wed Feb 15 11:25:04 2017 +0800
+
+    0215 背景色
+
+[33mcommit 6320c355aeb380cd00c4f0b9f3667d002d64ba30[m
+Merge: bd9cfea 4ff06ed
+Author: 林俊伟 <491526974@qq.com>
+Date:   Wed Feb 15 11:23:54 2017 +0800
+
+    Merge branch 'ljw_http_request_0210' into 'master'
+    
+    Ljw http request 0210
+    
+    字体大小调整
+    
+    See merge request !43
+
+[33mcommit 4ff06edde24a0dac94c712d0af18362dc5045ce5[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Wed Feb 15 11:14:51 2017 +0800
+
+    0215 大小调整
+
+[33mcommit cc96227f70cde849b9433df402dfb64251b5f1a0[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Wed Feb 15 10:29:22 2017 +0800
+
+    ls3
+
+[33mcommit 66dbe5757b4484553122a254aa94de126a474099[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Wed Feb 15 09:58:20 2017 +0800
+
+    ls1
+
+[33mcommit f146358532292c00f798036993fe09cf9d0009b3[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Wed Feb 15 09:56:05 2017 +0800
+
+    ls
+
+[33mcommit bd9cfeaed2c282499ebd2925cfea388ab1c05d63[m
+Merge: 8cb723b c92d030
+Author: 林俊伟 <491526974@qq.com>
+Date:   Wed Feb 15 09:37:50 2017 +0800
+
+    Merge branch 'ljw_http_request_0210' into 'master'
+    
+    生词本
+    
+    添加生词本页面
+    
+    See merge request !42
+
+[33mcommit c92d0306be9d74ad3abf08d78d2f649f561f0f88[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Wed Feb 15 09:28:20 2017 +0800
+
+    生词本
+
+[33mcommit 8cb723b483fd50f2bf1d186aa1b6dfbfc7f9ca04[m
+Merge: 6e33b5a 9df0685
+Author: 林俊伟 <491526974@qq.com>
+Date:   Mon Feb 13 16:09:19 2017 +0800
+
+    Merge branch 'ljw_http_request_0210' into 'master'
+    
+    增加http请求功能
+    
+    See merge request !41
+
+[33mcommit 9df0685ea9b3dd7016a45bc4d735815f26c5e7d4[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Mon Feb 13 15:59:47 2017 +0800
+
+    增加http请求功能
+
+[33mcommit 8088b5c5d26a74c4725644f3b5eb9c6b126af5e3[m
+Merge: fc19953 6e33b5a
+Author: lg <522413904@qq.com>
+Date:   Fri Feb 10 10:44:26 2017 +0800
+
+    Merge branch 'master' into ligang_bookstore
+
+[33mcommit fc19953b4906a489e55f2230305f3265eb91e751[m
+Author: lg <522413904@qq.com>
+Date:   Fri Feb 10 10:43:49 2017 +0800
+
+    1
+
+[33mcommit 6e33b5a9826508e8b20ecabb8dbd637eb219ebee[m
+Merge: 7c07860 4533845
+Author: 林俊伟 <491526974@qq.com>
+Date:   Fri Feb 10 10:01:18 2017 +0800
+
+    Merge branch 'test' into 'master'
+    
+    Test
+    
+    1.阅读器换为老版阅读器
+    2.修改阅读器翻页bug
+    3.修改阅读器无法进入的bug
+    
+    See merge request !40
+
+[33mcommit 45338455267ae64ee7346efa6ae63733c992fbc4[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Fri Feb 10 09:51:25 2017 +0800
+
+    0210 commit
+
+[33mcommit 33053daf4acb26e34d4fdba48c5cca81a7bbcb6e[m
+Merge: 84bfb76 7c07860
+Author: 林俊伟 <491526974@qq.com>
+Date:   Fri Feb 10 09:41:54 2017 +0800
+
+    test_merge
+
+[33mcommit 84bfb76954185df1edfa798c16e4747b3d5a7e94[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Fri Feb 10 09:33:32 2017 +0800
+
+    test commit 0210
+
+[33mcommit 2715c97b6b2ee630a18443e3b50c92e0fcb49740[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Wed Feb 8 17:42:56 2017 +0800
+
+    0208
+
+[33mcommit 7c07860705709765c3ce3fb02670efc6b2029c3d[m
+Merge: 547c04c 8d46839
+Author: 林俊伟 <491526974@qq.com>
+Date:   Tue Feb 7 19:32:20 2017 +0800
+
+    Merge branch 'ljw_reader_popwindow_0206' into 'master'
+    
+    Ljw reader popwindow 0206
+    
+    增加带bug的阅读器
+    
+    See merge request !39
+
+[33mcommit 8d46839839e17d95a6e267ad26b912bc2aa627d8[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Tue Feb 7 15:11:01 2017 +0800
+
+    0207
+
+[33mcommit ab52ff5f14d4153ee6476c544005c50cd8ef24e6[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Mon Feb 6 21:01:03 2017 +0800
+
+    0206
+
+[33mcommit 3d6a2618ecb0379244804776089628eafa501d84[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Mon Feb 6 15:15:59 2017 +0800
+
+    0206
+
+[33mcommit ea6946b322e614ceb756faa4832e65edc32bf40e[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Mon Jan 23 17:13:00 2017 +0800
+
+    0123
+
+[33mcommit d32c26517c654ee3ee3623414e5abcf8aad06ed1[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Mon Jan 23 15:12:06 2017 +0800
+
+    0123
+
+[33mcommit b29fc0ddd4fd466b3f5c27b5c6cc36e6ee5ae581[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Mon Jan 23 14:50:15 2017 +0800
+
+    0123无进展
+
+[33mcommit 2aa71e45f63ca5cd75957cde1f497029c8106216[m
+Merge: 31c1efa 547c04c
+Author: 林俊伟 <491526974@qq.com>
+Date:   Sun Jan 22 16:39:33 2017 +0800
+
+    0122 备份
+
+[33mcommit 31c1efa9bdbd525f0b80325289fbd185d249b836[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Sat Jan 21 12:43:46 2017 +0800
+
+    成功的一步，0121
+
+[33mcommit 547c04cc300f8c65a6aa82a73eaeb5d26bd0878a[m
+Merge: ea6e3e9 3b35177
+Author: 林俊伟 <491526974@qq.com>
+Date:   Sat Jan 21 09:54:06 2017 +0800
+
+    Merge branch 'ligang_bookstore' into 'master'
+    
+    Ligang bookstore
+    
+    修改样式
+    增加创建话题选项
+    
+    See merge request !37
+
+[33mcommit 3b351775d64f177151861290ca2de8826551e843[m
+Merge: e8e278d ea6e3e9
+Author: lg <522413904@qq.com>
+Date:   Sat Jan 21 09:34:24 2017 +0800
+
+    conflict solve
+
+[33mcommit ea6e3e9e6737fb7ee8b574f32c6a340d4c8ef0ec[m
+Merge: 23d06bd aec36c4
+Author: 林俊伟 <491526974@qq.com>
+Date:   Sat Jan 21 00:57:17 2017 +0800
+
+    Merge branch 'xsc' into 'master'
+    
+    Xsc
+    
+    1.改了一些乱七八糟的
+    2.DiscoverFragment热门圈子和DiscoverCirclrDetailActivity界面点赞可以滑动
+    
+    See merge request !38
+
+[33mcommit aec36c416e5cb94dc4e444d39f8bb5a5c58c6763[m
+Author: xsc <2495562958@qq.com>
+Date:   Sat Jan 21 00:28:53 2017 +0800
+
+    121
+
+[33mcommit e8e278d095e20052849d652424339658d154adfb[m
+Merge: ab1aaf9 23d06bd
+Author: lg <522413904@qq.com>
+Date:   Sat Jan 21 00:19:11 2017 +0800
+
+    Merge branch 'master' into ligang_bookstore
+
+[33mcommit ab1aaf978e56b1318e8ec42c0ca964d9bbf58cb6[m
+Author: lg <522413904@qq.com>
+Date:   Sat Jan 21 00:18:35 2017 +0800
+
+    0121
+
+[33mcommit 0ff043decfb2e47a3dda353ac96933383e1c236b[m
+Merge: 5796aaa 23d06bd
+Author: 林俊伟 <491526974@qq.com>
+Date:   Fri Jan 20 15:58:10 2017 +0800
+
+    0120合并
+
+[33mcommit 0da4e0fa1f59d7a2386eb186c867f01c8596b8f2[m
+Author: xsc <2495562958@qq.com>
+Date:   Fri Jan 20 15:50:45 2017 +0800
+
+    120
+
+[33mcommit 5796aaaf63aee05e5d8a31911eab322ed9cad487[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Fri Jan 20 15:49:41 2017 +0800
+
+    0120_15:49
+
+[33mcommit 23d06bdd369104eef73e0e047df8f5252bcc71ea[m
+Merge: 066e0f3 22dec10
+Author: 林俊伟 <491526974@qq.com>
+Date:   Fri Jan 20 15:09:42 2017 +0800
+
+    Merge branch 'ligang_bookstore' into 'master'
+    
+    Ligang bookstore
+    
+    修改发现的部分样式问题
+    
+    See merge request !36
+
+[33mcommit 066e0f3e0127d56f57be072fb15346a76ced98c3[m
+Merge: 2b683b0 f6a9582
+Author: 林俊伟 <491526974@qq.com>
+Date:   Fri Jan 20 15:06:27 2017 +0800
+
+    Merge branch 'xsc' into 'master'
+    
+    Xsc
+    
+    修改书城和书架部分功能，单词本扇形图
+    
+    See merge request !35
+
+[33mcommit 22dec10b2aa99b63639a34cbf61f2657f41a9fbc[m
+Merge: b3fe631 066e0f3
+Author: lg <522413904@qq.com>
+Date:   Fri Jan 20 15:00:10 2017 +0800
+
+    Merge branch 'master' into ligang_bookstore
+
+[33mcommit b3fe6311a1dc1dcab7309fa440d90fe139b5a842[m
+Author: lg <522413904@qq.com>
+Date:   Fri Jan 20 14:59:35 2017 +0800
+
+    0120
+
+[33mcommit 3f10da2f29ec1582fc98811b158faf49f20aada1[m
+Merge: 863b2c1 2b683b0
+Author: lg <522413904@qq.com>
+Date:   Fri Jan 20 14:51:15 2017 +0800
+
+    Merge branch 'master' into ligang_bookstore
+
+[33mcommit 863b2c115e9b41e73ce28a599f782a38f9204603[m
+Author: lg <522413904@qq.com>
+Date:   Fri Jan 20 14:49:48 2017 +0800
+
+    0120
+
+[33mcommit f6a9582df308632219701a992d6d3fb7fc701bfc[m
+Merge: acfe69d 2b683b0
+Author: xsc <2495562958@qq.com>
+Date:   Fri Jan 20 12:00:09 2017 +0800
+
+    120
+
+[33mcommit 2b683b03c49d968f4312cd155611c34424fcd04c[m
+Merge: 4ce5e42 e583ee0
+Author: 林俊伟 <491526974@qq.com>
+Date:   Fri Jan 20 11:36:22 2017 +0800
+
+    Merge branch 'ligang_bookstore' into 'master'
+    
+    Ligang bookstore
+    
+    修改我的和发现的样式
+    
+    See merge request !34
+
+[33mcommit acfe69d8c142a8fcd7afdfbbeee63d80af6e18f9[m
+Author: xsc <2495562958@qq.com>
+Date:   Fri Jan 20 11:34:12 2017 +0800
+
+    120
+
+[33mcommit e583ee06acfec3bf98da4cda7de087065f226c03[m
+Merge: 4fff707 4ce5e42
+Author: lg <522413904@qq.com>
+Date:   Fri Jan 20 11:25:44 2017 +0800
+
+    Merge branch 'master' into ligang_bookstore
+
+[33mcommit 4fff70753b8235096bbe4dd58fd2bed5e0d2863c[m
+Author: lg <522413904@qq.com>
+Date:   Fri Jan 20 11:25:05 2017 +0800
+
+    0120
+
+[33mcommit d6c0d85838e597358acd44ac0d3b883ee238cac2[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Thu Jan 19 19:48:10 2017 +0800
+
+    备份
+
+[33mcommit 4ce5e424a7da4b356696a02e7a36c876b1a6e6a0[m
+Merge: c291859 79b7e31
+Author: 林俊伟 <491526974@qq.com>
+Date:   Thu Jan 19 11:12:13 2017 +0800
+
+    Merge branch 'srb_newyear' into 'master'
+    
+    读读后感
+    
+    加入读后感
+    
+    See merge request !33
+
+[33mcommit 79b7e31c47834b43f69c00f26a63132f7d7c0c60[m
+Author: unknown <盛芮宾>
+Date:   Thu Jan 19 10:50:00 2017 +0800
+
+    读读后感
+
+[33mcommit c2918592a6a8726a11c8fab602e8991a4113b366[m
+Merge: 4460bcf 19a9001
+Author: 林俊伟 <491526974@qq.com>
+Date:   Thu Jan 19 09:05:49 2017 +0800
+
+    Merge branch 'ligang_bookstore' into 'master'
+    
+    Ligang bookstore
+    
+    李刚 bookstore
+    
+    See merge request !32
+
+[33mcommit 19a900120068d3052cadae55f92d7aac5f7f2828[m
+Merge: ee7cd87 4460bcf
+Author: lg <522413904@qq.com>
+Date:   Wed Jan 18 16:12:24 2017 +0800
+
+    Merge branch 'master' into ligang_bookstore
+
+[33mcommit ee7cd87352ea86c50736bbac909428469b51351f[m
+Author: lg <522413904@qq.com>
+Date:   Wed Jan 18 16:11:41 2017 +0800
+
+    0118
+
+[33mcommit ed5f5eb4d683dfa468e3d3823c15dd9a26f3a7ce[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Tue Jan 17 17:09:20 2017 +0800
+
+    蛋疼
+
+[33mcommit 8aab8e611bd8ba6e290bea0d0ae043897aecdfde[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Tue Jan 17 15:05:10 2017 +0800
+
+    1.17
+
+[33mcommit 27da96fd469a661db9b7bd8ce0d9047f2a6fbe41[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Mon Jan 16 21:58:06 2017 +0800
+
+    1.16 21:58
+
+[33mcommit 4460bcfa6169fac4a40534327e33151a813593fa[m
+Merge: 660a8a6 1b9b462
+Author: 林俊伟 <491526974@qq.com>
+Date:   Mon Jan 16 19:22:47 2017 +0800
+
+    Merge branch 'xsc' into 'master'
+    
+    Xsc
+    
+    1.所有界面的图书详情跳转和圈子跳转
+    2.购物车点击item选中
+    
+    See merge request !31
+
+[33mcommit 1b9b46263dbbd1c65f9e7ccb261092dd8d5b28ff[m
+Merge: 52427f1 660a8a6
+Author: xsc <2495562958@qq.com>
+Date:   Mon Jan 16 17:51:04 2017 +0800
+
+    Merge branch 'master' into xsc
+
+[33mcommit 52427f181ff88b7c465f1e5912c7141c9c36656b[m
+Author: xsc <2495562958@qq.com>
+Date:   Mon Jan 16 17:42:35 2017 +0800
+
+    116
+
+[33mcommit 375db6f1d52302ee5262e61a9297ecf9fda02439[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Mon Jan 16 17:28:53 2017 +0800
+
+    显示框
+
+[33mcommit 660a8a6f5fdd7027f594b3c10e59ce85d332f8ff[m
+Merge: bfc90bb 7e4bba7
+Author: 林俊伟 <491526974@qq.com>
+Date:   Mon Jan 16 17:19:26 2017 +0800
+
+    Merge branch 'srb_newyear' into 'master'
+    
+    找回密码”
+    
+    f
+    git commit -m 找回密码“
+    
+    See merge request !30
+
+[33mcommit 7e4bba7c0e00d0f05de78e72e1de198cea9d19e0[m
+Author: unknown <盛芮宾>
+Date:   Mon Jan 16 17:03:46 2017 +0800
+
+    找回密码码”
+    f
+    git commit -m 找回密码“
+
+[33mcommit 7375df4fb9cac35f673d4a9f31bf40a832bc9f7a[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Sat Jan 14 16:29:33 2017 +0800
+
+    无改动
+
+[33mcommit 2b022bca0847106cb493b84e6532db4810f1d681[m
+Merge: 024072e bfc90bb
+Author: 林俊伟 <491526974@qq.com>
+Date:   Sat Jan 14 11:04:58 2017 +0800
+
+    reader
+
+[33mcommit 865e3b277b35416e8591202e43d3d17ffce47d4c[m
+Merge: b22048d bfc90bb
+Author: lg <522413904@qq.com>
+Date:   Fri Jan 13 09:33:52 2017 +0800
+
+    Merge branch 'master' into ligang_bookstore
+
+[33mcommit b22048deeebd7428662c4a0b5d24d310bcab09d2[m
+Author: lg <522413904@qq.com>
+Date:   Fri Jan 13 09:32:54 2017 +0800
+
+    0113
+
+[33mcommit 024072ec26ebcfcbd3cfd5f9546695929134f131[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Wed Jan 11 20:16:30 2017 +0800
+
+    阅读器
+
+[33mcommit bfc90bb8966c271d08bbcea955db9ba0b6b2bd51[m
+Merge: 8aca735 d1b437b
+Author: 林俊伟 <491526974@qq.com>
+Date:   Wed Jan 11 15:28:57 2017 +0800
+
+    Merge branch 'xsc' into 'master'
+    
+    Xsc提交代码1月11日
+    
+    1.新建圈子5个页面
+    2.兑换图书修改
+    
+    See merge request !29
+
+[33mcommit d1b437b26ef954249cfead9f908869becc16f529[m
+Merge: ebf57dd 8aca735
+Author: xsc <2495562958@qq.com>
+Date:   Wed Jan 11 11:34:19 2017 +0800
+
+    111
+
+[33mcommit ebf57dd8e26944e5aa89626eab0b0a48dc099a10[m
+Author: xsc <2495562958@qq.com>
+Date:   Wed Jan 11 11:06:56 2017 +0800
+
+    111
+
+[33mcommit 8aca7356a77efedfbddddd1c0db63dc4307a7ea7[m
+Merge: 941fc05 faaf673
+Author: 林俊伟 <491526974@qq.com>
+Date:   Mon Jan 9 18:00:56 2017 +0800
+
+    Merge branch 'srb_newyear' into 'master'
+    
+    登录加注册页面
+    
+    See merge request !28
+
+[33mcommit faaf673de9bebd9ef4df79e8f59fbea6d071f367[m
+Merge: a232454 941fc05
+Author: unknown <盛芮宾>
+Date:   Mon Jan 9 17:46:11 2017 +0800
+
+    登录加注册
+
+[33mcommit a2324545b0c9bacc212155b3a006dcbd318b19ac[m
+Author: unknown <盛芮宾>
+Date:   Mon Jan 9 17:13:53 2017 +0800
+
+    注册
+
+[33mcommit 941fc05f14ac5771951186d9c743c9e7378ea8d0[m
+Merge: 1d57bee c945b98
+Author: 林俊伟 <491526974@qq.com>
+Date:   Sat Jan 7 14:46:18 2017 +0800
+
+    Merge branch 'ligang_bookstore' into 'master'
+    
+    Ligang bookstore
+    
+    发现里的读书会详情页面
+    
+    See merge request !26
+
+[33mcommit c945b98c2bda6317745d7ce05d24450c27ebfc58[m
+Merge: 3d7e335 1d57bee
+Author: lg <522413904@qq.com>
+Date:   Fri Jan 6 20:53:28 2017 +0800
+
+    Merge branch 'master' into ligang_bookstore
+
+[33mcommit 3d7e33556eec566708812f41ee9dfecc98610c43[m
+Author: lg <522413904@qq.com>
+Date:   Fri Jan 6 20:52:53 2017 +0800
+
+    0106
+
+[33mcommit 1d57bee7588fdba9ca246e8500982d301d32c87d[m
+Merge: f9b528b 5121598
+Author: 林俊伟 <491526974@qq.com>
+Date:   Fri Jan 6 17:37:06 2017 +0800
+
+    Merge branch 'ljw_develop' into 'master'
+    
+    Ljw develop
+    
+    个人主页
+    
+    See merge request !25
+
+[33mcommit 5121598e0e9ca7a62021ba6a1c539af4d106a541[m
+Merge: 75963dc f9b528b
+Author: 林俊伟 <491526974@qq.com>
+Date:   Fri Jan 6 17:28:40 2017 +0800
+
+    Merge branch 'master' into ljw_develop
+
+[33mcommit 75963dce809058bbc95742dfefc60e1629fef0c5[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Fri Jan 6 17:27:50 2017 +0800
+
+    my_page
+
+[33mcommit f9b528b7d54d0c788c503112a9068042240de1b2[m
+Merge: 978a9fc f016098
+Author: 林俊伟 <491526974@qq.com>
+Date:   Fri Jan 6 09:55:32 2017 +0800
+
+    Merge branch 'ljw_develop' into 'master'
+    
+    Ljw develop
+    
+    个人主页
+    
+    See merge request !24
+
+[33mcommit b65301f4b94e3223853df2f8a061cbb2aa9e7d6e[m
+Merge: f6e6410 f9b528b
+Author: lg <522413904@qq.com>
+Date:   Fri Jan 6 09:54:47 2017 +0800
+
+    Merge branch 'master' into ligang_bookstore
+
+[33mcommit f6e64106a187697e05df94c7dbb3b8aa3dec7643[m
+Author: lg <522413904@qq.com>
+Date:   Fri Jan 6 09:54:07 2017 +0800
+
+    0106
+
+[33mcommit f016098fee749f8712480ff4128194a3d47fb4e7[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Fri Jan 6 09:46:56 2017 +0800
+
+    0106
+
+[33mcommit 5e5bae29410fb2bffb6c515b8cd384ac95dd08f7[m
+Merge: e9a7723 978a9fc
+Author: lg <522413904@qq.com>
+Date:   Thu Jan 5 22:40:12 2017 +0800
+
+    0105
+
+[33mcommit e9a772360f32bf898c4771fc12bd2fd94da3db01[m
+Author: lg <522413904@qq.com>
+Date:   Thu Jan 5 22:33:30 2017 +0800
+
+    0105
+
+[33mcommit af7b0928c0b8ea8b8a67dc4e892500e45f89ab77[m
+Merge: 4cbf4f2 978a9fc
+Author: 林俊伟 <491526974@qq.com>
+Date:   Thu Jan 5 15:31:33 2017 +0800
+
+    Merge branch 'master' into ljw_develop
+
+[33mcommit 4cbf4f21e43344b1af81f535cd5b684e5ad16dba[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Thu Jan 5 15:30:48 2017 +0800
+
+    0105.1530
+
+[33mcommit 978a9fc3d851c7a5c08da323c9f98b2028f2ed87[m
+Merge: 2b287a5 71405ac
+Author: 林俊伟 <491526974@qq.com>
+Date:   Thu Jan 5 15:10:41 2017 +0800
+
+    Merge branch 'srb_newyear' into 'master'
+    
+    Srb newyear
+    
+    2017 1月5号登陆界面修改  背景图片及分隔线问题待解决
+    
+    See merge request !23
+
+[33mcommit 71405ac48c4a62989772148f74855453064c49ef[m
+Merge: 11913d4 2b287a5
+Author: unknown <盛芮宾>
+Date:   Thu Jan 5 14:55:07 2017 +0800
+
+    Merge branch 'master' into srb_newyear
+
+[33mcommit 11913d47f13399ad20885eed4d8299d063a4f2ff[m
+Author: unknown <盛芮宾>
+Date:   Thu Jan 5 14:50:33 2017 +0800
+
+    新登录“
+    
+    git commit -m 新登录“
+
+[33mcommit d75368ae97142a0868ebc04220c341543451cd2a[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Thu Jan 5 10:35:11 2017 +0800
+
+    我的主页
+
+[33mcommit 936386e9896f3135f59abec821c06062ba702634[m
+Merge: 329d8d1 2b287a5
+Author: 林俊伟 <491526974@qq.com>
+Date:   Thu Jan 5 09:14:08 2017 +0800
+
+    merge
+
+[33mcommit 329d8d1faf06220e43864225e21c2aca1bbb8318[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Thu Jan 5 08:56:56 2017 +0800
+
+    读书会
+
+[33mcommit 2b287a519efed97d3c5b0d47bcd41f9bb42ba778[m
+Merge: c4eaef4 fa53180
+Author: 林俊伟 <491526974@qq.com>
+Date:   Wed Jan 4 23:45:09 2017 +0800
+
+    Merge branch 'xsc' into 'master'
+    
+    许树成1月4号
+    
+    1.意见反馈
+    2.更多设置
+    3.账号绑定
+    4.我的消息
+    
+    See merge request !22
+
+[33mcommit fa531806470482e85b96ea34e0b785f91f8722c3[m
+Merge: faf1dd8 c4eaef4
+Author: xsc <2495562958@qq.com>
+Date:   Wed Jan 4 22:53:26 2017 +0800
+
+    14
+
+[33mcommit faf1dd84fcee11c0806c9750d641413b76065d5f[m
+Author: xsc <2495562958@qq.com>
+Date:   Wed Jan 4 22:21:39 2017 +0800
+
+    14
+
+[33mcommit 99627c01c5054498d716d6da25d35ae8172d0ac6[m
+Author: xsc <2495562958@qq.com>
+Date:   Wed Jan 4 22:21:26 2017 +0800
+
+    14
+
+[33mcommit d56df81ef83282eca791174cbd8a1c111898c8c8[m
+Author: xsc <2495562958@qq.com>
+Date:   Tue Jan 3 20:47:13 2017 +0800
+
+    13
+
+[33mcommit 9a277cf189e9d4aed83f9b3e89e09a3fb44f0188[m
+Author: xsc <2495562958@qq.com>
+Date:   Tue Jan 3 20:46:59 2017 +0800
+
+    13
+
+[33mcommit c4eaef438e1d65678861ef7c1ecbbeef3fe87d32[m
+Merge: 296b603 d223908
+Author: 林俊伟 <491526974@qq.com>
+Date:   Tue Jan 3 16:31:20 2017 +0800
+
+    Merge branch 'ljw_develop' into 'master'
+    
+    head修改
+    
+    See merge request !21
+
+[33mcommit d223908214b76d35bd915a26c914b588d1c64d1e[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Tue Jan 3 16:23:17 2017 +0800
+
+    head修改
+
+[33mcommit 296b6031b3fa4e8148e8b3baa1083de520bd9f5c[m
+Merge: 3335213 e12ae96
+Author: 林俊伟 <491526974@qq.com>
+Date:   Tue Jan 3 16:23:06 2017 +0800
+
+    Merge branch 'ljw_develop' into 'master'
+    
+    Ljw develop
+    
+    1.更换美工出的图片
+    2.修改布局文件
+    3.增加侧滑退出功能
+    
+    See merge request !20
+
+[33mcommit e12ae967f12c1f0114313a97bb30afdb4da544fd[m
+Merge: 331016d 3335213
+Author: 林俊伟 <491526974@qq.com>
+Date:   Tue Jan 3 16:13:57 2017 +0800
+
+    Merge branch 'master' into ljw_develop
+
+[33mcommit 331016d7472c802fe5be666127c828a0af9fd570[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Tue Jan 3 16:12:33 2017 +0800
+
+    更换图片，增加侧滑退出功能
+
+[33mcommit 626849dab4d609da8edb0ce02b1c371544cec815[m
+Merge: 81cbd06 3335213
+Author: xsc <2495562958@qq.com>
+Date:   Fri Dec 30 16:06:34 2016 +0800
+
+    1230
+
+[33mcommit 81cbd06ef501a8c46dc9354977be47221eb71175[m
+Author: xsc <2495562958@qq.com>
+Date:   Fri Dec 30 16:00:52 2016 +0800
+
+    1230
+
+[33mcommit 95f7fe820221e2516c9a509488b3cb9d5473b5f0[m
+Author: xsc <2495562958@qq.com>
+Date:   Fri Dec 30 15:35:43 2016 +0800
+
+    1230
+
+[33mcommit eba6c7efd52abf0260f07b3bdb2e82591c20e6c4[m
+Author: xsc <2495562958@qq.com>
+Date:   Fri Dec 30 11:50:59 2016 +0800
+
+    1230
+
+[33mcommit 3335213fec9e3c11f41b397878696394ea1ec210[m
+Merge: 6a6366f 4fa6163
+Author: 林俊伟 <491526974@qq.com>
+Date:   Fri Dec 30 10:49:21 2016 +0800
+
+    Merge branch 'ljw_develop' into 'master'
+    
+    Ljw develop
+    
+    注册页面viewpager
+    
+    See merge request !19
+
+[33mcommit 4fa6163e33d51b9ab6b3b2d90b5f9ba819b69025[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Fri Dec 30 10:40:39 2016 +0800
+
+    viewPage
+
+[33mcommit 4236bbcbfbf2a786493ddf59aa4b53e97cfc25a8[m
+Merge: b4479dd 6a6366f
+Author: 林俊伟 <491526974@qq.com>
+Date:   Thu Dec 29 15:01:20 2016 +0800
+
+    merge
+
+[33mcommit b4479ddb27317f1df3a8fe5eb1e5c76cf1195e96[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Thu Dec 29 14:57:16 2016 +0800
+
+    读后感
+
+[33mcommit 6a6366f77dc7382ddfa1afa0f46f51b18307ab23[m
+Merge: 3b2c565 782518c
+Author: 林俊伟 <491526974@qq.com>
+Date:   Thu Dec 29 11:39:48 2016 +0800
+
+    Merge branch 'ligang_bookstore' into 'master'
+    
+    Ligang bookstore
+    
+    1.圈子页面
+    2.图书详情页修改布局
+    
+    See merge request !18
+
+[33mcommit 782518c0539f3c5ce7fa0c92a7c1c5b3d5e0c2a3[m
+Author: lg <522413904@qq.com>
+Date:   Thu Dec 29 11:22:08 2016 +0800
+
+    merge
+
+[33mcommit 0a36908ab39af4b54e19d4462968aa04231a5501[m
+Author: lg <522413904@qq.com>
+Date:   Thu Dec 29 11:02:11 2016 +0800
+
+    1229
+
+[33mcommit 5af20a965cc03cf465680307a590463371e2be50[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Wed Dec 28 21:17:11 2016 +0800
+
+    读后感
+
+[33mcommit d95a4d6fa7b53acfec4c7dad1b3c441ecceb7a34[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Wed Dec 28 19:52:57 2016 +0800
+
+    圈子详情，读后感
+
+[33mcommit 0776edc24d477d2a455345deef67781a9539d733[m
+Merge: 77f7a6b 3b2c565
+Author: xsc <2495562958@qq.com>
+Date:   Wed Dec 28 16:19:21 2016 +0800
+
+    1228xsc
+
+[33mcommit 77f7a6bf82e86121c11e291bf27f60d40d5a3a43[m
+Author: xsc <2495562958@qq.com>
+Date:   Wed Dec 28 16:16:18 2016 +0800
+
+    1228xsc
+
+[33mcommit 8e9d6b356a7740779ee8a717d9814e78c5138616[m
+Author: xsc <2495562958@qq.com>
+Date:   Wed Dec 28 16:04:25 2016 +0800
+
+    xsc1228
+
+[33mcommit e6ad0bd395414a0fd6d668877645d07417b5d83f[m
+Author: xsc <2495562958@qq.com>
+Date:   Wed Dec 28 16:03:32 2016 +0800
+
+    xsc1228
+
+[33mcommit 3e5fd732376235e6f4d7365c89b08f4f665ed51f[m
+Merge: a4dfb12 3b2c565
+Author: lg <522413904@qq.com>
+Date:   Wed Dec 28 11:03:51 2016 +0800
+
+    solve conflict
+
+[33mcommit a4dfb12215868e8e04d5a68ab7a6208514c481ef[m
+Author: lg <522413904@qq.com>
+Date:   Wed Dec 28 11:00:11 2016 +0800
+
+    1228
+
+[33mcommit 3b2c5657d9cdffcb40e04e2b3bb5061ed3449b82[m
+Merge: f3135e2 c416f17
+Author: 林俊伟 <491526974@qq.com>
+Date:   Wed Dec 28 10:55:20 2016 +0800
+
+    Merge branch 'ljw_develop' into 'master'
+    
+    美化ui
+    
+    See merge request !17
+
+[33mcommit 3d6ab74dcbff5cbd4c34701766fd6c5abe2a39d0[m
+Merge: 1e800cb 3b2c565
+Author: 林俊伟 <491526974@qq.com>
+Date:   Wed Dec 28 10:48:40 2016 +0800
+
+    Merge branch 'master' into ljw_develop
+
+[33mcommit 1e800cb419219798992c80f8eec910ac67a5686c[m
+Merge: c416f17 f3135e2
+Author: 林俊伟 <491526974@qq.com>
+Date:   Wed Dec 28 10:46:04 2016 +0800
+
+    Merge branch 'master' into ljw_develop
+
+[33mcommit c416f17c63311c52ba0915e6dc18052dfd412dab[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Wed Dec 28 10:45:01 2016 +0800
+
+    美化ui
+
+[33mcommit 6df9d4a310f44fb1aa8874c044b93ceac698146d[m
+Author: xsc <2495562958@qq.com>
+Date:   Wed Dec 28 10:21:49 2016 +0800
+
+    1228
+
+[33mcommit d9f77c50bb401c3762bb13991b7cb488ce603b98[m
+Merge: 61ea4f0 f3135e2
+Author: xsc <2495562958@qq.com>
+Date:   Tue Dec 27 16:36:53 2016 +0800
+
+    xsc1227
+
+[33mcommit 61ea4f04c6c95c68b8dd8a274ddb5c9f1526ecae[m
+Author: xsc <2495562958@qq.com>
+Date:   Tue Dec 27 16:25:16 2016 +0800
+
+    xsc1227
+
+[33mcommit 817235c79cc84a6dde929fc023f1de8acad6c784[m
+Author: xsc <2495562958@qq.com>
+Date:   Tue Dec 27 16:24:48 2016 +0800
+
+    xsc1227
+
+[33mcommit f3135e22eef0806f43c8fc70966a2eb149e151a1[m
+Merge: 498e29d d70491a
+Author: 林俊伟 <491526974@qq.com>
+Date:   Tue Dec 27 09:03:36 2016 +0800
+
+    Merge branch 'ljw_develop' into 'master'
+    
+    Ljw develop
+    
+    1.更换引导页图片
+    2.更换app底栏图片
+    
+    See merge request !16
+
+[33mcommit d70491a6e2e88a47e583e6d37e11d1ad892b14ec[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Tue Dec 27 08:55:22 2016 +0800
+
+    引导页，app底栏
+
+[33mcommit 8a57859b0e2d196fff7cef82e58b46bb877f4d9c[m
+Merge: eb80e49 498e29d
+Author: 林俊伟 <491526974@qq.com>
+Date:   Mon Dec 26 22:11:44 2016 +0800
+
+    Merge branch 'master' into ljw_develop
+
+[33mcommit eb80e49f96b979dd45737ff13b89b8faaa63105d[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Mon Dec 26 22:11:04 2016 +0800
+
+    ljw_1226
+
+[33mcommit 498e29d0790cfd7f3fff0cab1158f15e6493592b[m
+Merge: 7eb286c 1a63291
+Author: 林俊伟 <491526974@qq.com>
+Date:   Mon Dec 26 21:22:58 2016 +0800
+
+    Merge branch 'xsc' into 'master'
+    
+    Xsc
+    
+    1.已购图书
+    2.兑换图书
+    3.购物车
+    4.支付界面
+    5.我的收藏
+    
+    See merge request !15
+
+[33mcommit 1a63291df0a0f448ceced743a7baf5fc062523c1[m
+Author: xsc <2495562958@qq.com>
+Date:   Mon Dec 26 21:05:57 2016 +0800
+
+    xsc_mine_60%
+
+[33mcommit 0cf43829b3e6df93332adbe199de8bec5cdd39a6[m
+Merge: c09675b 7eb286c
+Author: xsc <2495562958@qq.com>
+Date:   Mon Dec 26 20:58:45 2016 +0800
+
+    merge_1226
+
+[33mcommit 7eb286cd1f1ba99c92b897a773d54e284556e6c1[m
+Merge: e1eb121 8b403c8
+Author: 林俊伟 <491526974@qq.com>
+Date:   Mon Dec 26 20:55:55 2016 +0800
+
+    Merge branch 'ligang_bookstore' into 'master'
+    
+    Ligang bookstore
+    
+    书城下的
+    1.分类
+    2.搜索
+    3.图书详情页
+    4.作者简介
+    5.自定义原型图片
+    6.scrollView与ListView、GridView冲突，重写了ListView、GridView的onMeasure方法，后面改成RecycleView
+    
+    See merge request !14
+
+[33mcommit c09675bc9c35c6f14215c27646062211ace5ffae[m
+Author: xsc <2495562958@qq.com>
+Date:   Mon Dec 26 20:51:50 2016 +0800
+
+    xsc_1226
+
+[33mcommit 8b403c8d0cbd40a62257e6d4392dc9d2f337d337[m
+Author: lg <522413904@qq.com>
+Date:   Mon Dec 26 20:37:00 2016 +0800
+
+    merge1226
+
+[33mcommit fb62bc03cbab8ee60b970c9694ee3bdcbed92db6[m
+Merge: 86321df e1eb121
+Author: lg <522413904@qq.com>
+Date:   Mon Dec 26 19:51:24 2016 +0800
+
+    Merge branch 'master' into ligang_bookstore
+
+[33mcommit 86321df96f62ca7d9ae165aaa6a052a00ab8854f[m
+Author: lg <522413904@qq.com>
+Date:   Mon Dec 26 19:50:31 2016 +0800
+
+    ligang_book_market
+
+[33mcommit e1eb1215a81748233d0475ed5d2b53d04d525d8e[m
+Merge: bdd816c d273fc9
+Author: 林俊伟 <491526974@qq.com>
+Date:   Mon Dec 26 17:49:05 2016 +0800
+
+    Merge branch 'iyangcong_srb' into 'master'
+    
+    Iyangcong srb
+    
+    登录界面
+    
+    See merge request !13
+
+[33mcommit d273fc9030f7ef9b307eacfc89137a782c36993e[m
+Merge: 9d91ff8 bdd816c
+Author: unknown <盛芮宾>
+Date:   Mon Dec 26 17:39:31 2016 +0800
+
+    提交登录页面
+
+[33mcommit 44377315236a590e3d7cc19285611121a358f4db[m
+Merge: 06c9b64 bdd816c
+Author: xsc <2495562958@qq.com>
+Date:   Mon Dec 26 17:25:44 2016 +0800
+
+    Merge branch 'master' into xsc
+
+[33mcommit 9d91ff85cf969fd8abce36f279912ce50848982b[m
+Merge: 59372c1 9ccb082
+Author: unknown <盛芮宾>
+Date:   Mon Dec 26 17:19:35 2016 +0800
+
+    登录页面
+
+[33mcommit 06c9b64a79bb3ebee46a33ffdfba5a1d3505edad[m
+Author: xsc <2495562958@qq.com>
+Date:   Mon Dec 26 17:16:27 2016 +0800
+
+    xscc
+
+[33mcommit 581999ddfa77ccf245af8b521da297a77f4353be[m
+Merge: 7e1bb6f bdd816c
+Author: lg <522413904@qq.com>
+Date:   Mon Dec 26 15:15:23 2016 +0800
+
+    Merge branch 'master' into ligang_bookstore
+
+[33mcommit 7e1bb6f1c2a35e87ea78c2b43d1f304e43485511[m
+Author: lg <522413904@qq.com>
+Date:   Mon Dec 26 15:13:27 2016 +0800
+
+    solve conflict
+
+[33mcommit bdd816c53d9f745df1fac8cf511e9f5d6e548e05[m
+Merge: 9b9f876 d1d1992
+Author: 林俊伟 <491526974@qq.com>
+Date:   Mon Dec 26 11:03:33 2016 +0800
+
+    Merge branch 'ljw_develop' into 'master'
+    
+    自定义控件
+    
+    自定义控件
+    
+    See merge request !12
+
+[33mcommit d1d1992190048db160418ee1248f20877ebe8fba[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Mon Dec 26 10:55:41 2016 +0800
+
+    自定义控件
+
+[33mcommit ef30bb8bd8cc5dc3429a83105502a77b77f0c645[m
+Merge: 38fb71c 9b9f876
+Author: lg <522413904@qq.com>
+Date:   Sun Dec 25 19:35:43 2016 +0800
+
+    solve conflict
+
+[33mcommit 38fb71ca5f8f2115c0b5f061bad6b3c47c393a92[m
+Author: lg <522413904@qq.com>
+Date:   Sun Dec 25 19:30:46 2016 +0800
+
+    bookmatket
+
+[33mcommit dd4c99c5ebe6aeb3c5a7c929dafe78a085cb5024[m
+Merge: f7a8949 9b9f876
+Author: xsc <2495562958@qq.com>
+Date:   Sun Dec 25 19:00:43 2016 +0800
+
+    hebingchongtudaima
+
+[33mcommit f7a8949d15f173fddbad9fded11360753653d915[m
+Author: xsc <2495562958@qq.com>
+Date:   Sun Dec 25 18:56:44 2016 +0800
+
+    shucheng_mine_tijiao
+
+[33mcommit 9b9f87601db2d39d920e55347f975dcd47e3d201[m
+Merge: 9ccb082 988b40b
+Author: 林俊伟 <491526974@qq.com>
+Date:   Sun Dec 25 14:08:27 2016 +0800
+
+    Merge branch 'ljw_develop' into 'master'
+    
+    开发我的书架
+    
+    1.我的书架修改
+    2.云书架
+    3.我的分组
+    
+    See merge request !11
+
+[33mcommit 988b40bc34d1fff94ec70eb43d02673a220aceee[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Sun Dec 25 13:59:41 2016 +0800
+
+    开发我的书架
+
+[33mcommit 59372c176ad9d79ae03b4b4232bc9fbff4862ffe[m
+Merge: 3825e74 d2247bc
+Author: unknown <盛芮宾>
+Date:   Sat Dec 24 16:18:23 2016 +0800
+
+    注册
+
+[33mcommit 9ccb082bcb3e8bc42bd5b10b11b70bc1e9e6c596[m
+Merge: c24187e a1791e4
+Author: 林俊伟 <491526974@qq.com>
+Date:   Sat Dec 24 15:12:15 2016 +0800
+
+    Merge branch 'ljw_develop' into 'master'
+    
+    1.绘制我的页面2.修改状态栏
+    
+    1.绘制我的页面
+    2.修改状态栏
+    
+    See merge request !10
+
+[33mcommit a1791e4b5468c0176e6c790d5ed92e1f8e0320eb[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Sat Dec 24 15:04:10 2016 +0800
+
+    1.绘制我的页面2.修改状态栏
+
+[33mcommit c24187e830216c65f42bc44c69f5eb60336b739d[m
+Merge: 932d643 b02bd64
+Author: 林俊伟 <491526974@qq.com>
+Date:   Fri Dec 23 10:58:20 2016 +0800
+
+    Merge branch 'ljw_develop' into 'master'
+    
+    发现页面
+    
+    See merge request !9
+
+[33mcommit b02bd64bf9b18603b834e0419ec80e045c585f93[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Fri Dec 23 10:50:30 2016 +0800
+
+    发现页面
+
+[33mcommit 932d64383aadd383a5f5747c7e5432af04d67e22[m
+Merge: 5b53554 b966c49
+Author: 林俊伟 <491526974@qq.com>
+Date:   Wed Dec 21 17:30:32 2016 +0800
+
+    Merge branch 'ljw_develop' into 'master'
+    
+    绘制发现页面和我的页面
+    
+    1.绘制发现页面
+    2.绘制我的页面
+    
+    See merge request !8
+
+[33mcommit b966c49d49615f46506582c344fd13884f2b9c63[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Wed Dec 21 17:22:33 2016 +0800
+
+    绘制发现页面和我的页面
+
+[33mcommit 5b53554b25b405c2a92ab2083fed045717229013[m
+Merge: d2247bc b4158ec
+Author: 林俊伟 <491526974@qq.com>
+Date:   Tue Dec 20 11:07:46 2016 +0800
+
+    Merge branch 'ljw_develop' into 'master'
+    
+    新增 发现主页
+    
+    See merge request !7
+
+[33mcommit b4158ece5d12aae76f633abbe17fa01c61ab60da[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Tue Dec 20 10:58:57 2016 +0800
+
+    新增 发现主页
+
+[33mcommit 3825e749982f5b21fef9a6a242c132df6c4b9e72[m
+Author: unknown <盛芮宾>
+Date:   Tue Dec 20 10:14:36 2016 +0800
+
+    盛芮宾的提交登录页面布局
+
+[33mcommit d2247bcddef4b2885bf572d1c229dbe3621c4728[m
+Merge: a084e33 15432e0
+Author: 林俊伟 <491526974@qq.com>
+Date:   Mon Dec 19 11:21:01 2016 +0800
+
+    Merge branch 'ljw_develop' into 'master'
+    
+    命名规范
+    
+    命名规范
+    
+    See merge request !6
+
+[33mcommit 15432e02bb5177ef2da9ea049b8e5b2ed7d272dc[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Mon Dec 19 11:13:11 2016 +0800
+
+    命名规范
+
+[33mcommit a084e3397a6d125c64ea008f72a950471aa3b44c[m
+Merge: 7fe5763 eff225a
+Author: 林俊伟 <491526974@qq.com>
+Date:   Sun Dec 18 14:42:30 2016 +0800
+
+    Merge branch 'ljw_develop' into 'master'
+    
+    1.更改引导页图片2.增加字体样式
+    
+    1.更改引导页图片
+    2.增加字体样式
+    
+    See merge request !5
+
+[33mcommit eff225a5f71c5575a928282b20643e55da71de0c[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Sun Dec 18 14:34:34 2016 +0800
+
+    1.更改引导页图片2.增加字体样式
+
+[33mcommit 7fe57639635473e60a07a600fb20c1656f634822[m
+Merge: dcc6207 8c9770a
+Author: 林俊伟 <491526974@qq.com>
+Date:   Sat Dec 17 19:38:13 2016 +0800
+
+    Merge branch 'ljw_develop' into 'master'
+    
+    改包名
+    
+    See merge request !4
+
+[33mcommit 8c9770a3525d67f2b59193c3920af8308d864a1d[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Sat Dec 17 19:30:35 2016 +0800
+
+    改包名
+
+[33mcommit dcc6207f90b300d72282a1afb201f11dab2c7386[m
+Merge: 5641716 daa573c
+Author: 林俊伟 <491526974@qq.com>
+Date:   Sat Dec 17 18:06:48 2016 +0800
+
+    Merge branch 'ljw_develop' into 'master'
+    
+    commit
+    
+    See merge request !3
+
+[33mcommit daa573c81202f280655f0a21d02bf90f47422273[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Sat Dec 17 17:59:09 2016 +0800
+
+    commit
+
+[33mcommit 5641716e6ac20498d0ff88c125d221b6ac293c7a[m
+Merge: be48109 227862b
+Author: chenkeliang <474850241@qq.com>
+Date:   Sat Dec 17 16:19:13 2016 +0800
+
+    Merge branch 'mainpage' into 'master'
+    
+    修改首頁，整理了一下相應的值
+    
+    See merge request !2
+
+[33mcommit 227862b8380b38bfe08b266b83c78c89bb094f22[m
+Author: chenkeliang <474850241@qq.com>
+Date:   Sat Dec 17 16:11:25 2016 +0800
+
+    修改首頁，整理了一下相應的值
+
+[33mcommit be48109d19248e8205daecb2b498cafde672cbfb[m
+Merge: 874862c 964edfc
+Author: 林俊伟 <491526974@qq.com>
+Date:   Sat Dec 17 11:22:07 2016 +0800
+
+    Merge branch 'ljw_develop' into 'master'
+    
+    1.首页加上书籍列表2.调整首页版式
+    
+    1.首页加上书籍列表
+    2.调整首页版式
+    3.删除多余文件
+    
+    See merge request !1
+
+[33mcommit 964edfce1b090165b49cf4175e6a6d67095d2c56[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Sat Dec 17 11:14:11 2016 +0800
+
+    1.首页加上书籍列表2.调整首页版式
+
+[33mcommit 874862c1df62d43df3d8640b0e8413fd07341ee8[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Fri Dec 16 15:24:25 2016 +0800
+
+    爱洋葱主页
+
+[33mcommit a1ee916d898f84e6ec7fa96ed01e43b27f17472e[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Tue Dec 13 11:11:16 2016 +0800
+
+    second commit
+
+[33mcommit b376c541ea407a441b7046e33c1f8966b6f873c4[m
+Author: 林俊伟 <491526974@qq.com>
+Date:   Tue Dec 13 11:09:36 2016 +0800
+
+    first commit

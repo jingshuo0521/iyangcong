@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.iyangcong.reader.activity.ReplyPrivateMessageActivity">
+
+    <include layout="@layout/layout_main_header"/>
+
+    <com.iyangcong.reader.ui.LimitedEdittext
+        android:id="@+id/et_private_message_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/space_10"
+        style="@style/text_middle"
+        android:hint="@string/input_title"
+        android:background="@null"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:background="@color/lightgray"/>
+    <com.iyangcong.reader.ui.LimitedEdittext
+        android:id="@+id/et_private_message_context"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top|left"
+        android:padding="@dimen/space_10"
+        style="@style/text_middle"
+        android:hint="@string/input_content"
+        android:background="@null"/>
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingBottom="@dimen/space_15"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_shelf_book_image"
+        android:layout_width="85dip"
+        android:layout_height="113dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/space_5"
+        >
+
+        <ImageView
+            android:id="@+id/iv_shelf_book_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop" />
+
+    </android.support.v7.widget.CardView>
+<!--    <ImageView-->
+<!--        android:id="@+id/cv_shelf_book_image"-->
+<!--        android:layout_width="85dip"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:scaleType="fitXY"-->
+<!--        android:layout_alignLeft="@+id/cv_shelf_book_image"-->
+<!--        android:layout_below="@+id/cv_shelf_book_image"-->
+<!--        android:src="@drawable/img_elevation"/>-->
+
+    <TextView
+        android:id="@+id/tv_book_name"
+        style="@style/text_middle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pg_book_added"
+        android:layout_alignRight="@+id/pg_book_added"
+        android:layout_below="@+id/cv_shelf_book_image"
+        android:layout_marginTop="@dimen/space_3"
+        android:ellipsize="end"
+        android:gravity="left|top"
+        android:maxEms="7"
+        android:maxLines="2"
+        android:lines="2"
+        android:singleLine="false"
+        android:paddingLeft="@dimen/space_0"
+        android:textColor="@color/text_color" />
+
+    <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+        android:id="@+id/pg_book_added"
+        android:layout_width="85dip"
+        android:layout_height="0dp"
+        android:layout_below="@+id/tv_book_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/space_2"
+        app:rcBackgroundColor="@color/bg_progress"
+        app:rcMax="100"
+        app:rcProgress="20"
+        app:rcProgressColor="@color/progress"
+        app:rcRadius="20dp"
+        app:rcReverse="false" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pg_book_added"
+        android:layout_alignStart="@+id/pg_book_added"
+        android:layout_below="@+id/pg_book_added"
+        android:layout_marginTop="@dimen/space_2"
+        android:layout_marginBottom="@dimen/space_3">
+
+        <TextView
+            android:id="@+id/tv_book_state"
+            style="@style/text_tiny"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="已读100%"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/pg_book_added"
+        android:layout_alignRight="@+id/pg_book_added"
+        android:layout_below="@+id/pg_book_added"
+        android:layout_marginTop="@dimen/space_2"
+        android:layout_marginBottom="@dimen/space_3"
+        >
+
+        <TextView
+            android:id="@+id/tv_book_progress"
+            style="@style/text_tiny"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            tools:text="100%"/>
+
+    </LinearLayout>
+</RelativeLayout>

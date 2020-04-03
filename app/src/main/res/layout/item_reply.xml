@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/item_reply_layout"
+              android:orientation="vertical"
+              android:paddingLeft="@dimen/space_15"
+              android:paddingRight="@dimen/space_15"
+              android:background="@color/click_bg"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_replyer_name"
+        style="@style/text_small"
+        android:layout_weight="1"
+        tools:text="asdfasdf"/>
+    <TextView
+        style="@style/text_middle"
+        android:id="@+id/tv_reply_content"
+        tools:text="asdfasdfasfs"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_reply_time"
+            style="@style/text_small"
+            android:layout_weight="1"
+            tools:text="2017-10-12 09:40:54"/>
+        <ImageView
+            android:id="@+id/iv_like"
+            android:layout_width="@dimen/space_13"
+            android:layout_height="@dimen/space_13"
+            android:layout_marginRight="@dimen/space_5"
+            android:layout_toLeftOf="@+id/tv_message_num"
+            android:src="@drawable/ic_discover_heart" />
+        <TextView
+            android:id="@+id/tv_reply_like_num"
+            style="@style/text_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/space_20"
+            android:layout_toLeftOf="@+id/iv_topic_message"
+            android:text="1000+" />
+        <!--<ImageView-->
+            <!--android:layout_width="@dimen/space_13"-->
+            <!--android:layout_height="@dimen/space_13"-->
+            <!--android:layout_marginRight="@dimen/space_5"-->
+            <!--android:layout_toLeftOf="@+id/tv_message_num"-->
+            <!--android:src="@drawable/ic_discover_message" />-->
+        <!--<TextView-->
+            <!--android:id="@+id/tv_reply_num"-->
+            <!--style="@style/text_small"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:text="9985" />-->
+    </LinearLayout>
+
+</LinearLayout>

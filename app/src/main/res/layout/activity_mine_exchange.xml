@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <include layout="@layout/layout_main_header" />
+
+    <com.iyangcong.reader.ui.ClearEditText
+        android:id="@+id/exchange_delete"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_40"
+        android:layout_marginLeft="@dimen/space_20"
+        android:layout_marginRight="@dimen/space_20"
+        android:layout_marginTop="@dimen/space_10"
+        android:background="@drawable/bg_mine_exchange"
+        android:drawableLeft="@drawable/ic_change"
+        android:drawablePadding="@dimen/space_10"
+        android:drawableRight="@drawable/close"
+        android:hint="请输入兑换码..."
+        android:inputType="number"
+        android:paddingBottom="@dimen/space_5"
+        android:paddingLeft="@dimen/space_8"
+        android:paddingRight="@dimen/space_8"
+        android:paddingTop="@dimen/space_5"
+        android:textColorHint="@color/gray" />
+
+    <com.iyangcong.reader.ui.button.FlatButton
+        android:id="@+id/mine_exchange_btn"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_40"
+        android:layout_marginLeft="@dimen/space_20"
+        android:layout_marginRight="@dimen/space_20"
+        android:layout_marginTop="@dimen/space_10"
+        android:text="兑换"
+        android:textColor="@color/white"
+        app:shadowEnabled="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_20"
+        android:layout_marginRight="@dimen/space_20"
+        android:layout_marginTop="@dimen/space_15"
+        android:layout_weight="0.42"
+        android:text="备注：此兑换码为14位数字组成，一个兑换码只使用一次，本兑换功能解释权由本公司所有。" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="280dp"
+        android:layout_gravity="bottom"
+        android:src="@drawable/exchange" />
+
+</LinearLayout>

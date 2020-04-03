@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:id="@+id/ll_discover_review_detail"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <!--<include layout="@layout/item_discover_thought_reply"/>-->
+    <!--<include layout="@layout/item_discover_topic"/>-->
+    <include layout="@layout/item_comment_review_detail"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/reply_RecyclerView"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_12"
+        android:layout_marginRight="@dimen/space_12"/>
+</LinearLayout>

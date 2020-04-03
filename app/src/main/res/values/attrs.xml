@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--昼夜模式主色调-->
+    <attr name="dayNightBackground" format="color|reference"/>
+    <attr name="dayNightOneTextColor" format="color|reference"/>
+    <attr name="dayNightTwoTextColor" format="color|reference"/>
+    <attr name="dayNightThreeTextColor" format="color|reference"/>
+    <attr name="dayNightBackgroundDrawable" format="color|reference"/>
+
+    <declare-styleable name="DayNightMode">
+        <attr name="dayNightBackgroundAttr" format="string|reference"/><!--切换背景属性-->
+        <attr name="dayNightOneTextColorAttr" format="string|reference"/><!--切换一级字体颜色属性-->
+        <attr name="dayNightTwoTextColorAttr" format="string|reference"/><!--切换二级字体颜色属性-->
+        <attr name="dayNightThreeTextColorAttr" format="string|reference"/><!--切换三级字体颜色属性-->
+        <attr name="dayNightBackgroundDrawableAttr" format="string|reference"/><!--切换背景图片属性-->
+    </declare-styleable>
+
+    <!--RatingBar 评分控件 -->
+    <declare-styleable name="RatingBar" tools:ignore="ResourceName">
+        <!--尺寸值-->
+        <attr name="starImageSize" format="dimension"/>
+        <attr name="starCount" format="integer"/>
+        <!--资源文件值-->
+        <attr name="starEmpty" format="reference"/>
+        <!--资源文件值-->
+        <attr name="starFill" format="reference"/>
+        <!--资源文件值-->
+        <attr name="starHalf" format="reference"/>
+        <!--boolean值-->
+        <attr name="clickable" format="boolean"/>
+    </declare-styleable>
+
+
+    <!--平面按钮样式-->
+    <declare-styleable name="FlatButton">
+        <attr name="shadowEnabled" format="boolean"/>
+        <attr name="buttonColor" format="color"/>
+        <attr name="shadowColor" format="color"/>
+        <attr name="shadowHeight" format="dimension"/>
+        <attr name="cornerRadius" format="dimension"/>
+    </declare-styleable>
+
+    <!--侧滑返回样式-->
+    <declare-styleable name="SwipeBackLayout">
+        <attr name="edge_size" format="dimension"/>
+        <attr name="edge_flag">
+            <enum name="left" value="0"/>
+            <enum name="right" value="1"/>
+            <enum name="bottom" value="2"/>
+            <enum name="all" value="3"/>
+        </attr>
+        <attr name="shadow_left" format="reference"/>
+        <attr name="shadow_right" format="reference"/>
+        <attr name="shadow_bottom" format="reference"/>
+    </declare-styleable>
+
+    <attr name="SwipeBackLayoutStyle" format="reference"/>
+
+
+    <declare-styleable name="MyCircleView">
+        <attr name="cub_color" format="color"/>
+        <attr name="cub_hover_color" format="color"/>
+        <attr name="cub_border_color" format="color"/>
+        <attr name="cub_icon" format="integer"/>
+        <attr name="cub_border_radius" format="dimension"/>
+        <attr name="cub_fontstyle" format="string"/>
+        <attr name="cub_riple_effect" format="boolean"></attr>
+
+    </declare-styleable>
+
+
+    <!-- TextItem -->
+    <declare-styleable name="text_item">
+        <!--TextItem图片-->
+        <attr name="textItemDrawable" format="reference"/>
+        <!--TextItem内容-->
+        <attr name="textItemContent" format="string"/>
+        <!--TextItem内容尺寸-->
+        <attr name="textItemContentSize" format="dimension"/>
+        <!--TextItem内容颜色-->
+        <attr name="textItemContentColor" format="color"/>
+    </declare-styleable>
+
+    <!-- settingItem -->
+    <declare-styleable name="setting_info">
+        <attr name="item_titleText" format="string"/>
+        <attr name="item_detailText" format="string"/>
+        <attr name="item_hintText" format="string"/>
+        <attr name="item_image" format="reference"/>
+        <attr name="item_imgVisibility" format="boolean"/>
+        <attr name="item_oneVisibility" format="boolean"/>
+        <attr name="item_accessoryType">
+            <enum name="none" value="0"/>
+            <enum name="arrow" value="1"/>
+            <enum name="switchbutton" value="2"/>
+            <enum name="radio" value="3"/>
+        </attr>
+        <attr name="item_showDivider" format="boolean"/>
+    </declare-styleable>
+
+    <!-- 九宫格 -->
+    <declare-styleable name="NineGridView">
+        <attr name="ngv_singleImageSize" format="dimension"/>
+        <attr name="ngv_singleImageRatio" format="float"/>
+        <attr name="ngv_gridSpacing" format="dimension"/>
+        <attr name="ngv_maxSize" format="integer"/>
+        <attr name="ngv_mode" format="enum">
+            <enum name="fill" value="0"/>
+            <enum name="grid" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <!-- 状态栏 -->
+    <declare-styleable name="SimpleViewBehavior">
+        <attr name="svb_dependOn" format="reference"/>
+        <attr name="svb_dependType">
+            <enum name="height" value="0"/>
+            <enum name="width" value="1"/>
+            <enum name="x" value="2"/>
+            <enum name="y" value="3"/>
+        </attr>
+        <attr name="svb_dependTargetX" format="reference|dimension"/>
+        <attr name="svb_dependTargetY" format="reference|dimension"/>
+        <attr name="svb_dependTargetWidth" format="reference|dimension"/>
+        <attr name="svb_dependTargetHeight" format="reference|dimension"/>
+        <attr name="svb_targetX" format="reference|dimension"/>
+        <attr name="svb_targetY" format="reference|dimension"/>
+        <attr name="svb_targetWidth" format="reference|dimension"/>
+        <attr name="svb_targetHeight" format="reference|dimension"/>
+        <attr name="svb_targetBackgroundColor" format="reference|color"/>
+        <attr name="svb_targetAlpha" format="float"/>
+        <attr name="svb_targetRotateX" format="float"/>
+        <attr name="svb_targetRotateY" format="float"/>
+        <attr name="svb_animation" format="reference"/>
+    </declare-styleable>
+    <!--翻动卡片-->
+    <declare-styleable name="card">
+        <attr name="itemMarginTop" format="dimension"/>
+        <attr name="bottomMarginTop" format="dimension"/>
+        <attr name="yOffsetStep" format="dimension"/>
+        <attr name="widthHeightRate" format="float"/>
+    </declare-styleable>
+
+    <declare-styleable name="MarqueeViewStyle">
+        <attr name="mvInterval" format="integer|reference"/>
+        <attr name="mvAnimDuration" format="integer|reference"/>
+        <attr name="mvTextSize" format="dimension|reference"/>
+        <attr name="mvTextColor" format="color|reference"/>
+        <attr name="mvSingleLine" format="boolean"/>
+        <attr name="mvGravity">
+            <enum name="left" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+    </declare-styleable>
+    <!--搜索标签-->
+    <declare-styleable name="TagGroup">
+        <!-- Whether the tag group is in append mode. -->
+        <attr name="atg_isAppendMode" format="boolean"/>
+        <!-- If the tag group is in append mode, what the hint of input tag. -->
+        <attr name="atg_inputHint" format="string"/>
+
+        <!-- The tag view outline border color. -->
+        <attr name="atg_borderColor" format="color"/>
+        <!-- The tag view text color. -->
+        <attr name="atg_textColor" format="color"/>
+        <!-- The tag view background color. -->
+        <attr name="atg_backgroundColor" format="color"/>
+
+        <!-- The dash outline border color, when in append mode. -->
+        <attr name="atg_dashBorderColor" format="color"/>
+        <!-- The input tag hint text color, when in append mode. -->
+        <attr name="atg_inputHintColor" format="color"/>
+        <!-- The input tag type text color, when in append mode. -->
+        <attr name="atg_inputTextColor" format="color"/>
+
+        <!-- The checked tag view outline border color. -->
+        <attr name="atg_checkedBorderColor" format="color"/>
+        <!-- The checked text color. -->
+        <attr name="atg_checkedTextColor" format="color"/>
+        <!-- The checked marker color. -->
+        <attr name="atg_checkedMarkerColor" format="color"/>
+        <!-- The checked tag view background color. -->
+        <attr name="atg_checkedBackgroundColor" format="color"/>
+
+        <!-- The tag view background color, when the tag view is being pressed. -->
+        <attr name="atg_pressedBackgroundColor" format="color"/>
+
+        <!-- The tag view outline border stroke width. -->
+        <attr name="atg_borderStrokeWidth" format="dimension"/>
+        <!-- The tag view text size. -->
+        <attr name="atg_textSize" format="dimension"/>
+
+        <attr name="atg_horizontalSpacing" format="dimension"/>
+        <attr name="atg_verticalSpacing" format="dimension"/>
+        <attr name="atg_horizontalPadding" format="dimension"/>
+        <attr name="atg_verticalPadding" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="Themes">
+        <attr name="tagGroupStyle" format="reference"/>
+    </declare-styleable>
+
+    <!-- 自定义tablayou -->
+    <!-- indicator -->
+    <!-- 设置显示器颜色 -->
+    <attr name="tl_indicator_color" format="color"/>
+    <!-- 设置显示器高度 -->
+    <attr name="tl_indicator_height" format="dimension"/>
+    <!-- 设置显示器固定宽度 -->
+    <attr name="tl_indicator_width" format="dimension"/>
+    <!-- 设置显示器margin,当indicator_width大于0,无效 -->
+    <attr name="tl_indicator_margin_left" format="dimension"/>
+    <attr name="tl_indicator_margin_top" format="dimension"/>
+    <attr name="tl_indicator_margin_right" format="dimension"/>
+    <attr name="tl_indicator_margin_bottom" format="dimension"/>
+    <!-- 设置显示器圆角弧度-->
+    <attr name="tl_indicator_corner_radius" format="dimension"/>
+    <!-- 设置显示器上方还是下方,只对圆角矩形有用-->
+    <attr name="tl_indicator_gravity" format="enum">
+        <enum name="TOP" value="48"/>
+        <enum name="BOTTOM" value="80"/>
+    </attr>
+    <!-- 设置显示器为常规|三角形|背景色块|-->
+    <attr name="tl_indicator_style" format="enum">
+        <enum name="NORMAL" value="0"/>
+        <enum name="TRIANGLE" value="1"/>
+        <enum name="BLOCK" value="2"/>
+    </attr>
+    <!-- 设置显示器长度与title一样长,只有在STYLE_NORMAL并且indicatorWidth小于零有效-->
+    <attr name="tl_indicator_width_equal_title" format="boolean"/>
+    <!-- 设置显示器支持动画-->
+    <attr name="tl_indicator_anim_enable" format="boolean"/>
+    <!-- 设置显示器动画时间-->
+    <attr name="tl_indicator_anim_duration" format="integer"/>
+    <!-- 设置显示器支持动画回弹效果-->
+    <attr name="tl_indicator_bounce_enable" format="boolean"/>
+
+    <!-- underline -->
+    <!-- 设置下划线颜色 -->
+    <attr name="tl_underline_color" format="color"/>
+    <!-- 设置下划线高度 -->
+    <attr name="tl_underline_height" format="dimension"/>
+    <!-- 设置下划线上方还是下方-->
+    <attr name="tl_underline_gravity" format="enum">
+        <enum name="TOP" value="48"/>
+        <enum name="BOTTOM" value="80"/>
+    </attr>
+
+    <!-- divider -->
+    <!-- 设置分割线颜色 -->
+    <attr name="tl_divider_color" format="color"/>
+    <!-- 设置分割线宽度 -->
+    <attr name="tl_divider_width" format="dimension"/>
+    <!-- 设置分割线的paddingTop和paddingBottom -->
+    <attr name="tl_divider_padding" format="dimension"/>
+
+    <!-- tab -->
+    <!-- 设置tab的paddingLeft和paddingRight -->
+    <attr name="tl_tab_padding" format="dimension"/>
+    <!-- 设置tab大小等分 -->
+    <attr name="tl_tab_space_equal" format="boolean"/>
+    <!-- 设置tab固定大小 -->
+    <attr name="tl_tab_width" format="dimension"/>
+
+    <!-- title -->
+    <!-- 设置字体大小 -->
+    <attr name="tl_textsize" format="dimension"/>
+    <!-- 设置字体选中颜色 -->
+    <attr name="tl_textSelectColor" format="color"/>
+    <!-- 设置字体未选中颜色 -->
+    <attr name="tl_textUnselectColor" format="color"/>
+    <!-- 设置字体加粗 -->
+    <attr name="tl_textBold" format="enum">
+        <enum name="NONE" value="0"/>
+        <enum name="SELECT" value="1"/>
+        <enum name="BOTH" value="2"/>
+    </attr>
+    <!-- 设置字体全大写 -->
+    <attr name="tl_textAllCaps" format="boolean"/>
+    <declare-styleable name="MsgView">
+        <!-- 圆角矩形背景色 -->
+        <attr name="mv_backgroundColor" format="color"/>
+        <!-- 圆角弧度,单位dp-->
+        <attr name="mv_cornerRadius" format="dimension"/>
+        <!-- 圆角弧度,单位dp-->
+        <attr name="mv_strokeWidth" format="dimension"/>
+        <!-- 圆角边框颜色-->
+        <attr name="mv_strokeColor" format="color"/>
+        <!-- 圆角弧度是高度一半-->
+        <attr name="mv_isRadiusHalfHeight" format="boolean"/>
+        <!-- 圆角矩形宽高相等,取较宽高中大值-->
+        <attr name="mv_isWidthHeightEqual" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="CommonTabLayout">
+        <!-- indicator -->
+        <attr name="tl_indicator_color"/>
+        <attr name="tl_indicator_height"/>
+        <attr name="tl_indicator_width"/>
+        <attr name="tl_indicator_margin_left"/>
+        <attr name="tl_indicator_margin_top"/>
+        <attr name="tl_indicator_margin_right"/>
+        <attr name="tl_indicator_margin_bottom"/>
+        <attr name="tl_indicator_corner_radius"/>
+        <attr name="tl_indicator_gravity"/>
+        <attr name="tl_indicator_style"/>
+        <attr name="tl_indicator_anim_enable"/>
+        <attr name="tl_indicator_anim_duration"/>
+        <attr name="tl_indicator_bounce_enable"/>
+
+        <!-- underline -->
+        <attr name="tl_underline_color"/>
+        <attr name="tl_underline_height"/>
+        <attr name="tl_underline_gravity"/>
+
+        <!-- divider -->
+        <attr name="tl_divider_color"/>
+        <attr name="tl_divider_width"/>
+        <attr name="tl_divider_padding"/>
+
+        <!-- tab -->
+        <attr name="tl_tab_padding"/>
+        <attr name="tl_tab_space_equal"/>
+        <attr name="tl_tab_width"/>
+
+        <!-- title -->
+        <attr name="tl_textsize"/>
+        <attr name="tl_textSelectColor"/>
+        <attr name="tl_textUnselectColor"/>
+        <attr name="tl_textBold"/>
+        <attr name="tl_textAllCaps"/>
+
+        <!-- icon -->
+        <!-- 设置icon宽度 -->
+        <attr name="tl_iconWidth" format="dimension"/>
+        <!-- 设置icon高度 -->
+        <attr name="tl_iconHeight" format="dimension"/>
+        <!-- 设置icon是否可见 -->
+        <attr name="tl_iconVisible" format="boolean"/>
+        <!-- 设置icon显示位置,对应Gravity中常量值 -->
+        <attr name="tl_iconGravity" format="enum">
+            <enum name="LEFT" value="3"/>
+            <enum name="TOP" value="48"/>
+            <enum name="RIGHT" value="5"/>
+            <enum name="BOTTOM" value="80"/>
+        </attr>
+        <!-- 设置icon与文字间距 -->
+        <attr name="tl_iconMargin" format="dimension"/>
+
+    </declare-styleable>
+    <declare-styleable name="SegmentTabLayout">
+        <!-- indicator -->
+        <attr name="tl_indicator_color"/>
+        <attr name="tl_indicator_height"/>
+        <attr name="tl_indicator_margin_left"/>
+        <attr name="tl_indicator_margin_top"/>
+        <attr name="tl_indicator_margin_right"/>
+        <attr name="tl_indicator_margin_bottom"/>
+        <attr name="tl_indicator_corner_radius"/>
+        <attr name="tl_indicator_anim_enable"/>
+        <attr name="tl_indicator_anim_duration"/>
+        <attr name="tl_indicator_bounce_enable"/>
+
+        <!-- divider -->
+        <attr name="tl_divider_color"/>
+        <attr name="tl_divider_width"/>
+        <attr name="tl_divider_padding"/>
+
+        <!-- tab -->
+        <attr name="tl_tab_padding"/>
+        <attr name="tl_tab_space_equal"/>
+        <attr name="tl_tab_width"/>
+
+        <!-- title -->
+        <attr name="tl_textsize"/>
+        <attr name="tl_textSelectColor"/>
+        <attr name="tl_textUnselectColor"/>
+        <attr name="tl_textBold"/>
+        <attr name="tl_textAllCaps"/>
+
+        <attr name="tl_bar_color" format="color"/>
+        <attr name="tl_bar_stroke_color" format="color"/>
+        <attr name="tl_bar_stroke_width" format="dimension"/>
+
+    </declare-styleable>
+
+    <!-- 加载等待动画-->
+    <declare-styleable name="ProgressWheel">
+        <attr name="matProg_progressIndeterminate" format="boolean"/>
+        <attr name="matProg_barColor" format="color"/>
+        <attr name="matProg_rimColor" format="color"/>
+        <attr name="matProg_rimWidth" format="dimension"/>
+        <attr name="matProg_spinSpeed" format="float"/>
+        <attr name="matProg_barSpinCycleTime" format="integer"/>
+        <attr name="matProg_circleRadius" format="dimension"/>
+        <attr name="matProg_fillRadius" format="boolean"/>
+        <attr name="matProg_barWidth" format="dimension"/>
+        <attr name="matProg_linearProgress" format="boolean"/>
+    </declare-styleable>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference"/>
+        <attr name="metaButtonBarButtonStyle" format="reference"/>
+    </declare-styleable>
+
+    <!-- 末行对齐方式 -->
+    <declare-styleable name="AlignTextView">
+        <attr name="align" format="enum">
+            <enum name="left" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+    </declare-styleable>
+
+    <!-- 标点转换 -->
+    <declare-styleable name="CBAlignTextView">
+        <attr name="punctuationConvert" format="boolean"/>
+    </declare-styleable>
+
+</resources>

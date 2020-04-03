@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/ll_book_introduction"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/market_list_height"
+        android:background="@drawable/bg_selector"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_buy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1.1">
+
+            <ImageView
+                android:id="@+id/iv_book_introduction_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/space_8"
+                android:layout_marginLeft="@dimen/space_12"
+                android:layout_marginRight="@dimen/space_12"
+                android:layout_marginTop="@dimen/space_8"
+
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/tushupic3x" />
+
+            <TextView
+                android:id="@+id/tv_book_kind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_12"
+                android:layout_marginRight="@dimen/space_12"
+                android:layout_marginTop="@dimen/space_8"
+                android:background="@color/text_color_blue"
+                android:padding="@dimen/space_3"
+                android:text="出现"
+                android:textSize="12dip"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/space_5"
+            android:layout_marginRight="@dimen/space_12"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_20"
+                android:layout_marginBottom="@dimen/space_5"
+                android:layout_marginTop="@dimen/space_6"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_book_introduction_tittle"
+                    style="@style/text_middle_large"
+                    android:layout_toLeftOf="@+id/rb_level"
+                    android:textColor="@color/black" />
+
+                <!--<com.iyangcong.reader.ui.RatingBar
+                    android:id="@+id/rb_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right|center_vertical"
+                    app:clickable="true"
+                    app:starCount="5"
+                    app:starEmpty="@drawable/ic_star_empty"
+                    app:starFill="@drawable/ic_star_fill"
+                    app:starImageSize="@dimen/text_size_14" />-->
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_book_introduction_author"
+                style="@style/text_small"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1" />
+
+            <TextView
+                android:id="@+id/tv_book_introduce"
+                style="@style/text_middle"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_18"
+                android:lineSpacingExtra="@dimen/space_3"
+                android:lines="2" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_28"
+                android:layout_marginTop="@dimen/space_10"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_book_introduction_language"
+                    style="@style/text_small"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal">
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+                        <com.iyangcong.reader.ui.button.FlatButton
+                            android:id="@+id/bt_semester"
+
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/space_28"
+                            android:clickable="true"
+                            android:paddingLeft="@dimen/space_10"
+                            android:paddingRight="@dimen/space_10"
+                            android:text="@null"
+                            android:textColor="@color/white"
+                            android:visibility="visible"
+                            app:buttonColor="@color/main_color"
+                            app:cub_riple_effect="false"
+                            app:shadowEnabled="false" />
+                       <!-- <com.iyangcong.reader.ui.TagGroup
+                            android:id="@+id/rl_introduction_Received"
+                            android:visibility="visible"
+                            style="@style/TagGroup.Beauty_Gray"
+                            android:layout_alignParentRight="true"
+                            android:gravity="right|center_vertical"
+                            app:atg_textSize="@dimen/text_size_10" />-->
+                        <com.iyangcong.reader.ui.TagGroup
+                            android:id="@+id/rl_introduction_type"
+                            style="@style/TagGroup.Beauty_Gray"
+                            android:layout_alignParentRight="true"
+                            android:gravity="right|center_vertical"
+                            app:atg_textSize="@dimen/text_size_10"
+                            android:visibility="invisible"/>
+                    </FrameLayout>
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10"
+        android:background="@drawable/line_divide" />
+
+</LinearLayout>

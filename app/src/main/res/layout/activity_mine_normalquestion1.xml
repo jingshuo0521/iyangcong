@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mine_suggest"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    tools:context="com.iyangcong.reader.activity.NewNormalQuestionActivity">
+
+    <include layout="@layout/layout_main_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                style="@style/mine_normalquestion_text_title"
+                android:text="1.  如何调整亮度、字体大小、背景色和翻页模式？"/>
+            <TextView
+                style="@style/mine_normalquestion_text"
+                android:text="在阅读器内，点击屏幕中部。"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/reader1"
+                />
+            <TextView
+                style="@style/mine_normalquestion_text"
+                android:text="屏幕底部将出现图标。"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/reader2"
+                />
+            <TextView
+            style="@style/mine_normalquestion_text"
+            android:text="点击T形图标，在弹出的浮层中，可设置亮度、字号、翻页、背景和夜间模式。"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/reader3"
+                />
+            <TextView
+            style="@style/mine_normalquestion_text_title"
+            android:text="2.  如何从书架删除图书？"/>
+            <TextView
+                style="@style/mine_normalquestion_text"
+                android:text="点击书架右上角小图标（三个点），在弹出的菜单中，点击”本地书架“。\n
+长按图书封面选中所要删的书，直到封面右上角出现对号。\n
+点击封面，使对号高亮显示。可选中多本，一次将其删除。\n
+点击下方“删除”图标，将图书删除。\n
+点击右上方”完成“，回到本地书架，图书删除操作完成。"/>
+
+            <TextView
+                style="@style/mine_normalquestion_text_title"
+                android:text="3.  已购买图书，从书架删除后，还能找回来吗？"/>
+            <TextView
+                style="@style/mine_normalquestion_text"
+                android:text="可以找回来，不需要再次购买。来到书架，点击左上角云朵图标，来到云书架，搜索您想找回的图书，下载后即可阅读。网站上购买的书，也可用这种方法找回。"/>
+            <TextView
+                style="@style/mine_normalquestion_text_title"
+                android:text="4.  图书打开时，提示解压错误，怎么办？"/>
+            <TextView
+            style="@style/mine_normalquestion_text"
+            android:text="请尝试从书架删除该书，重新下载。如还不能解决问题，请到我的-意见反馈，说明问题，留下正确的联系方式，爱洋葱小编将联系您，协助解决该问题。"/><TextView
+            style="@style/mine_normalquestion_text_title"
+            android:text="5.  充值后，资金未到账，怎么办？"/>
+            <TextView
+            style="@style/mine_normalquestion_text"
+            android:text="充值后，支付平台若未能及时返回交易成功的信息，可能会导致该问题。遇到这种情况，请保留好充值的凭证（交易记录截图），记好交易时间。请到我的-意见反馈，说明问题，留下正确的联系方式，爱洋葱小编将联系您，协助解决该问题。"/>
+            <TextView
+                style="@style/mine_normalquestion_text_title"
+                android:text="6.  如何兑换图书？"/>
+            <TextView
+            style="@style/mine_normalquestion_text"
+            android:text="爱洋葱官方做活动、答谢用户时，会向用户发放兑换码。兑换码是一串数字。拿到兑换码后，请到我的-兑换图书，输入兑换码兑换。兑换图书前，请确保您已登录爱洋葱阅读。"/><TextView
+            style="@style/mine_normalquestion_text_title"
+            android:text="7.  如何修改密码？"/>
+            <TextView
+                style="@style/mine_normalquestion_text"
+                android:text="点击应用底部“我的”，打开“我的”页面，点击头像，打开个人设置页面。修改密码的入口在个人设置的最底部。"/>
+            <TextView
+            style="@style/mine_normalquestion_text_title"
+            android:text="8.  如何知道我安装的是最新版吗？"/>
+            <TextView
+                style="@style/mine_normalquestion_text"
+                android:text="我的-更多设置-检查更新。"/>
+            <TextView
+                style="@style/mine_normalquestion_text_title"
+                android:text="9.  如何激活学生账号？"/>
+            <TextView
+                style="@style/mine_normalquestion_text"
+                android:text="我的-点击用户头像-点击学生账号-输入学校名称、学生姓名、学号、激活码、当前爱洋葱账号密码进行激活。"/>
+            <TextView
+                style="@style/mine_normalquestion_text_title"
+                android:text="10.  如何知道我安装的是哪个版本？"/>
+            <TextView
+                style="@style/mine_normalquestion_text"
+                android:text="我的-更多-关于产品。"/>
+            <TextView
+                style="@style/mine_normalquestion_text_title"
+                android:text="11.  我的阅历显示的阅读时长为什么跟教师从管理端看到的不一致？"/>
+            <TextView
+                style="@style/mine_normalquestion_text"
+                android:text="我的阅历统计的阅读时长，既包括学期书单的，又包括自主阅读图书的时长。
+教师管理端只记录学期书单阅读时长。"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

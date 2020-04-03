@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/ll_item_record">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_100"
+        android:paddingRight="@dimen/space_15"
+        android:paddingLeft="@dimen/space_15"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_toLeftOf="@+id/ll_score">
+            <TextView
+                android:id="@+id/tv_book_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="史蒂夫·乔布斯的一生：还有一件事"
+                android:layout_marginBottom="@dimen/space_5"
+                style="@style/text_middle"/>
+            <TextView
+                android:id="@+id/tv_test_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="章节测试121"
+                android:layout_marginBottom="@dimen/space_5"
+                style="@style/text_large"/>
+            <TextView
+                android:id="@+id/tv_record_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:lines="1"
+                android:ellipsize="end"
+                tools:text="2019.12.11 12:20:30"
+                style="@style/text_middle"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_score"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical"
+            android:paddingRight="@dimen/space_15"
+            android:paddingLeft="@dimen/space_15"
+            android:gravity="center_vertical|right">
+            <TextView
+                android:id="@+id/tv_correct_percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="正确率：66.7%"
+                style="@style/text_small"
+                />
+            <TextView
+                android:id="@+id/tv_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_5"
+                tools:text="得分：2 分"
+                style="@style/text_small"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_0.5"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10"
+        android:background="@drawable/line_divide"/>
+
+
+</LinearLayout>

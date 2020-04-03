@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/layout_item_message_invent"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:background="@drawable/bg_selector">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+        <ImageView
+            android:id="@+id/iv_read_status"
+            android:layout_width="@dimen/space_30"
+            android:layout_height="@dimen/space_30"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/has_not_read"/>
+        <LinearLayout
+            android:id="@+id/message_bell_ll"
+            android:layout_centerVertical="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_marginTop="@dimen/space_20"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_message_bell"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_toRightOf="@id/message_bell_ll"
+            android:layout_width="250dp"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:text="用户 "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_4"
+                    />
+                <TextView
+                    android:id="@+id/message_user"
+                    android:text="爱洋葱"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    style="@style/text_large"
+                    android:singleLine="true"
+                    android:ellipsize="end"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/invite_care"
+                    android:text=" 邀请你加入圈子："
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_5"/>
+
+                <TextView
+                    android:layout_marginTop="@dimen/space_4"
+                    android:id="@+id/group_name"
+                    android:layout_width="80dp"
+                    android:layout_height="@dimen/space_20"
+                    android:text="中山大学3年2班"
+                    style="@style/text_middle"
+                    android:textColor="@color/main_color"
+                    android:singleLine="true"
+                    android:ellipsize="end"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_5"
+                android:layout_marginLeft="@dimen/space_4"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_to_circle"/>
+                <TextView
+                    android:id="@+id/tv_accept"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:text="@string/accept"
+                    android:background="@drawable/selecor_main_color"
+                    android:textColor="@color/main_color"/>
+                <TextView
+                    android:id="@+id/tv_refuse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:background="@drawable/selecor_main_color"
+                    android:text="@string/refuse"
+                    android:textColor="@color/main_color"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.iyangcong.reader.ui.button.FlatButton
+            android:id="@+id/delete_notice"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_15"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="@dimen/space_65"
+            android:layout_height="@dimen/space_35"
+            android:text="@string/delete"
+            android:textColor="@color/main_color"
+            app:buttonColor="@color/lightorange"
+            app:shadowEnabled="false" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_0.5"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10"
+        android:background="@drawable/line_divide"/>
+
+</LinearLayout>

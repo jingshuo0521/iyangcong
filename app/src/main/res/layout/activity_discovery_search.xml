@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_main_header" />
+    <LinearLayout
+        android:id="@+id/ll_sequence"
+        android:layout_below="@+id/im_divide"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/text_middle"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/space_23"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:text="类型:" />
+
+        <com.iyangcong.reader.ui.customtablayout.widget.SegmentTabLayout
+            android:id="@+id/seg_tab_sort"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_30"
+            android:layout_marginBottom="@dimen/space_0"
+            android:layout_marginLeft="@dimen/space_20"
+            android:layout_marginRight="@dimen/space_20"
+            android:layout_marginTop="@dimen/space_15"
+            android:gravity="center_vertical"
+            app:tl_bar_color="#ffffff"
+            app:tl_indicator_anim_enable="true"
+            app:tl_indicator_color="@color/main_color"
+            app:tl_indicator_margin_bottom="2dp"
+            app:tl_indicator_margin_left="2dp"
+            app:tl_indicator_margin_right="2dp"
+            app:tl_indicator_margin_top="2dp"
+            app:tl_textBold="SELECT" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_40"
+            android:layout_marginTop="@dimen/space_10"
+            android:paddingLeft="@dimen/space_10">
+
+            <ImageButton
+                android:id="@+id/im_scan"
+                style="@style/title_base_button"
+                android:layout_alignParentBottom="true"
+                android:visibility="gone"
+                android:src="@drawable/icon_scan"/>
+
+            <TextView
+                android:id="@+id/bt_search"
+                style="@style/text_middle_large"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:paddingLeft="@dimen/space_10"
+                android:paddingRight="@dimen/space_10"
+                android:text="@string/search"
+                android:textColor="@drawable/bg_search_bt_selector" />
+
+            <RelativeLayout
+                android:layout_toRightOf="@+id/im_scan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/bt_search"
+                android:gravity="center_vertical">
+
+                <EditText
+                    android:id="@+id/et_search"
+                    style="@style/text_middle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/space_2"
+                    android:background="@drawable/bg_search_edt"
+                    android:hint="@string/input_discoveryname"
+                    android:maxLines="1"
+                    android:lines="1"
+                    android:paddingLeft="@dimen/space_40"
+                    android:textColorHint="@color/text_color_hint" />
+
+                <ImageView
+                    android:layout_width="@dimen/space_20"
+                    android:layout_height="@dimen/space_20"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space_20"
+                    android:src="@drawable/ic_search" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_0.5"
+            android:layout_margin="@dimen/space_10"
+            android:background="@drawable/line_divide" />
+
+        <LinearLayout
+            android:id="@+id/ll_search_tip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_40"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_hot_search_ring"
+                    android:layout_width="@dimen/space_22"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:padding="@dimen/space_5"
+                    android:src="@drawable/ic_ring" />
+
+
+                <TextView
+                    style="@style/text_middle_large"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/iv_hot_search_ring"
+                    android:layout_toRightOf="@+id/iv_hot_search_ring"
+                    android:paddingLeft="@dimen/space_5"
+                    android:text="@string/search_hot_search" />
+
+
+                <TextView
+                    android:id="@+id/tvChangeWords"
+                    style="@style/text_middle_large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:drawableLeft="@drawable/refresh"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:paddingRight="@dimen/space_10"
+                    android:text="@string/search_change_a_lot"
+                    android:visibility="visible" />
+
+
+            </RelativeLayout>
+
+            <com.iyangcong.reader.ui.TagGroup
+                android:id="@+id/gv_search_hot"
+                style="@style/TagGroup.Beauty_Large_Orange"
+                android:visibility="gone"
+                android:layout_marginLeft="@dimen/space_15"
+                android:layout_marginRight="@dimen/space_15"
+                android:layout_marginTop="@dimen/space_10" />
+
+            <View
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="@dimen/space_0.5"
+                android:layout_margin="@dimen/space_10"
+                android:background="@drawable/line_divide" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_40">
+
+                <ImageView
+                    android:id="@+id/iv_history_search_ring"
+                    android:layout_width="@dimen/space_22"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:padding="@dimen/space_5"
+                    android:src="@drawable/ic_ring" />
+
+                <TextView
+                    style="@style/text_middle_large"
+                    android:layout_width="wrap_content"
+                    android:layout_toRightOf="@+id/iv_history_search_ring"
+                    android:paddingLeft="@dimen/space_5"
+                    android:text="@string/search_history" />
+
+                <TextView
+                    android:id="@+id/tvDeleteHistory"
+                    style="@style/text_middle_large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:drawableLeft="@drawable/ic_delete"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:paddingRight="@dimen/space_10"
+                    android:text="@string/clear"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <com.iyangcong.reader.ui.TagGroup
+                android:id="@+id/gv_search_history"
+                style="@style/TagGroup.Beauty_Large_Orange.Inverse"
+                android:layout_marginLeft="@dimen/space_15"
+                android:layout_marginRight="@dimen/space_15"
+                android:layout_marginTop="@dimen/space_10" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_book_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <com.chanven.lib.cptr.PtrClassicFrameLayout xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/search_ptrClassicFrameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                cube_ptr:ptr_duration_to_close="200"
+                cube_ptr:ptr_duration_to_close_header="700"
+                cube_ptr:ptr_keep_header_when_refresh="true"
+                cube_ptr:ptr_pull_to_fresh="false"
+                cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+                cube_ptr:ptr_resistance="1.8">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_book_introduction"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+            </android.support.v7.widget.RecyclerView>
+            </com.chanven.lib.cptr.PtrClassicFrameLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

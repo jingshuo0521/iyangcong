@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:layout_gravity="right"
+    >
+
+        <LinearLayout
+            android:layout_width="140dp"
+            android:layout_height="170dp"
+            android:orientation="vertical"
+            android:paddingTop="7dp"
+            android:background="@drawable/shelf_pull"
+            >
+
+            <LinearLayout
+                android:id="@+id/only_localshelf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/selection_background2"
+                android:layout_marginLeft="@dimen/space_1"
+                android:paddingLeft="@dimen/space_9"
+                android:paddingRight="@dimen/space_10"
+                android:paddingTop="@dimen/space_18"
+                android:paddingBottom="@dimen/space_10"
+                android:gravity="left">
+
+                <ImageView
+                    android:id="@+id/localicon"
+                    android:layout_marginRight="@dimen/space_10"
+                    style="@style/pull_button"
+                    android:src="@drawable/local_shelf"/>
+                <TextView
+                    android:id="@+id/localtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/space_30"
+                    android:text="本地书架"
+                    android:textColor="@color/black"
+                    android:paddingRight="@dimen/space_5"
+                    android:textSize="@dimen/space_16"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/all_shelf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/selection_background"
+                android:layout_marginLeft="@dimen/space_1"
+                android:paddingLeft="@dimen/space_9"
+                android:paddingRight="@dimen/space_10"
+                android:paddingTop="@dimen/space_10"
+                android:paddingBottom="@dimen/space_10"
+                android:gravity="left">
+
+                <ImageView
+                    android:id="@+id/cloudicon"
+                    android:layout_marginRight="@dimen/space_10"
+                    style="@style/pull_button"
+                    android:src="@drawable/cloud_shelf"/>
+                <TextView
+                    android:id="@+id/cloudtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/space_30"
+                    android:textColor="@color/black"
+                    android:paddingRight="@dimen/space_5"
+                    android:text="云书架"
+                    android:textSize="@dimen/space_16"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/shelf_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/selection_background1"
+                android:layout_marginLeft="@dimen/space_1"
+                android:paddingLeft="@dimen/space_9"
+                android:paddingRight="@dimen/space_10"
+                android:paddingTop="@dimen/space_10"
+                android:paddingBottom="@dimen/space_15"
+                android:gravity="left">
+
+                <ImageView
+                    android:layout_marginRight="@dimen/space_10"
+                    style="@style/pull_button"
+                    android:src="@drawable/setting_shelf"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/space_30"
+                    android:textColor="@color/black"
+                    android:text="书架设置"
+                    android:paddingRight="@dimen/space_5"
+                    android:textSize="@dimen/space_16"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+</RelativeLayout>

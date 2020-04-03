@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_main_header" />
+
+    <com.iyangcong.reader.ui.RatingBar
+        android:id="@+id/comment_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/space_15"
+        app:clickable="true"
+        app:starCount="5"
+        app:starEmpty="@drawable/ic_star_empty"
+        app:starFill="@drawable/ic_star_fill"
+        app:starImageSize="@dimen/text_size_25" />
+
+    <TextView
+        android:id="@+id/textNotification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/space_15"
+        android:text="轻触添加评分"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_14" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/space_15"
+        android:src="@drawable/line_divide" />
+
+    <EditText
+        android:id="@+id/comment_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_20"
+        android:layout_marginTop="@dimen/space_10"
+        android:background="@null"
+        android:ellipsize="middle"
+        android:hint="请输入标题（不超过20字）"
+        android:maxLength="20"
+        android:textColorHint="@color/ic_default_bg_color"
+        android:textSize="@dimen/text_size_16" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/space_10"
+        android:src="@drawable/line_divide" />
+
+    <EditText
+        android:id="@+id/comment_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/space_20"
+        android:layout_marginRight="@dimen/space_20"
+        android:layout_marginTop="@dimen/space_15"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="请输入读后感内容"
+        android:maxLines="16"
+        android:textColorHint="@color/ic_default_bg_color"
+        android:textSize="@dimen/text_size_16" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/space_15"
+        android:src="@drawable/line_divide" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/space_10"
+        android:src="@drawable/line_divide" />
+
+
+</LinearLayout>

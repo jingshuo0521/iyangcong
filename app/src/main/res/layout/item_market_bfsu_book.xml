@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_book_type"
+    android:layout_width="wrap_content"
+    android:layout_height="100dip"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/space_5"
+    android:paddingLeft="@dimen/space_7"
+    android:paddingRight="@dimen/space_7"
+    android:paddingTop="@dimen/space_5">
+
+
+    <ImageView
+        android:id="@+id/iv_book_type"
+        android:layout_width="match_parent"
+        android:layout_height="120dip"
+        android:layout_marginBottom="@dimen/space_2"
+        android:layout_marginLeft="@dimen/space_8"
+        android:layout_marginRight="@dimen/space_8"
+        android:layout_marginTop="@dimen/space_1"
+
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/tushupic3x"  />
+
+    <TextView
+        android:id="@+id/tv_book_type"
+        style="@style/text_middle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_book_type"
+        android:layout_marginTop="@dimen/space_2"
+        android:ellipsize="end"
+        android:gravity="left|top"
+        android:lines="2"
+        android:maxEms="5"
+        android:maxLines="2"
+        android:singleLine="false" />
+
+</RelativeLayout>

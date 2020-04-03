@@ -1,0 +1,385 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao' // apply plugin
+android {
+    dexOptions {
+//        incremental true
+        javaMaxHeapSize "4g"
+        // jumboMode = true
+    }
+
+    compileSdkVersion = 29
+//    buildToolsVersion '26.0.1'
+    defaultConfig {
+        applicationId "com.iyangcong.reader"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 63
+        versionName "3.3.3"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        manifestPlaceholders = [qqappid: "siK8jbES1K5ZTAI2"]
+        ndk {
+            moduleName "DeflatingDecompressor-v3"
+            abiFilters "arm64-v8a", "x86","x86_64"//,"mips"
+            //armeabi，armeabi-v7a，x86，mips，arm64-v8a，mips64，x86_64。想要生成arm64-v8a，mips64，x86_64
+        }
+
+        packagingOptions {
+            exclude "lib/arm64-v8a/libimagepipeline.so"
+        }
+        configurations.all {
+            resolutionStrategy.eachDependency {  details ->
+                def requested = details.requested
+                if (requested.group == 'com.android.support') {
+                    if (!requested.name.startsWith("multidex")) {
+                        details.useVersion '25.3.0'
+                    }
+                }
+            }
+        }
+    }
+    //签名配置
+    signingConfigs {
+        releaseConfig {
+//            storeFile file("iyangcong.keystore")
+//            storePassword "iyangcong"
+//            keyAlias "iyangcong"
+//            keyPassword "iyangcong"//将这里的“**”替换成自己的信息
+            storeFile file(MYAPP_RELEASE_STORE_FILE)
+            storePassword MYAPP_RELEASE_STORE_PASSWORD
+            keyAlias MYAPP_RELEASE_KEY_ALIAS
+            keyPassword MYAPP_RELEASE_KEY_PASSWORD
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.releaseConfig
+            applicationVariants.all { variant ->
+//                if (variant.buildType.name.equals('release')) {
+//                    variant.outputs.each { output ->
+//                        def outputFile = output.outputFile
+//                        if (outputFile != null && outputFile.name.endsWith('.apk')) {
+//                            def fileName = "iycreader_v${defaultConfig.versionName}_${releaseTime()}_${variant.flavorName}.apk"
+//                            output.outputFile = new File(outputFile.parent, fileName)
+//                        }
+//                    }
+//                }
+                variant.outputs.all { output ->
+                    outputFileName = "iycreader_v${defaultConfig.versionName}_${releaseTime()}_${variant.flavorName}.apk"
+                }
+            }
+        }
+
+        debug {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            jniDebuggable true
+            signingConfig signingConfigs.releaseConfig
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    dataBinding {
+        enabled = true
+    }
+    useLibrary 'org.apache.http.legacy'
+
+/*    productFlavors {//多渠道打包
+        xiaomi {
+            applicationId 'com.iyangcong.reader1'
+            manifestPlaceholders.put("UMENG_CHANNEL_VALUE", 'xiaomi')
+        }
+        safe360 {
+            applicationId 'com.iyangcong.reader2'
+            manifestPlaceholders.put("UMENG_CHANNEL_VALUE", 'safe360')
+        }
+    }*/
+    //省略部分代码
+    configurations.all {
+        resolutionStrategy.force 'com.google.code.findbugs:jsr305:1.3.9'
+        resolutionStrategy.force 'com.squareup.okhttp3:okhttp:3.4.1'
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+
+    }
+
+//    sourceSets {
+//       main {
+////            jni.srcDirs = []
+//////        jniLibs.srcDirs = ['libs']
+//            jniLibs.srcDirs = ['src/main/jniLibs']//设置目标的so存放路径
+//        }
+//    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+//                jni.srcDirs = []
+        }
+    }
+    externalNativeBuild {
+        ndkBuild {
+            path 'src/main/jni/Android.mk'
+        }
+    }
+}
+
+
+def releaseTime() {
+    return new Date().format("yyyy-MM-dd", TimeZone.getTimeZone("UTC"))
+}
+
+repositories {
+    flatDir { dirs 'libs' }
+    mavenCentral()
+//    maven { url "http://repo1.maven.org/maven2" }
+    maven { url "https://jitpack.io" }
+    maven { url 'https://dl.bintray.com/umsdk/release' }
+}   //作用是添加一个本地仓库,并把libs目录当做仓库地址
+
+
+dependencies {
+
+    //    configurations {
+
+    //        all*.exclude group: 'com.android.support', module: 'support-v4'
+
+    //    }
+    implementation project(':push')
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //compile files('libs/pushservice-6.7.3.20.jar')
+    //RoundCornerProgressBar    进度条
+
+    //FlycoDialog_Lib   一个强大的Android对话框库,简化自定义对话框.支持2.2+.
+
+    //cptr    刷新框架
+
+    //circleindicator    引导页轮播指示器
+
+    //okthttp    网络请求框架
+
+    //appcompat-v7  Google自己的一个兼容包，就是一个支持库，能让2.1以上全使用上4.0版本的界面
+
+    //recyclerview-v7   Google自己的一个兼容包，支持复杂页面布局
+
+    //cardview-v7   Google自己的一个兼容包，支持卡片式布局
+
+    //systembartint    沉浸状态栏
+
+    //okhttp
+
+    //okio
+
+    //butterknife    view注入式绑定
+
+    //json    快速解析库
+
+    //glide    图片加载库
+
+    //banner    图片轮播控件
+
+    //logger    日志打印工具
+
+    //richtext  富文本显示工具
+    implementation files('libs/jsoup-1.10.2.jar')
+
+    //阅读器
+
+    //    implementation project(':ambilWarna')
+
+    //    implementation project(':code')
+
+    //    implementation project(':library')
+
+    //    implementation project(':superToasts')
+    implementation files('libs/LingvoIntegration_2.5.2.12.jar')
+    implementation files('libs/json-simple-1.1.1.jar')
+    implementation files('libs/open-dictionary-api-1.2.1.jar')
+    implementation files('libs/pdfparse.jar')
+    implementation files('libs/nanohttpd-2.0.5.jar')
+    implementation files('libs/httpmime-4.2.5.jar')
+
+    //    implementation 'org.jsoup:jsoup:1.10.2'
+
+    //分享相关
+    //implementation files('libs/umeng-share-douban-6.9.0.jar')
+
+    //豆瓣第三方登陆
+
+    //    implementation files("libs/open_sdk_r5990_lite.jar")//QQ分享完整版需要的库
+
+    //    implementation files("libs/umeng-share-QQ-full-6.9.0.jar")//QQ分享完整版需要的库
+
+    //    implementation files("libs/umeng-share-wechat-full-6.9.0.jar")//微信分享完整版需要的库
+
+    //    implementation files("libs/wechat-sdk-android-without-mta-5.1.4.jar")//微信分享完整版需要的库
+
+    //    implementation files("libs/umeng-share-sina-full-6.9.0.jar")//新浪分享完整版需要的库
+
+    //    implementation files("libs/weiboSDKCore.jar")//新浪分享完整版需要的库
+
+    //    implementation files("libs/umeng-shareboard-widget-6.9.0.jar")//分享界面组建库
+
+    ////    implementation files("libs/umeng-share-core-6.9.0.jar")//友盟分享核心组件
+
+    //    implementation files("libs/umeng-sharetool-6.9.0.jar")//友盟分享工具
+
+    //    implementation files("libs/umeng-common-1.5.0.jar")//友盟通用工具
+
+    //    implementation files("libs/umeng-debug-1.0.0.jar")
+
+    //    implementation files('libs/umeng_social_api.jar')
+
+    //    implementation files('libs/SocialSDK_WeiXin_Full.jar')
+
+    //    implementation files('libs/SocialSDK_douban.jar')
+
+    //    implementation files('libs/umeng_social_net.jar')
+
+    //    implementation files('libs/SocialSDK_alipay.jar')
+    implementation files('libs/libapshare.jar')
+
+    //    implementation files('libs/umeng_social_shareview.jar')
+
+    //    implementation files('libs/umeng_social_shareboard.jar')
+
+    //    implementation files('libs/SocialSDK_QQ_Simplify.jar')
+
+    //    implementation files('libs/umeng_shareboard_widget.jar')
+
+    //    implementation files('libs/umeng_social_tool.jar')
+
+    //    implementation files('libs/SocialSDK_QQ_Full.jar')
+
+    //    implementation files('libs/weiboSDKCore_3.1.4.jar')
+
+    //    implementation files('libs/open_sdk_r5781.jar')
+
+    //    implementation files('libs/SocialSDK_Sina_Full.jar')
+    implementation files('libs/alipaySdk-15.6.5-20190718211159-noUtdid.aar')
+    implementation files('libs/ormlite-android-5.0.jar')
+
+    //    implementation files('libs/wechat-sdk-android-with-mta-1.0.2.jar')
+//    implementation files('libs/zxing.jar')
+
+    //    implementation 'com.afollestad:easyvideoplayer:0.3.0'
+
+    //    implementation 'com.zzhoujay.richtext:richtext:2.4.4'
+    //implementation files('libs/umeng-analytics-v6.1.0.jar')
+    //implementation files('libs/pushservice-6.7.3.20.jar')
+    implementation files('libs/sunjce_provider.jar')
+    implementation 'com.akexorcist:RoundCornerProgressBar:2.0.3'
+    implementation 'com.flyco.dialog:FlycoDialog_Lib:1.3.2@aar'
+    implementation 'com.chanven.lib:cptr:1.1.0'
+    implementation 'me.relex:circleindicator:1.2.2@aar'
+    implementation 'com.lzy.net:okgo:2.1.4'
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:recyclerview-v7:26.1.0'
+    implementation 'com.android.support:cardview-v7:26.1.0'
+    implementation 'com.android.support:support-v4:26.1.0'
+//    implementation 'com.android.support:design:25.3.1'
+//    implementation 'com.android.support:appcompat-v7:25.3.1'
+//    implementation 'com.android.support:recyclerview-v7:25.3.1'
+//    implementation 'com.android.support:cardview-v7:25.3.1'
+//    implementation 'com.android.support:support-v4:25.3.1'
+//    implementation 'com.android.support:design:25.3.1'
+//    implementation 'com.android.support:appcompat-v7:25.4.0'
+//    implementation 'com.android.support:recyclerview-v7:25.4.0'
+//    implementation 'com.android.support:cardview-v7:25.4.0'
+//    implementation 'com.android.support:support-v4:25.4.0'
+    implementation 'com.android.support:multidex:1.0.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    //implementation 'com.squareup.okhttp3:okhttp:3.5.0'
+    implementation 'com.squareup.okio:okio:1.8.0'
+    implementation 'com.google.code.gson:gson:2.8.0'
+    implementation 'com.github.bumptech.glide:glide:3.8.0'
+    implementation 'com.youth.banner:banner:1.4.4'
+    implementation 'com.orhanobut:logger:2.2.0'
+    implementation 'com.github.AlphaBoom:ClassifyView:0.5.2'
+    implementation 'com.lzy.widget:imagepicker:0.5.5'
+    implementation 'com.zzhoujay.richtext:richtext:2.4.7'
+    implementation 'jp.wasabeef:glide-transformations:1.0.6'
+    implementation 'com.github.ravenfeld:easyvideoplayer:1.1.0'
+    implementation 'jp.wasabeef:richeditor-android:1.2.2'
+    implementation 'com.github.iwgang:countdownview:2.1.3'
+    testImplementation 'junit:junit:4.12'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+//    implementation 'fm.jiecao:jiecaovideoplayer:5.8.1'
+    debugImplementation 'com.amitshekhar.android:debug-db:1.0.1'
+    implementation 'me.drakeet.support:toastcompat:1.1.0'
+    //调试数据库用的工具
+    implementation 'org.greenrobot:greendao:3.2.2'
+
+    // GreenDao数据库
+    implementation 'org.greenrobot:eventbus:3.1.1'
+
+    //超级好用的通信框架
+
+    //    implementation 'com.sina.weibo.sdk:core:4.2.7:openDefaultRelease@aar'
+    //implementation 'com.umeng.sdk:share-core:6.9.4'
+    //implementation 'com.umeng.sdk:share-qq:6.9.4'
+    //implementation 'com.umeng.sdk:share-wechat:6.9.4'
+    implementation 'com.umeng.sdk:share-sina:6.9.2'
+    //implementation 'com.umeng.sdk:common:1.5.0'
+
+    //PushSDK必须依赖基础组件库，所以需要加入对应依赖
+    //implementation 'com.umeng.umsdk:common:2.1.0'
+////PushSDK必须依赖utdid库，所以需要加入对应依赖
+    //implementation 'com.umeng.umsdk:utdid:1.1.5.3'
+////PushSDK
+    //implementation 'com.umeng.umsdk:push:6.0.1'
+
+    //    implementation 'com.umeng.sdk:utdid:1.1.5.3'
+    implementation 'com.umeng.sdk:debug:1.0.0'
+    implementation 'com.baoyz.actionsheet:library:1.1.7'
+    implementation 'com.yanzhenjie.permission:support:2.0.1'
+//    implementation('com.github.XuDaojie:QRCode-Android:v0.4.2') {
+//        exclude group: 'com.google.zxing'
+//    }
+//    implementation project(path:':ambilWarna',configuration:'default')
+    implementation project(':ambilWarna')
+    implementation project(':code')
+    implementation project(':library')
+    implementation project(':superToasts')
+    implementation project(':qrcodelib')
+    implementation 'com.github.arcadefire:nice-spinner:1.3.4'
+    implementation 'com.github.Jeromeer:BreatheView:0.1.3'
+    implementation 'com.fang:dashview:v1.0.0'
+    implementation 'cn.jzvd:jiaozivideoplayer:7.0.5'
+
+//  必选，内部默认使用系统mediaplayer进行解码
+    implementation 'com.github.dueeeke.dkplayer:dkplayer-java:3.1.4'
+
+//    # 可选，包含StandardVideoController的实现
+    implementation 'com.github.dueeeke.dkplayer:dkplayer-ui:3.1.4'
+//
+//    # 可选，使用exoplayer进行解码（推荐）
+//    implementation 'com.github.dueeeke.dkplayer:player-exo:3.1.4'
+//
+//    # 可选，使用ijkplayer进行解码
+//    implementation 'com.github.dueeeke.dkplayer:player-ijk:3.1.4'
+//
+//    # 可选，如需要缓存或者抖音预加载功能请引入此库
+//    implementation 'com.github.dueeeke.dkplayer:videocache:3.1.4'
+
+//    implementation 'com.github.BakerJQ:Android-InfiniteCards:1.0.5'
+}

@@ -1,0 +1,1 @@
+make: `G:/iyangcong_android/app/build/intermediates/ndkBuild/debug/obj/local/armeabi-v7a/libNativeFormats-v4.so' is up to date.

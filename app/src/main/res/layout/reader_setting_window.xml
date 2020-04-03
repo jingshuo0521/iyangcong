@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_setting_window"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_day_night_mode"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_60"
+        android:layout_gravity="center_vertical"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/space_20"
+            android:paddingRight="@dimen/space_10"
+            android:text="亮度" />
+
+        <ImageView
+            android:id="@+id/light_reduce"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dip"
+            android:clickable="true"
+            android:focusable="true"
+            android:scaleType="center"
+            android:src="@drawable/light_reduce" />
+
+        <SeekBar
+            android:id="@+id/light_progress"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="15"
+            android:clickable="true"
+            android:focusable="true"
+            android:maxHeight="@dimen/space_3"
+            android:minHeight="@dimen/space_3"
+            android:paddingBottom="@dimen/space_20"
+            android:paddingLeft="@dimen/space_10"
+            android:paddingRight="@dimen/space_10"
+            android:paddingTop="@dimen/space_20"
+            android:progressDrawable="@drawable/seekbar"
+            android:thumb="@drawable/seekbar_thumb"
+            android:thumbOffset="@dimen/space_5" />
+
+        <ImageView
+            android:id="@+id/light_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="18dip"
+            android:clickable="true"
+            android:focusable="true"
+            android:scaleType="center"
+            android:src="@drawable/light_plus" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/word_size_mode"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_60"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/space_20"
+            android:paddingRight="@dimen/space_10"
+            android:text="字号" />
+
+        <RadioGroup
+            android:id="@+id/rg_word_size"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_word_size_1"
+                style="@style/main_footer_bar_radio"
+                android:checked="true"
+                android:drawableLeft="@drawable/wor_size_1"
+                android:paddingLeft="@dimen/space_15" />
+
+            <RadioButton
+                android:id="@+id/rb_word_size_2"
+                style="@style/main_footer_bar_radio"
+                android:drawableLeft="@drawable/wor_size_2"
+                android:paddingLeft="@dimen/space_15" />
+
+            <RadioButton
+                android:id="@+id/rb_word_size_3"
+                style="@style/main_footer_bar_radio"
+                android:drawableLeft="@drawable/wor_size_3"
+                android:paddingLeft="@dimen/space_15" />
+
+            <RadioButton
+                android:id="@+id/rb_word_size_4"
+                style="@style/main_footer_bar_radio"
+                android:drawableLeft="@drawable/wor_size_4"
+                android:paddingLeft="@dimen/space_15" />
+
+            <RadioButton
+                android:id="@+id/rb_word_size_5"
+                style="@style/main_footer_bar_radio"
+                android:drawableLeft="@drawable/wor_size_5"
+                android:paddingLeft="@dimen/space_15" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/turn_page_mode"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_60"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/space_20"
+            android:paddingRight="@dimen/space_10"
+            android:text="翻页" />
+
+        <RadioGroup
+            android:id="@+id/rg_turn_page"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_turn_page_mode_1"
+                style="@style/main_footer_bar_radio"
+                android:checked="true"
+                android:drawableLeft="@drawable/turn_page_mode_1"
+                android:paddingLeft="@dimen/space_15" />
+
+            <RadioButton
+                android:id="@+id/rb_turn_page_mode_2"
+                style="@style/main_footer_bar_radio"
+                android:drawableLeft="@drawable/turn_page_mode_2"
+                android:paddingLeft="@dimen/space_15" />
+
+            <RadioButton
+                android:id="@+id/rb_turn_page_mode_3"
+                style="@style/main_footer_bar_radio"
+                android:drawableLeft="@drawable/turn_page_mode_3"
+                android:paddingLeft="@dimen/space_15" />
+
+            <RadioButton
+                android:id="@+id/rb_turn_page_mode_4"
+                style="@style/main_footer_bar_radio"
+                android:drawableLeft="@drawable/turn_page_mode_4"
+                android:paddingLeft="@dimen/space_15" />
+
+            <RadioButton
+                android:id="@+id/rb_turn_page_mode_5"
+                style="@style/main_footer_bar_radio"
+                android:drawableLeft="@drawable/turn_page_mode_5"
+                android:paddingLeft="@dimen/space_15" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/background_color_mode"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_60"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/space_20"
+            android:paddingRight="@dimen/space_10"
+            android:text="模式" />
+
+        <RadioGroup
+            android:id="@+id/rg_bg_color_mode"
+            android:layout_width="@dimen/space_0"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_bg_color_mode_1"
+                style="@style/main_footer_bar_radio"
+                android:checked="true"
+                android:drawableLeft="@drawable/bg_color_mode_1"
+                android:paddingLeft="@dimen/space_15" />
+
+            <RadioButton
+                android:id="@+id/rb_bg_color_mode_2"
+                style="@style/main_footer_bar_radio"
+                android:drawableLeft="@drawable/bg_color_mode_2"
+                android:paddingLeft="@dimen/space_15" />
+
+            <RadioButton
+                android:id="@+id/rb_bg_color_mode_3"
+                style="@style/main_footer_bar_radio"
+                android:drawableLeft="@drawable/bg_color_mode_3"
+                android:paddingLeft="@dimen/space_15" />
+
+            <RadioButton
+                android:id="@+id/rb_bg_color_mode_4"
+                style="@style/main_footer_bar_radio"
+                android:drawableLeft="@drawable/bg_color_mode_4"
+                android:paddingLeft="@dimen/space_15" />
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/cb_bg_color_mode_5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:button="@null"
+            android:drawableLeft="@drawable/bg_color_mode_5"
+            android:paddingLeft="@dimen/space_15"
+            android:paddingRight="@dimen/space_15" />
+
+    </LinearLayout>
+
+</LinearLayout>

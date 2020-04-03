@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_discover_tab"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginTop="@dimen/space_12"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/space_8">
+
+    <com.iyangcong.reader.ui.customtablayout.CommonTabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/space_50"
+        android:layout_marginRight="@dimen/space_50"
+        android:layout_height="@dimen/space_40"
+        android:background="@null"
+        app:tl_iconVisible="false"
+        app:tl_indicator_color="@color/main_color"
+        app:tl_indicator_corner_radius="1.5dp"
+        app:tl_indicator_height="3dp"
+        app:tl_indicator_width="20dp"
+        app:tl_textBold="BOTH"
+        app:tl_textSelectColor="@color/text_color_black"
+        app:tl_textUnselectColor="@color/text_color_black"
+        app:tl_textsize="@dimen/text_size_16" />
+
+    <View
+        android:id="@+id/iv_bar_divide"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_0.5"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10"
+        android:visibility="gone"
+        android:background="@drawable/line_divide" />
+
+</LinearLayout>

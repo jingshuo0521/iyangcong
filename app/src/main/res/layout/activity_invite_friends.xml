@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_invite_friends"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.iyangcong.reader.activity.DiscoverNewCircleInviteFriends"
+    android:background="@color/click_bg">
+    <include layout="@layout/layout_main_header"></include>
+    <include layout="@layout/ll_search_bar"></include>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/invite_friends_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/space_10"/>
+</LinearLayout>

@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".activity.MineNewWordActivity">
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical">-->
+        <!--android:layout_weight="10"-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:padding="0dip"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/image_mine_bg">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height"
+                android:layout_marginTop="@dimen/space_10">
+
+                <ImageButton
+                    android:id="@+id/btnBack"
+                    style="@style/title_base_button"
+                    android:visibility="visible"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space_0"
+                    android:layout_alignParentLeft="true"/>
+
+                <TextView
+                    android:id="@+id/textHeadTitle"
+                    style="@style/text_tittle"
+                    android:layout_centerInParent="true"
+                    android:clickable="true"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:maxWidth="180dp"
+                    android:singleLine="true"
+                    android:text="@string/app_name"
+                    android:textColor="@color/white"/>
+
+                <ImageButton
+                    android:id="@+id/btnFunction"
+                    style="@style/title_base_button"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/space_10"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="5"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<FrameLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent">-->
+
+                    <LinearLayout
+                        android:id="@+id/layout_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="@dimen/space_10"
+                            android:paddingTop="@dimen/space_10"
+                            android:paddingBottom="@dimen/space_30"
+                            android:layout_weight="1">
+
+                            <com.github.mikephil.charting.charts.PieChart
+                                android:id="@+id/piechart"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:paddingTop="@dimen/space_10"
+                            android:paddingBottom="@dimen/space_30"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/all_word"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="总词量:"
+                                    android:layout_weight="1"
+                                    android:gravity="right|center"
+                                    android:textColor="@color/white"
+                                    android:textSize="22sp" />
+
+                                <TextView
+                                    android:id="@+id/allnewword_count_tx"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="left|center"
+                                    android:paddingLeft="5.0dip"
+                                    android:text="0"
+                                    android:textColor="@color/white"
+                                    android:textSize="32sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10.0dip"
+                                android:orientation="horizontal"
+                                android:gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:paddingLeft="30.0dip">
+
+                                <TextView
+                                    android:id="@+id/textView3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="需背诵:"
+                                    android:layout_weight="1"
+                                    android:gravity="right|center"
+                                    android:textColor="@color/white"
+                                    android:textSize="18sp"/>
+
+                                <TextView
+                                    android:id="@+id/needrecite_count_tx"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="left|center"
+                                    android:paddingLeft="5.0dip"
+                                    android:text="0"
+                                    android:textColor="@color/white"
+                                    android:textSize="18sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dip"
+                                android:gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:paddingLeft="30.0dip">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="待复习:"
+                                    android:layout_weight="1"
+                                    android:gravity="right|center"
+                                    android:textColor="@color/white"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/readyrecite_count_tx"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="left|center"
+                                    android:paddingLeft="5.0dip"
+                                    android:text="0"
+                                    android:textColor="@color/white"
+                                    android:textSize="18sp"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:layout_marginTop="10dip"
+                                android:paddingLeft="30.0dip">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="已掌握:"
+                                    android:layout_weight="1"
+                                    android:gravity="right|center"
+                                    android:textColor="@color/white"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/alreadyknow_count_tx"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:paddingLeft="5.0dip"
+                                    android:gravity="left|center"
+                                    android:text="0"
+                                    android:textColor="@color/white"
+                                    android:textSize="18sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!--<LinearLayout-->
+                        <!--android:id="@+id/layout_1"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="0dip"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:layout_weight="4">-->
+
+                            <!--<com.github.mikephil.charting.charts.PieChart-->
+                                <!--android:id="@+id/piechart"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="match_parent"-->
+                                <!--android:layout_gravity="center_vertical"-->
+                                <!--android:paddingLeft="30dip"/>-->
+                        <!--</LinearLayout>-->
+
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="0dip"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:layout_weight="4"-->
+                            <!--android:orientation="vertical">-->
+
+                            <!--<TextView-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="match_parent" />-->
+                        <!--</LinearLayout>-->
+                    <!--</LinearLayout>-->
+                <!--</FrameLayout>-->
+            <!--</LinearLayout>-->
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="5"-->
+            <!--android:orientation="vertical">-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:background="@color/white"
+                android:layout_weight="1.3"
+                android:orientation="vertical">
+
+                <!---->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <com.iyangcong.reader.ui.TextImageButton
+                        android:id="@+id/reciteword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:src="@drawable/reciteword"
+                        android:text="背单词"
+                        android:textColor="#464646"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="1dip"
+                        android:layout_height="match_parent"
+                        android:background="#ffc4c3c3" />
+
+                    <com.iyangcong.reader.ui.TextImageButton
+                        android:id="@+id/readyrecite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:src="@drawable/readyrecite"
+                        android:text="待复习"
+                        android:textColor="#464646"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="#ffc4c3c3" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <com.iyangcong.reader.ui.TextImageButton
+                        android:id="@+id/Iknow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:src="@drawable/imfavorite"
+                        android:text="已掌握"
+                        android:textColor="#464646"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="1dip"
+                        android:layout_height="match_parent"
+                        android:background="#ffc4c3c3" />
+
+                    <com.iyangcong.reader.ui.TextImageButton
+                        android:id="@+id/myfavorite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:src="@drawable/favorite"
+                        android:text="我的收藏"
+                        android:textColor="#464646"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+        <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+
+</LinearLayout>

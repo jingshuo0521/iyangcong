@@ -1,0 +1,35 @@
+{
+  "buildFiles": [
+    "D:\\ndkproject\\android-iyangcong\\app\\src\\main\\jni\\Android.mk",
+    "D:\\ndkproject\\android-iyangcong\\app\\src\\main\\jni\\Application.mk"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\wuzepeng\\AppData\\Local\\Android\\sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dD:\\ndkproject\\android-iyangcong\\app\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dD:\\ndkproject\\android-iyangcong\\app\\src\\main\\jni\\Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003dD:/ndkproject/android-iyangcong/app/build/intermediates/ndkBuild/sourceSets/obj NDK_LIBS_OUT\u003dD:\\ndkproject\\android-iyangcong\\app\\build\\intermediates\\ndkBuild\\sourceSets\\lib clean"
+  ],
+  "libraries": {
+    "expat-sourceSets-x86_64": {
+      "artifactName": "expat",
+      "buildCommand": "C:\\Users\\wuzepeng\\AppData\\Local\\Android\\sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dD:\\ndkproject\\android-iyangcong\\app\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dD:\\ndkproject\\android-iyangcong\\app\\src\\main\\jni\\Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003dD:/ndkproject/android-iyangcong/app/build/intermediates/ndkBuild/sourceSets/obj NDK_LIBS_OUT\u003dD:\\ndkproject\\android-iyangcong\\app\\build\\intermediates\\ndkBuild\\sourceSets\\lib D:/ndkproject/android-iyangcong/app/build/intermediates/ndkBuild/sourceSets/obj/local/x86_64/libexpat.a",
+      "abi": "x86_64",
+      "output": "D:\\ndkproject\\android-iyangcong\\app\\build\\intermediates\\ndkBuild\\sourceSets\\obj\\local\\x86_64\\libexpat.a"
+    },
+    "NativeFormats-v4-sourceSets-x86_64": {
+      "artifactName": "NativeFormats-v4",
+      "buildCommand": "C:\\Users\\wuzepeng\\AppData\\Local\\Android\\sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dD:\\ndkproject\\android-iyangcong\\app\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dD:\\ndkproject\\android-iyangcong\\app\\src\\main\\jni\\Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003dD:/ndkproject/android-iyangcong/app/build/intermediates/ndkBuild/sourceSets/obj NDK_LIBS_OUT\u003dD:\\ndkproject\\android-iyangcong\\app\\build\\intermediates\\ndkBuild\\sourceSets\\lib D:/ndkproject/android-iyangcong/app/build/intermediates/ndkBuild/sourceSets/obj/local/x86_64/libNativeFormats-v4.so",
+      "abi": "x86_64",
+      "output": "D:\\ndkproject\\android-iyangcong\\app\\build\\intermediates\\ndkBuild\\sourceSets\\obj\\local\\x86_64\\libNativeFormats-v4.so"
+    },
+    "DeflatingDecompressor-v3-sourceSets-x86_64": {
+      "artifactName": "DeflatingDecompressor-v3",
+      "buildCommand": "C:\\Users\\wuzepeng\\AppData\\Local\\Android\\sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dD:\\ndkproject\\android-iyangcong\\app\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dD:\\ndkproject\\android-iyangcong\\app\\src\\main\\jni\\Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003dD:/ndkproject/android-iyangcong/app/build/intermediates/ndkBuild/sourceSets/obj NDK_LIBS_OUT\u003dD:\\ndkproject\\android-iyangcong\\app\\build\\intermediates\\ndkBuild\\sourceSets\\lib D:/ndkproject/android-iyangcong/app/build/intermediates/ndkBuild/sourceSets/obj/local/x86_64/libDeflatingDecompressor-v3.so",
+      "abi": "x86_64",
+      "output": "D:\\ndkproject\\android-iyangcong\\app\\build\\intermediates\\ndkBuild\\sourceSets\\obj\\local\\x86_64\\libDeflatingDecompressor-v3.so"
+    },
+    "LineBreak-v2-sourceSets-x86_64": {
+      "artifactName": "LineBreak-v2",
+      "buildCommand": "C:\\Users\\wuzepeng\\AppData\\Local\\Android\\sdk\\ndk-bundle\\ndk-build.cmd NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003dD:\\ndkproject\\android-iyangcong\\app\\src\\main\\jni\\Android.mk NDK_APPLICATION_MK\u003dD:\\ndkproject\\android-iyangcong\\app\\src\\main\\jni\\Application.mk APP_ABI\u003dx86_64 NDK_ALL_ABIS\u003dx86_64 NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-21 NDK_OUT\u003dD:/ndkproject/android-iyangcong/app/build/intermediates/ndkBuild/sourceSets/obj NDK_LIBS_OUT\u003dD:\\ndkproject\\android-iyangcong\\app\\build\\intermediates\\ndkBuild\\sourceSets\\lib D:/ndkproject/android-iyangcong/app/build/intermediates/ndkBuild/sourceSets/obj/local/x86_64/libLineBreak-v2.so",
+      "abi": "x86_64",
+      "output": "D:\\ndkproject\\android-iyangcong\\app\\build\\intermediates\\ndkBuild\\sourceSets\\obj\\local\\x86_64\\libLineBreak-v2.so"
+    }
+  }
+}

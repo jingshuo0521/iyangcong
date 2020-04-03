@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout_item_book_introduction_circle"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/book_introducton_circle_ll"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/book_introducton_circle_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_mine_shopping_cb"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/space_5"
+            android:layout_marginLeft="@dimen/space_5"
+            android:button="@null"/>
+        <include layout="@layout/item_book_introduction"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_0.5"
+        android:background="@drawable/line_divide"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10"/>
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/im_item_ll"
+    android:layout_width="@dimen/space_70"
+    android:layout_height="@dimen/space_120"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_5">
+        <ImageView
+            android:id="@+id/im_item_head"
+            android:layout_width="@dimen/space_70"
+            android:layout_height="@dimen/space_70"
+            android:scaleType="fitXY"
+            tools:background="@drawable/book" />
+        <ImageView
+            android:id="@+id/iv_is_class"
+            android:layout_width="@dimen/space_70"
+            android:layout_height="@dimen/space_70"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:src="@drawable/class_sign"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/im_item_title"
+        style="@style/text_middle"
+        android:layout_width="@dimen/space_70"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_10"
+        android:gravity="left|top"
+        android:lines="2"
+        android:maxEms="4"
+        android:maxLines="2"
+        android:singleLine="false"
+        android:ellipsize="end"
+        android:text="辽宁大学第十九届外研社辩证会" />
+
+    <TextView
+        android:id="@+id/im_item_content"
+        style="@style/text_middle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_5"
+        android:singleLine="false"
+        android:maxEms="4"
+        android:maxLines="2"
+        android:lines="2"
+        android:ellipsize="end"
+        android:text="3年2班" />
+</LinearLayout>

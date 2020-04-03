@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_discover_new_circle2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.iyangcong.reader.activity.DiscoverNewCircle2"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_main_header"/>
+
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/fill_circle_name"
+        android:layout_marginTop="@dimen/space_15"
+        style="@style/text_middle_large"/>
+
+    <com.iyangcong.reader.ui.LimitedEdittext
+        android:id="@+id/et_circle_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:singleLine="true"
+        android:layout_marginTop="@dimen/space_15"
+        android:gravity="center"
+        android:hint="@string/circle_name_limited_length"
+        android:textColorHint="@color/text_color_hint"
+        style="@style/text_middle"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:layout_marginLeft="@dimen/space_30"
+        android:layout_marginRight="@dimen/space_30"
+        android:layout_marginTop="@dimen/space_5"
+        android:background="@drawable/line_divide"/>
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center"-->
+        <!--android:text="上传圈子头像"-->
+        <!--style="@style/text_middle_large"-->
+        <!--android:layout_marginTop="@dimen/space_10"/>-->
+
+    <!--<ImageView-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:background="@drawable/pic_default_circle"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_margin="@dimen/space_10"-->
+         <!--/>-->
+    <!--<TextView-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="@dimen/space_25"-->
+        <!--android:text="添加头像"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_gravity="center"-->
+        <!--style="@style/text_middle"-->
+        <!--android:layout_marginTop="@dimen/space_5"-->
+        <!--android:background="@drawable/bg_text_label_normal"/>-->
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center"-->
+        <!--android:text="上传圈子头像"-->
+        <!--style="@style/text_middle_large"-->
+        <!--android:layout_marginTop="@dimen/space_20"/>-->
+    <ImageView
+        android:id="@+id/iv_circle_cover"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/pic_default_circle"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/space_10"
+         />
+    <TextView
+        android:id="@+id/tv_upload_pic"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:text="上传封面"
+        style="@style/text_middle"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/space_5"
+        android:background="@drawable/bg_text_label_normal"/>
+
+</LinearLayout>

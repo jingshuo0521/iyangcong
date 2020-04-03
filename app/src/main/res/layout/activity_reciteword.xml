@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:ignore="RtlSymmetry,HardcodedText,RtlHardcoded,ContentDescription">
+
+    <include layout="@layout/layout_main_header" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/recitewording_view"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_color"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/reciteword_showword_view_max_height"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/shape_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="20.0dip"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/first_review_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/reciteword_firstreview_view_height"
+                            android:background="@drawable/reciteword_shape_corner"
+                            android:orientation="vertical"
+                            android:visibility="invisible">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15.0dip">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dip"
+                                    android:layout_marginTop="5.0dip"
+                                    android:text="@null"
+                                    tools:ignore="RtlHardcoded" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5.0dip"
+                                    android:paddingLeft="10dip"
+                                    android:text="@null"
+                                    android:textColor="@color/black"
+                                    tools:ignore="RtlHardcoded" />
+
+                                <LinearLayout
+                                    android:id="@+id/first_favoritelayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right">
+
+                                    <ImageView
+                                        android:id="@+id/img_first_myfavorite"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="15.0dip"
+                                        android:src="@drawable/im_notfavorite" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/first_review_view_word"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_horizontal"
+                                android:paddingTop="20dip"
+                                android:text="vicissitute"
+                                android:textColor="@color/black"
+                                android:textSize="45sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/second_dontknow_word_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10.0dip">
+
+                                <TextView
+                                    android:id="@+id/second_dontkonw_word"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dip"
+                                    android:layout_marginTop="5.0dip"
+                                    android:text="@null"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:id="@+id/second_dontknow_phonetic"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5.0dip"
+                                    android:paddingLeft="10dip"
+                                    android:text="@null"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp" />
+
+                                <LinearLayout
+                                    android:id="@+id/second_dontknow_favoritelayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right">
+
+                                    <ImageView
+                                        android:id="@+id/img_second_dontknow_myfavorite"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="15.0dip"
+                                        android:src="@drawable/im_notfavorite" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <ScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10.0dip">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="200dip"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/word_from_content_dontknow"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="15dip"
+                                        android:layout_marginRight="5.0dip"
+                                        android:lineSpacingExtra="10dip"
+                                        android:text="@null"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp" />
+
+                                    <TextView
+                                        android:id="@+id/word_meaning_dontknow"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="15dip"
+                                        android:layout_marginRight="5.0dip"
+                                        android:gravity="left"
+                                        android:lineSpacingExtra="10dip"
+                                        android:text="@null"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp" />
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_width="40dip"
+                                            android:layout_height="0.5dip"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginRight="5.0dip"
+                                            android:layout_toLeftOf="@+id/second_word_from_bookname_dontknow"
+                                            android:background="@color/black" />
+
+                                        <TextView
+                                            android:id="@+id/second_word_from_bookname_dontknow"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginRight="15.0dip"
+                                            android:text="@null"
+                                            android:textColor="@color/black"
+                                            android:textSize="14sp" />
+                                    </RelativeLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/space_45">
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </ScrollView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/second_know_word_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/second_know_word_view_height"
+                            android:orientation="vertical"
+                            android:visibility="invisible">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10.0dip">
+
+                                <TextView
+                                    android:id="@+id/second_know_word"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dip"
+                                    android:layout_marginTop="5.0dip"
+                                    android:text="@null"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:id="@+id/second_know_phonetic"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5.0dip"
+                                    android:paddingLeft="10dip"
+                                    android:text="@null"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp" />
+
+                                <LinearLayout
+                                    android:id="@+id/second_know_favoritelayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right">
+
+                                    <ImageView
+                                        android:id="@+id/img_second_know_myfavorite"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="15.0dip"
+                                        android:src="@drawable/im_notfavorite" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <ScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/newword_explain_view_height">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="5.0dip"
+                                    android:orientation="vertical">
+
+                                    <com.iyangcong.reader.ui.NewWordExplainView
+                                        android:id="@+id/newwordexplain_item"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"></com.iyangcong.reader.ui.NewWordExplainView>
+
+                                    <TextView
+                                        android:id="@+id/second_word_meaning_know"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="15dip"
+                                        android:layout_marginRight="5.0dip"
+                                        android:lineSpacingExtra="10dip"
+                                        android:text="@null"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp" />
+
+                                    <TextView
+                                        android:id="@+id/second_word_from_content_know"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="15dip"
+                                        android:layout_marginRight="5.0dip"
+                                        android:layout_marginTop="@dimen/space_10"
+                                        android:lineSpacingExtra="10dip"
+                                        android:text="@null"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp" />
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/space_3">
+
+                                        <TextView
+                                            android:layout_width="40dip"
+                                            android:layout_height="0.5dip"
+                                            android:layout_centerVertical="true"
+                                            android:layout_marginRight="5.0dip"
+                                            android:layout_toLeftOf="@+id/second_word_from_bookname"
+                                            android:background="@color/black" />
+
+                                        <TextView
+                                            android:id="@+id/second_word_from_bookname"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_marginRight="15.0dip"
+                                            android:text="@null"
+                                            android:textColor="@color/black"
+                                            android:textSize="14sp" />
+                                    </RelativeLayout>
+                                </LinearLayout>
+                            </ScrollView>
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/newword_bottombutton_paddingbottom"
+                android:orientation="vertical">
+
+                <com.iyangcong.reader.ui.ReciteWordBottomButton
+                    android:id="@+id/bottomButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/reciteworded_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_color"
+            android:visibility="visible">
+
+            <com.iyangcong.reader.ui.QQListView2
+                android:id="@+id/LV_reciteresult"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/newword_reciteword_listview_height"
+                android:layout_marginTop="15dip"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@color/background_color"
+                android:dividerHeight="0dp"
+                android:listSelector="@android:color/transparent" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/LV_reciteresult"
+                android:layout_marginBottom="@dimen/newword_bottombutton_paddingbottom"
+                android:layout_marginTop="5.0dip"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <Button
+                        android:id="@+id/next_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20.0dip"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/reciteword_shortbutton"
+                        android:text="下一组"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/space_19" />
+
+                    <Button
+                        android:id="@+id/stop_here"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_marginRight="20.0dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/reciteword_shortbutton"
+                        android:paddingLeft="5.0dip"
+                        android:paddingRight="5.0dip"
+                        android:text="先练到这里吧"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/space_19" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/reciteword_detail_view"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_color"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/myfavorite_showword_view_max_height"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="20.0dip"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/detail_know_word_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/reciteword_index_shape_corner_white"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10.0dip">
+
+                            <TextView
+                                android:id="@+id/_detail_view_word"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dip"
+                                android:layout_marginTop="5.0dip"
+                                android:text="@null"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/_detail_view_word_phonetic"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5.0dip"
+                                android:paddingLeft="10dip"
+                                android:text="@null"
+                                android:textSize="15sp" />
+
+                            <LinearLayout
+                                android:id="@+id/detail_favoritelayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right">
+
+                                <ImageView
+                                    android:id="@+id/img_favorite_myfavorite"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="15.0dip"
+                                    android:src="@drawable/im_notfavorite"
+                                    android:visibility="invisible" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5.0dip"
+                                android:orientation="vertical">
+
+                                <com.iyangcong.reader.ui.NewWordExplainView
+                                    android:id="@+id/detail_newwordexplain_item"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:id="@+id/detail_word_from_content_explain"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15.0dip"
+                                    android:layout_marginRight="5.0dip"
+                                    android:lineSpacingExtra="10dip"
+                                    android:text="@null"
+                                    android:textSize="14sp" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/detail_word_from_bookname"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_marginRight="15.0dip"
+                                        android:text="@null"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp" />
+
+                                    <TextView
+                                        android:layout_width="40dip"
+                                        android:layout_height="0.5dip"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginRight="5.0dip"
+                                        android:layout_toLeftOf="@+id/detail_word_from_bookname"
+                                        android:background="@color/black" />
+                                </RelativeLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/space_45">
+                                </LinearLayout>
+                            </LinearLayout>
+                        </ScrollView>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

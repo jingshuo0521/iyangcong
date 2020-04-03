@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10">
+
+        <ImageView
+            android:id="@+id/iv_cooperation_banner"
+            android:layout_width="match_parent"
+            android:layout_height="160dip"
+            android:background="@drawable/pic_cooperation" />
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/space_5"-->
+            <!--android:background="@color/page_bg" />-->
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_cooperation_party_list"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:paddingTop="@dimen/space_10"
+        android:paddingBottom="@dimen/space_10"
+        android:layout_height="170dip">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

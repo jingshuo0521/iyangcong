@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/book_item"
+    android:orientation="horizontal"
+    android:background="@drawable/bg_color_radius"
+    android:padding="@dimen/text_size_15"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_book_cover"
+        android:layout_width="83dp"
+        android:layout_height="110dp"
+        android:layout_marginRight="@dimen/space_10"
+        android:layout_gravity="center"
+        android:src="@drawable/tushupic3x"
+        tools:background="@drawable/tushupic3x"
+        android:scaleType="centerInside"/>
+    <!--android:background="@drawable/tushupic3x"-->
+    <!--android:scaleType="centerInside"-->
+    <!--android:adjustViewBounds="true"-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/text_size_10"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_book_title"
+            style="@style/text_middle_large"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color_black"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/space_3"
+            android:ellipsize="end"
+            android:gravity="left|top"
+            android:maxEms="7"
+            android:maxLines="2"
+            android:lines="2"
+            android:singleLine="false"
+            tools:text="特里斯坦和伊索尔德（入门级）（美绘版）（书虫·牛津英汉双语读物）" />
+
+        <TextView
+            android:id="@+id/tv_book_author"
+            style="@style/text_tiny"
+            android:layout_marginBottom="@dimen/text_size_10"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_book_version"
+            android:textColor="@color/text_color_lightgray"
+            tools:text="安东尼 德 圣-艾克苏佩里"/>
+
+        <TextView
+            android:id="@+id/tv_book_version"
+            style="@style/text_tiny"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_book_publish_house"
+            android:layout_marginBottom="@dimen/text_size_7"
+            android:textColor="@color/text_color_gray"
+            tools:text="版本"/>
+
+        <TextView
+            android:id="@+id/tv_book_publish_house"
+            style="@style/text_tiny"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/text_color_gray"
+            android:layout_marginBottom="@dimen/space_3"
+            tools:text="出版社："/>
+    </RelativeLayout>
+</LinearLayout>

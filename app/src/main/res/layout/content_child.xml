@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/transparent">
+
+
+    <LinearLayout
+        android:id="@+id/ll_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_15"
+        android:layout_marginRight="@dimen/space_15"
+        android:padding="@dimen/space_15"
+        android:layout_marginTop="@dimen/space_25"
+        android:background="@drawable/shape_corner"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/contentId"
+            android:background="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:textColor="@color/black"
+            android:text="这是一个评论,这是一个测试评论。这是一个评论,这是一个测试评论。这是一个评论,这是一个测试评论。这是一个评论,这是一个测试评论。这是一个评论,这是一个测试评论。这是一个评论,这是一个测试评论。"
+           />
+
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/space_20"
+            android:layout_gravity="right"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_huifu"
+                android:layout_width="@dimen/space_30"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space_3"
+                android:src="@drawable/iconfontpinglun" />
+
+            <TextView
+                android:id="@+id/allCount"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="12"
+                android:textColor="@color/main_color" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

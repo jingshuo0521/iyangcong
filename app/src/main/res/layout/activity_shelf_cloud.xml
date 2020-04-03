@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_shelf_cloud"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.iyangcong.reader.activity.ShelfCloudActivity">
+
+    <include layout="@layout/layout_main_header" />
+
+    <include layout="@layout/ll_search_bar" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10"
+        android:src="@drawable/line_divide" />
+
+    <LinearLayout
+        android:id="@+id/ll_divider"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/text_middle"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/space_23"
+            android:gravity="center_vertical"
+            android:text="排序:" />
+
+        <com.iyangcong.reader.ui.customtablayout.widget.SegmentTabLayout
+            android:id="@+id/seg_tab_sort"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/space_8"
+            android:layout_marginLeft="@dimen/space_20"
+            android:layout_marginRight="@dimen/space_23"
+            android:layout_marginTop="@dimen/space_8"
+            android:gravity="center_vertical"
+            app:tl_bar_color="#ffffff"
+            app:tl_indicator_anim_enable="true"
+            app:tl_indicator_color="@color/main_color"
+            app:tl_indicator_margin_bottom="2dp"
+            app:tl_indicator_margin_left="2dp"
+            app:tl_indicator_margin_right="2dp"
+            app:tl_indicator_margin_top="2dp"
+            app:tl_textBold="SELECT" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10"
+        android:src="@drawable/line_divide" />
+
+    <com.chanven.lib.cptr.PtrClassicFrameLayout
+        xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/shelf_cloud_ptrClassicFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        cube_ptr:ptr_duration_to_close="200"
+        cube_ptr:ptr_duration_to_close_header="700"
+        cube_ptr:ptr_keep_header_when_refresh="true"
+        cube_ptr:ptr_pull_to_fresh="false"
+        cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+        cube_ptr:ptr_resistance="1.8">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_shelf_cloud"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/space_50"
+            android:background="@color/white" />
+    </com.chanven.lib.cptr.PtrClassicFrameLayout>
+</LinearLayout>

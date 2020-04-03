@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_mine_about_product"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_main_header" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/guideImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/guide_five" />
+
+        <TextView
+            android:id="@+id/tv_slogan"
+            style="@style/text_large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="166dp"
+            android:gravity="center_horizontal"
+            android:text="阅读改变世界" />
+        <TextView
+            android:id="@+id/tv_version"
+            style="@style/text_tittle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="V1.0.0 版本"
+            android:layout_marginTop="195dp"
+
+
+            android:gravity="center_horizontal" />
+        <!--<TextView-->
+            <!--android:id="@+id/tv_version"-->
+            <!--style="@style/text_tittle"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="V1.0.0 版本"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_marginBottom="@dimen/space_100"-->
+            <!--android:gravity="center_horizontal" />-->
+
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="206dp"
+
+            android:layout_alignBottom="@+id/tv_tips"
+            android:layout_alignParentStart="true"
+            android:columnWidth="200dip"
+            android:numColumns="2"
+            android:stretchMode="spacingWidthUniform" />
+
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/tv_company"
+            style="@style/text_middle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="外语教学与研究出版社"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/space_70"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/tv_tips"
+            style="@style/text_middle_large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Copyright © 2011-2019 "
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/space_40"
+            android:gravity="center_horizontal" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

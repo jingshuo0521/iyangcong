@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <include layout="@layout/layout_main_header" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/space_15">
+            <ImageView
+                android:id="@+id/im_author_head"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_head_default"
+                android:layout_marginBottom="@dimen/space_10"/>
+            <TextView
+                android:id="@+id/im_author_name"
+                style="@style/text_large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_8"
+                android:text="郭敬明"/>
+            <ImageView
+                android:layout_width="@dimen/space_20"
+                android:layout_height="@dimen/space_20"
+                android:layout_marginBottom="@dimen/space_10"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_quotation_marks"/>
+            <TextView
+                android:id="@+id/im_author_introduce"
+                style="@style/text_middle"
+                android:lineSpacingExtra="@dimen/space_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="郭敬明"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_4"
+                android:background="@color/page_bg"/>
+            <com.iyangcong.reader.ui.MyGridView
+                android:id="@+id/gv_about_author_book"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numColumns="3" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

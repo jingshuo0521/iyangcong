@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/market_today_push_height"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/space_12"
+    android:paddingBottom="@dimen/space_12">
+
+
+    <LinearLayout
+        android:id="@+id/ll_general_read"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.7"
+        android:background="@drawable/tongshi_back"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/space_10">
+
+        <TextView
+            android:id="@+id/tv_general_read_tittle"
+            style="@style/text_middle_large"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_10"
+            android:gravity="center_horizontal"
+            android:text="@string/today_push_tongshi_tittle"
+            />
+
+        <TextView
+            android:id="@+id/tv_general_read_introduction"
+            style="@style/text_tiny"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/space_6"
+            android:gravity="center_horizontal"
+            android:textColor="@color/text_color_orange"
+            android:paddingTop="@dimen/space_2"
+            android:paddingBottom="@dimen/space_2"
+            android:paddingLeft="@dimen/space_10"
+            android:paddingRight="@dimen/space_10"
+            android:text="@string/today_push_tongshi" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/iv_general_read_image"
+        android:layout_alignLeft="@+id/iv_general_read_image"
+        android:layout_alignTop="@+id/iv_general_read_image"
+        android:layout_alignBottom="@+id/iv_general_read_image"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="-4dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="-3dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/book_background"
+        android:scaleType="fitCenter" />
+        <ImageView
+            android:id="@+id/iv_general_read_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_25"
+            android:layout_marginRight="@dimen/space_25"
+            android:layout_marginTop="@dimen/space_10"
+            android:layout_marginBottom="@dimen/space_3"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter" />
+
+</RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/space_8"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/ll_hot_book"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_0"
+            android:layout_weight="1"
+            android:background="@drawable/tuijian_back"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="@dimen/space_0"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/space_10"
+                android:layout_weight="1">
+
+
+                <TextView
+                    android:id="@+id/tv_hot_book_tittle"
+                    style="@style/text_middle_large"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/today_push_hot_tittle"
+                    />
+                <TextView
+                    style="@style/text_tiny"
+                    android:layout_alignLeft="@id/tv_hot_book_tittle"
+                    android:layout_below="@+id/tv_hot_book_tittle"
+                    android:layout_marginTop="@dimen/space_2"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/dynamic_update"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_hot_book_introduction"
+                    style="@style/text_tiny"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="@dimen/space_15"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="@dimen/space_5"
+                    android:textColor="@color/text_color_orange"
+                    android:paddingTop="@dimen/space_2"
+                    android:paddingBottom="@dimen/space_2"
+                    android:paddingRight="@dimen/space_10"
+                    android:text="@string/today_push_hot" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/iv_hot_book_image"
+                android:layout_alignLeft="@+id/iv_hot_book_image"
+                android:layout_alignTop="@+id/iv_hot_book_image"
+                android:layout_alignBottom="@+id/iv_hot_book_image"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="-3dp"
+                android:layout_marginTop="@dimen/space_14"
+                android:layout_marginBottom="@dimen/space_10"
+                android:adjustViewBounds="true"
+                android:src="@drawable/book_background"
+                android:scaleType="fitXY" />
+            <ImageView
+                android:id="@+id/iv_hot_book_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/space_1"
+                android:layout_marginBottom="@dimen/space_1"
+                android:layout_marginRight="@dimen/space_20"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_today_free"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_0"
+            android:layout_marginTop="@dimen/space_8"
+            android:layout_weight="1"
+            android:background="@drawable/mianfei_back"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="@dimen/space_0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/space_10">
+
+                <TextView
+                    android:id="@+id/tv_free_book_tittle"
+                    style="@style/text_middle_large"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/today_push_free_tittle"
+                    />
+                <TextView
+                    style="@style/text_tiny"
+                    android:layout_alignLeft="@id/tv_free_book_tittle"
+                    android:layout_below="@+id/tv_free_book_tittle"
+                    android:layout_marginTop="@dimen/space_2"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/dynamic_update"
+                    />
+                <TextView
+                    android:id="@+id/tv_free_book_introduction"
+                    style="@style/text_tiny"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="@dimen/space_15"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="@dimen/space_5"
+                    android:textColor="@color/text_color_orange"
+                    android:paddingTop="@dimen/space_2"
+                    android:paddingBottom="@dimen/space_2"
+                    android:paddingRight="@dimen/space_10"
+                    android:text="@string/today_push_free" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/iv_free_book_image"
+                android:layout_alignLeft="@+id/iv_free_book_image"
+                android:layout_alignTop="@+id/iv_free_book_image"
+                android:layout_alignBottom="@+id/iv_free_book_image"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="-3dp"
+                android:layout_marginTop="@dimen/space_14"
+                android:layout_marginBottom="@dimen/space_10"
+                android:adjustViewBounds="true"
+                android:src="@drawable/book_background"
+                android:scaleType="fitXY" />
+            <ImageView
+                android:id="@+id/iv_free_book_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/space_1"
+                android:layout_marginBottom="@dimen/space_1"
+                android:layout_marginRight="@dimen/space_20"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

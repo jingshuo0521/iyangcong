@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <org.geometerplus.zlibrary.ui.android.view.ZLAndroidWidget
+        android:id="@+id/main_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadeScrollbars="false"
+        android:focusable="true"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbars="vertical" />
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/layout_read_help"
+        android:overScrollMode="never"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"/>
+
+    <include
+        android:id="@+id/ll_read_help"
+        layout="@layout/activity_readerhelp"
+        android:visibility="gone" />
+
+
+    <include
+        android:id="@+id/ll_read_end"
+        layout="@layout/activity_readend"
+        android:visibility="gone" />
+
+</RelativeLayout>

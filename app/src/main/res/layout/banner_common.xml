@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_banner"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_120"
+        android:src="@drawable/home_banner"
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="true"/>
+
+    <com.iyangcong.reader.ui.CustomBanner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_marginRight="@dimen/space_10"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginTop="@dimen/space_10"
+        android:layout_alignParentTop="true"
+        android:layout_height="@dimen/market_banner_height"
+        app:indicator_height="@dimen/space_2"
+        app:indicator_width="@dimen/space_15"
+        app:indicator_drawable_selected="@drawable/indicator_drawable_selected"
+        app:indicator_drawable_unselected="@drawable/indicator_drawable_unselected"
+        app:paddingEnd="@dimen/space_10"
+        app:is_auto_play="true" />
+</RelativeLayout>

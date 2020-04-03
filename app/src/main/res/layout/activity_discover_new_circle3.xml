@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_discover_new_circle3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.iyangcong.reader.activity.DiscoverNewCircle3"
+    android:orientation="vertical">
+    <include layout="@layout/layout_main_header"></include>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/finish_circle_discribe"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/space_15"
+        style="@style/text_large"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_cirlce_lable"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/space_15"
+        style="@style/text_middle_large"/>
+    <LinearLayout
+        android:layout_marginTop="@dimen/space_5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/label_rectangle_height"
+        android:background="@drawable/bg_discover_new_circle3"
+        android:layout_marginLeft="@dimen/space_20"
+        android:layout_marginRight="@dimen/space_20"
+        android:padding="@dimen/space_10"
+        android:orientation="horizontal">
+        <!--<ImageView-->
+            <!--android:id="@+id/discover_new_circle3_image"-->
+            <!--android:layout_width="@dimen/space_25"-->
+            <!--android:layout_height="@dimen/space_25"-->
+            <!--android:background="@drawable/ic_edit"-->
+            <!--/>-->
+        <!--<View-->
+            <!--android:layout_width="@dimen/space_0.5"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginLeft="@dimen/space_10"-->
+            <!--android:background="@color/gray">-->
+
+        <!--</View>-->
+        <!--<EditText-->
+            <!--android:id="@+id/et_circle_label"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:hint="@string/input_circle_name"-->
+            <!--android:maxEms="4"-->
+            <!--android:ellipsize="end"-->
+            <!--android:layout_marginLeft="@dimen/space_5"-->
+            <!--style="@style/text_middle"-->
+            <!--android:background="@null"-->
+            <!--android:singleLine="true"/>-->
+        <com.iyangcong.reader.ui.TagGroup
+            android:id="@+id/tag_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:atg_isAppendMode="true"
+            style="@style/TagGroup.Beauty_Orange.Inverse" />
+
+    </LinearLayout>
+    <!--<View-->
+        <!--android:layout_marginTop="@dimen/space_5"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/space_0.5"-->
+        <!--android:background="@color/gray"-->
+        <!--android:layout_marginLeft="@dimen/space_30"-->
+        <!--android:layout_marginRight="@dimen/space_30"-->
+        <!--&gt;</View>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/space_5"
+        android:layout_marginLeft="@dimen/space_20"
+        android:layout_marginRight="@dimen/space_20">
+        <TextView
+            android:id="@+id/discover_new_circle3_tv"
+            style="@style/text_middle"
+            android:layout_width="@dimen/space_80"
+            android:layout_height="@dimen/space_24"
+            android:text="@string/label_used_frequently"
+            android:gravity="center"
+            android:background="@drawable/bg_text_label_normal"/>
+        <TextView
+            android:layout_marginLeft="@dimen/space_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cicle_label_tips"
+            android:gravity="left"
+            style="@style/text_middle" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_20"
+        android:text="@string/fill_circle_discribe"
+        style="@style/text_middle_large"
+        android:gravity="center"/>
+
+    <com.iyangcong.reader.ui.LimitedEdittext
+        android:id="@+id/et_review_editor"
+        style="@style/text_middle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_20"
+        android:layout_marginTop="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_20"
+        android:background="@drawable/bg_discover_new_circle3"
+        android:gravity="left"
+        android:hint="@string/fill_describe"
+        android:lines="7"
+        android:paddingLeft="@dimen/space_10"
+        android:paddingTop="@dimen/space_5" />
+
+</LinearLayout>

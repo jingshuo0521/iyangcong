@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/space_15"
+    android:paddingRight="@dimen/space_15">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical|left"
+        android:minHeight="?android:attr/listPreferredItemHeight"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/bookmark_booktitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            tools:text="2019.12.12 15:30"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/gray4"
+            android:layout_marginTop="@dimen/space_6"
+            android:layout_marginBottom="@dimen/space_3"/>
+
+        <TextView
+            android:id="@+id/bookmark_item_booktitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:text=""
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            tools:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/bookmark_item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:gravity="top|left"
+            android:singleLine="false"
+            tools:text="The three so mingled did beseem"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/text_color_gray"
+            android:layout_marginBottom="@dimen/space_6"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="permissions">
+        <item>@string/permission_recode_audio_hint</item>
+        <item>@string/permission_get_accounts_hint</item>
+        <item>@string/permission_read_phone_hint</item>
+        <item>@string/permission_call_phone_hint</item>
+        <item>@string/permission_camera_hint</item>
+        <item>@string/permission_access_fine_location_hint</item>
+        <item>@string/permission_access_coarse_location_hint</item>
+        <item>@string/permission_read_external_hint</item>
+        <item>@string/permission_white_external_hint</item>
+    </string-array>
+
+    <!-- 数据库Entity Class -->
+    <string-array name="db_tb">
+        <item>com.iyangcong.reader.bean.ShelfBook</item>
+        <item>com.iyangcong.reader.bean.User</item>
+        <item>com.iyangcong.reader.bean.ShelfGroup</item>
+        <item>com.iyangcong.reader.bean.NewWord</item>
+        <item>com.iyangcong.reader.bean.BookMarker</item>
+        <item>com.iyangcong.reader.bean.BookInfo</item>
+        <item>com.iyangcong.reader.bean.BookNote</item>
+        <item>com.iyangcong.reader.bean.ReadingDataBean</item>
+    </string-array>
+
+    <!-- 创建圈子 -->
+    <string-array name="new_circle">
+        <item>com.iyangcong.reader.activity.DiscoverNewCircleChooseBook</item>
+        <item>com.iyangcong.reader.activity.DiscoverNewCircleInviteFriends</item>
+        <item>com.iyangcong.reader.activity.DiscoverNewCircle3</item>
+        <item>com.iyangcong.reader.activity.DiscoverNewCircle2</item>
+        <item>com.iyangcong.reader.activity.DiscoverNewCircle</item>
+        <item>com.iyangcong.reader.activity.DiscoverCircleActivity</item>
+    </string-array>
+
+    <!--语言版本-->
+    <string-array name="language_version">
+        <item>@string/version_ch</item>
+        <item>@string/version_en</item>
+        <item>@string/version_double</item>
+        <item>@string/version_compare</item>
+    </string-array>
+    <!--语言难度-->
+    <string-array name="language_grade">
+        <item>@string/grade_primary</item>
+        <item>@string/grade_middle</item>
+        <item>@string/grade_high</item>
+        <item>@string/grade_University</item>
+    </string-array>
+</resources>

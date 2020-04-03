@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/space_5">
+
+    <ImageView
+        android:id="@+id/iv_circle_member"
+        android:layout_width="@dimen/space_30"
+        android:layout_height="@dimen/space_30"
+        android:src="@drawable/ic_head_default"/>
+
+</LinearLayout>

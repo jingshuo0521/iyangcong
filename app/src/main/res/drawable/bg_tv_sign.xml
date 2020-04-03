@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 签到按钮背景 -->
+    <corners android:radius="@dimen/space_5"/>
+    <solid android:color="@color/main_color"/>
+    <stroke
+        android:width="@dimen/space_0.5"
+        android:color="@color/main_color"/>
+
+</shape>

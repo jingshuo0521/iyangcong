@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/space_65"
+    android:id="@+id/first_circle"
+    >
+
+    <TextView
+        android:id="@+id/add_coin1"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="+3"
+        android:textColor="@color/circle_text"
+        android:textSize="@dimen/space_14"
+        />
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true"
+        android:background="@color/main_color"
+        />
+
+    <TextView
+        android:id="@+id/circle1"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/circle_prey"
+        />
+
+    <TextView
+        android:id="@+id/continue_day1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1天"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/circle_text"
+        android:textSize="@dimen/space_14"
+        />
+
+
+</RelativeLayout>

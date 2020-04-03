@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/recite_bg"
+    tools:context=".activity.AllWordActivity">
+
+    <include layout="@layout/layout_main_header" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/recitewording_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/recite_bg"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/myfavorite_showword_view_max_height"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/shape_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="20.0dip"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/word_detail_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/reciteword_index_shape_corner_white"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10.0dip">
+
+                            <TextView
+                                android:id="@+id/word_detail_view_word"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dip"
+                                android:layout_marginTop="5.0dip"
+                                android:text="@null"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/word_detail_view_word_phonetic"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5.0dip"
+                                android:paddingLeft="10dip"
+                                android:text="这里空空如也..."
+                                android:textSize="15sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right">
+
+                                <ImageView
+                                    android:id="@+id/img_alreadyknow_myfavorite"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="15.0dip"
+                                    android:src="@drawable/im_notfavorite" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10.0dip">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <com.iyangcong.reader.ui.NewWordExplainView
+                                    android:id="@+id/newwordexplain_item"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"></com.iyangcong.reader.ui.NewWordExplainView>
+
+                                <TextView
+                                    android:id="@+id/detail_word_from_content_explain"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dip"
+                                    android:layout_marginRight="5.0dip"
+                                    android:textColor="#ee4d22"
+                                    android:lineSpacingExtra="10dip"
+                                    android:text="@null"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/second_word_from_content_know"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dip"
+                                    android:layout_marginRight="5.0dip"
+                                    android:layout_marginTop="@dimen/space_10"
+                                    android:lineSpacingExtra="10dip"
+                                    android:text="@null"
+                                    android:textSize="14sp" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/detail_word_from_bookname"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_marginRight="15.0dip"
+                                        android:text="@null"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp" />
+
+                                    <TextView
+                                        android:layout_width="40dip"
+                                        android:layout_height="0.5dip"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginRight="5.0dip"
+                                        android:layout_toLeftOf="@id/detail_word_from_bookname"
+                                        android:background="@color/black" />
+                                </RelativeLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/space_45">
+                                </LinearLayout>
+                            </LinearLayout>
+                        </ScrollView>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <com.iyangcong.reader.ui.ScrollListviewDelete
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dip"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:divider="@null"
+            android:visibility="invisible"
+            />
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

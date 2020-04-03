@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.iyangcong.reader.fragment.BookShelfFragment">
+
+    <RelativeLayout
+        android:id="@+id/book_shelf_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/ll_search"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_50"
+                android:background="@drawable/shelf_banner"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.iyangcong.reader.ui.ClearEditText
+                    android:id="@+id/ceSearch"
+                    android:layout_width="@dimen/space_0"
+                    android:layout_height="@dimen/space_40"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_marginRight="@dimen/space_5"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_trans_color_selector"
+                    android:backgroundTint="@color/click_bg"
+                    android:cursorVisible="true"
+                    android:drawableLeft="@drawable/ic_search"
+                    android:drawablePadding="@dimen/space_5"
+                    android:drawableRight="@drawable/close"
+                    android:foregroundGravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:hint="请输入作者或书名"
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/space_10"
+                    android:paddingRight="@dimen/space_5"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="@dimen/text_size_14"/>
+                <TextView
+                    android:id="@+id/tv_search"
+                    style="@style/text_large"
+                    android:layout_marginRight= "@dimen/space_5"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginLeft="@dimen/space_5"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:padding="10dip"
+                    android:text="搜索"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_16" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/im_divide"
+                android:layout_below="@id/ll_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_10"
+                android:layout_marginRight="@dimen/space_10"
+                android:src="@drawable/line_divide" />
+
+            <LinearLayout
+                android:id="@+id/ll_sequence"
+                android:layout_below="@+id/im_divide"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_45"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+
+                <com.iyangcong.reader.ui.customtablayout.CommonTabLayout
+                    android:id="@+id/seg_tab_sort"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/space_5"
+                    android:layout_marginLeft="@dimen/space_15"
+                    android:layout_marginRight="@dimen/space_15"
+                    android:layout_marginTop="0dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/white"
+                    app:tl_iconVisible="false"
+                    app:tl_indicator_color="@color/main_color"
+                    app:tl_indicator_corner_radius="1.5dip"
+                    app:tl_indicator_height="@dimen/space_3"
+                    app:tl_indicator_width="@dimen/space_20"
+                    app:tl_textSelectColor="@color/text_color_black"
+                    app:tl_textUnselectColor="@color/text_color_black"
+                    app:tl_textsize="@dimen/text_size_16" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/im_ll_sequence"
+                android:layout_below="@id/ll_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginLeft="@dimen/space_10"
+                android:layout_marginRight="@dimen/space_10"
+                android:src="@drawable/line_divide" />
+            <LinearLayout
+                android:id="@+id/layout_no_book"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingTop="0dp"
+                android:visibility="visible"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <!--<include layout="@layout/layout_main_header"/>-->
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:orientation="vertical"-->
+                <!--android:background="@color/yellow">-->
+                <ImageView
+                    android:layout_width="210dp"
+                    android:layout_height="128dp"
+                    android:src="@drawable/no_book"
+                    android:layout_gravity="center_horizontal"/>
+                <TextView
+                    style="@style/text_large"
+                    android:layout_marginTop="@dimen/space_20"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/space_16"
+                    android:gravity="center"
+                    android:text="@string/empty_shelf"/>
+                <TextView
+                    android:id="@+id/tv_makesure_internet_ok"
+                    style="@style/text_middle"
+                    android:layout_marginTop="@dimen/space_20"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:textColor="@color/text_color_lightgray"
+                    android:gravity="center"
+                    android:text="@string/faxianjingcai"/>
+                <com.iyangcong.reader.ui.button.FlatButton
+                    android:id="@+id/fb_goto_bookmarket"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/space_40"
+                    android:paddingRight="@dimen/space_35"
+                    android:paddingLeft="@dimen/space_35"
+                    android:layout_marginTop="@dimen/space_20"
+                    android:text="@string/go_bookmarket"
+                    android:textColor="@color/white"
+                    app:buttonColor="@color/main_color"
+                    app:shadowEnabled="false" />
+                <!--</LinearLayout>-->
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.iyangcong.reader.ui.dragmerge.model.DragMergeClassifyView
+            android:id="@+id/classify_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:overScrollMode="never"
+            android:layout_below="@+id/ll_head"
+            android:visibility="gone"
+            app:DragInMergeScaleX="0.9"
+            app:DragInMergeScaleY="0.9"
+            app:DragScaleX="1"
+            app:DragScaleY="1"
+            app:MainClipToPadding="false"
+            app:MainPaddingLeft="12dp"
+            app:MainPaddingRight="12dp"
+            app:SubClipToPadding="false"
+            app:SubPaddingLeft="12dp"
+            app:SubPaddingRight="12dp"
+            />
+
+        <com.chanven.lib.cptr.PtrClassicFrameLayout
+            xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/shelf_cloud_ptrClassicFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ll_head"
+            android:background="@color/white"
+            cube_ptr:ptr_duration_to_close="200"
+            cube_ptr:ptr_duration_to_close_header="700"
+            cube_ptr:ptr_keep_header_when_refresh="true"
+            cube_ptr:ptr_pull_to_fresh="false"
+            cube_ptr:ptr_ratio_of_header_height_to_refresh="1.1"
+            cube_ptr:ptr_resistance="1.8">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_shelf_cloud"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"
+                android:layout_marginBottom="@dimen/space_50"
+                android:background="@color/white"
+                />
+
+        </com.chanven.lib.cptr.PtrClassicFrameLayout>
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/shelf_rl_sign_height"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/white"
+            android:elevation="@dimen/space_3"
+            app:contentInsetLeft="@dimen/space_0"
+            app:contentInsetStart="@dimen/space_0">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+               >
+
+                <TextView
+                    android:id="@+id/text_select_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:text="全选"
+                    android:textColor="@color/middle_dark"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/red"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/text_complete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:text="完成"
+                    android:textColor="@color/middle_dark"
+                    android:textSize="15sp" />
+            </FrameLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <FrameLayout
+            android:id="@+id/fl_footBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:id="@+id/bottom_bar"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@color/white"
+                android:elevation="@dimen/space_3">
+
+                <RelativeLayout
+                    android:id="@+id/container_delete"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clipToPadding="false"
+                    android:paddingTop="@dimen/space_10">
+
+                    <ImageView
+                        android:id="@+id/ic_delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:duplicateParentState="true"
+                        android:src="@drawable/ic_delete"
+                        android:tint="#303030" />
+
+                    <TextView
+                        android:id="@+id/ic_delete_badge"
+                        android:layout_width="@dimen/space_18"
+                        android:layout_height="@dimen/space_18"
+                        android:layout_alignRight="@id/ic_delete"
+                        android:layout_marginRight="-8dp"
+                        android:layout_marginTop="-8dp"
+                        android:background="@drawable/bg_circle_red"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:visibility="invisible"
+                        tools:text="1" />
+
+                    <TextView
+                        android:id="@+id/text_delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ic_delete"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/space_5"
+                        android:duplicateParentState="true"
+                        android:text="删除"
+                        android:textColor="@color/middle_dark"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/add_num"
+            android:layout_width="@dimen/space_30"
+            android:layout_height="@dimen/space_30"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/transparent"
+            android:paddingRight="@dimen/space_8"
+            android:textColor="@color/red"
+            android:textSize="@dimen/text_size_16"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

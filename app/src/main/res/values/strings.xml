@@ -1,0 +1,360 @@
+<resources>
+    <string name="app_name">爱洋葱阅读</string>
+
+    <!-- 共享过度动画 -->
+    <string name="transition_photos">transition_animation_news_photos</string>
+
+    <!-- 页面名称 -->
+    <string name="main_book_market">书城</string>
+    <string name="main_book_shelf">书架</string>
+    <string name="main_discover">发现</string>
+    <string name="main_mine">我的</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="brocast_tittle">洋葱通告</string>
+    <string name="mine_dictionary">洋葱词典</string>
+    <string name="mine_book_purchased">我的图书</string>
+    <string name="mine_book_term">学期图书</string>
+    <string name="mine_monthly_book">我的包月</string>
+    <string name="mine_book_exchange">兑换图书</string>
+    <string name="mine_membershippoint">积分充值</string>
+    <string name="mine_shopping_cart">购物车</string>
+    <string name="mine_my_collection">我的收藏</string>
+    <string name="mine_my_experience">我的阅历</string>
+    <string name="mine_my_friends_and_fans">我的好友&amp;粉丝</string>
+    <string name="mine_my_friends">我的好友</string>
+    <string name="mine_my_fans">我的粉丝</string>
+    <string name="mine_new_word">生词本</string>
+    <string name="mine_test_record">我的测试</string>
+    <string name="mine_history">浏览历史</string>
+    <string name="mine_suggest">意见反馈</string>
+    <string name="mine_normalquestion">常见问题</string>
+    <string name="mine_more_setting">更多设置</string>
+
+    <!-- 九宫格 -->
+    <string name="select">%1$s/%2$s</string>
+    <string name="discover_review">书评</string>
+    <string name="discover_topic">话题</string>
+    <string name="mine_read">读过</string>
+    <string name="mine_dynamic">动态</string>
+
+    <string name="simple_view_behavior">com.iyangcong.reader.ui.SimpleViewBehavior</string>
+    <string name="activity_shelf_group_title">我的分组</string>
+    <string name="activity_shelf_cloud_title">云书架</string>
+    <!--圈子-->
+    <string name="book_detail_help">指此书在文字层面（即词汇，句式，复\n杂度）上的难易度与美国学生语言水平\n的对照关系</string>
+    <string name="level_rule">10000分以上：状元\n5000分以上：榜眼\n3000分以上：探花\n1000分以上：举人\n500分以上：秀才\n100分以上：书生\n100分以下：书童</string>
+    <string name="discover_topic_title">所有话题</string>
+    <string name="discover_thought_praise_title">他们赞了</string>
+    <string name="discover_thought_all_reply">全部回复</string>
+    <string name="discover_circle">圈子</string>
+    <string name="mine">我的</string>
+    <string name="mine_page">个人主页</string>
+    <string name="mine_collection">我的收藏</string>
+
+    <!--阅读器-->
+    <string name="previews_tips">当前为试读，您可以购买全本</string>
+    <string name="buy_all_book">购买全本</string>
+    <string name="bookmarkexist">书签已存在</string>
+    <string name="bookmarkaddok">书签添加成功</string>
+    <string name="bookmarkdel">书签已删除</string>
+    <string name="socket_exception_error">网络异常，读取数据超时</string>
+    <string name="titil_right_cp">右侧点击事件</string>
+    <string name="chapter">目       录</string>
+    <string name="note">笔       记</string>
+    <string name="bookmark">书       签</string>
+
+    <string name="notice">提醒</string>
+    <string name="login_msg">您还未登陆，是否现在登陆 ?</string>
+    <string name="cancel">取消</string>
+    <string name="auto_add_newword">将您查过的单词自动加入到生词本?</string>
+    <string name="certain">确定</string>
+    <string name="cancel_auto_addnewword">已经取消默认设置，您可以在个人-生词本设置中开启该功能。</string>
+    <string name="i_know">我知道了</string>
+
+    <string name="permission_get_accounts_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_GET_ACCOUNTS</string>
+    <string name="permission_read_phone_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_READ_PHONE_STATE</string>
+    <string name="permission_call_phone_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_CALL_PHONE</string>
+    <string name="permission_camera_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_CAMERA</string>
+    <string name="permission_access_fine_location_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_ACCESS_FINE_LOCATION</string>
+    <string name="permission_access_coarse_location_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_ACCESS_COARSE_LOCATION</string>
+    <string name="permission_read_external_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_READ_EXTERNAL_STORAGE</string>
+    <string name="permission_white_external_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_WRITE_EXTERNAL_STORAGE</string>
+    <string name="permission_recode_audio_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_RECORD_AUDIO</string>
+    <string name="empty_string"></string>
+
+    <!--登录注册-->
+    <string name="tips">提示</string>
+    <string name="data_load_failure">点击屏幕 重新加载</string>
+    <string name="reload">点击屏幕重新加载</string>
+
+    <string name="privacy_title">服务协议与隐私政策</string>
+    <string name="privacy_content">请你务必审慎阅读，充分理解“爱洋葱用户服务协议”和“隐私政策”各项条款，包括但不限于：为了向你提供内容阅读等服务，我们需要搜集你的设备信息，操作日志等个人信息。你可以在“设置”中查看、变更、删除个人信息并管理你的授权。你可阅读<a href='http://edu.iyangcong.com/onion/user_protocol.html'>《爱洋葱用户服务协议》</a>和<a href='http://edu.iyangcong.com/onion/user_protocol.html'>《隐私政策》</a>了解详细信息。如你同意，请点击“同意”开始接受我们的服务</string>
+
+    <!--创建圈子-->
+    <string name="create_circle">创建圈子</string>
+    <string name="choose_type_and_permission">您还没有选择圈子类型或者没有进行隐私设置</string>
+    <string name="fill_circle_name">请填写圈子的名称</string>
+    <string name="content_tooshort">您输入的内容长度太短</string>
+    <string name="content_toolong">您输入的内容已经超过最大长度</string>
+    <string name="content_no_emoji">该符号无法作为圈子名称</string>
+    <string name="notfinished">您还没有填写圈子名称或者没有上传封面</string>
+    <string name="add_cirlce_lable">添加圈子标签</string>
+    <string name="finish_circle_discribe">完善圈子资料</string>
+    <string name="input_circle_name">请输入标签名称</string>
+    <string name="label_used_frequently">常用标签</string>
+    <string name="cicle_label_tips">标签最多3个，每个在2-12个汉字之间</string>
+    <string name="fill_circle_discribe">填写圈子描述</string>
+    <string name="fill_describe">请输入描述</string>
+
+    <string name="other_login_method">其他方式登录</string>
+    <string name="readandagree">我已阅读并同意</string>
+    <string name="user_agree">《爱洋葱用户协议条款》</string>
+    <string name="user_policy">《隐私协议》</string>
+    <string name="account">账号</string>
+    <string name="key">密码</string>
+    <string name="forgot_key">忘记密码</string>
+    <string name="now_register">现在注册</string>
+
+    <string name="search_hot_search">热门搜索</string>
+    <string name="search_change_a_lot">换一批</string>
+    <string name="search_history">历史搜索</string>
+    <string name="clear">清空</string>
+    <string name="add_label">添加标签</string>
+    <string name="search">搜索</string>
+    <string name="search_book">在这搜索您喜爱的图书...</string>
+    <string name="search_circle">搜索圈子、话题或者书评...</string>
+    <string name="input_bookname">请输入作者或书名...</string>
+    <string name="input_discoveryname">请输入圈子、话题或书评名称...</string>
+
+
+    <string name="invite_friends">邀请好友</string>
+    <string name="input_username">请输入用户名</string>
+    <string name="input_book_name">请输入书名</string>
+    <string name="hot_circle">推荐圈子</string>
+    <string name="buy">购买</string>
+    <string name="exchange">兑换</string>
+    <string name="try_read">试读</string>
+    <string name="ok_read">阅读</string>
+    <string name="free_get_success">领取成功</string>
+    <string name="have_getted">此书已领取，无需重复领取</string>
+
+    <!--注册界面-->
+    <string name="find_by_phone">手机找回</string>
+    <string name="find_by_email">邮箱找回</string>
+    <string name="bind_by_phone">手机绑定</string>
+    <string name="bind_by_email">邮箱绑定</string>
+    <string name="register_by_phone">手机注册</string>
+    <string name="register_by_email">邮箱注册</string>
+    <string name="not_login">网络状态差，登录失败</string>
+
+    <string name="follow">关注</string>
+    <string name="private_letter">私信</string>
+    <string name="notification">通知</string>
+    <string name="comment">回复</string>
+    <string name="other">其他</string>
+
+    <string name="toc">目录</string>
+    <string name="notes">笔记</string>
+    <string name="book_marker">书签</string>
+    <string name="chapter_test">测试</string>
+
+    <string name="circle_name_repeated">您填写的圈子名称已被使用，请换一个</string>
+
+    <string name="log_out">退出当前账号</string>
+
+
+    <string name="please_input_phone_number">请输入手机号</string>
+    <string name="please_input_phone_number_or_email">请输入手机号/邮箱</string>
+    <string name="please_input_oldcode">请输入旧密码</string>
+    <string name="please_input_code">请输入验证码</string>
+    <string name="please_input_random_code">请输入图片验证码</string>
+    <string name="please_input_password">请输入密码</string>
+    <string name="please_input_password2">请重复输入密码</string>
+    <string name="random_code">图片码</string>
+    <string name="send_code">发送验证码</string>
+    <string name="register">注册</string>
+    <string name="login">登录</string>
+    <string name="activate">激活</string>
+    <string name="readandaccept">点击“注册”即视为阅读并接受</string>
+    <string name="readandaccept_activate">点击“激活”即视为阅读并接受</string>
+    <string name="bindingtitle">账号绑定说明</string>
+    <string name="activatetitle">账号激活说明</string>
+    <string name="bindingcontent">•第三方账号必须绑定手机或邮箱才能使用。\n•只有在初次绑定时才需要此操作，之后只需要点击第三方登录即可登录成功。\n•一个账户（手机或邮箱）只能绑定一个同类型第三方账号。\n•绑定成功后需重新登录。\n</string>
+    <string name="activatecontent">•电子图书馆只有激活才能使用。\n•账号必须是手机或邮箱。\n•只有在初次操作时才需要此激活操作，之后在非退出状态下无须重复登录。\n•请牢记账号密码，在非登录状态可在登录界面进行登录操作。\n</string>
+
+    <string name="user_rules">《使用协议》</string>
+    <string name="net_error_tip">您的网络似乎有问题，请稍后再试！</string>
+    <string name="added_shoppingcart">此书已添加到购物车，无需重复添加！</string>
+    <string name="addcomment">回复</string>
+    <string name="must_not_null">您输入的内容不能为空</string>
+    <string name="book_detail">图书详情</string>
+    <string name="discover_topic_comment">评论</string>
+    <string name="not_input_error">尚未输入任何信息，无需提交</string>
+    <!--个人设置-->
+    <string name="setting_head">头像</string>
+    <string name="setting_nickName">昵称</string>
+    <string name="setting_accounts">账号</string>
+    <string name="setting_phone">手机号</string>
+    <string name="setting_name">姓名</string>
+    <string name="setting_sex">性别</string>
+    <string name="setting_region">地区</string>
+    <string name="setting_introduction">个人简介</string>
+    <string name="setting_modify_passward">修改密码</string>
+    <string name="title_reading_party">读书会</string>
+    <string name="reading_party_list">读书会列表</string>
+    <string name="loading_tip">加载中，请稍候...</string>
+    <string name="upload_succeed">上传成功</string>
+    <string name="upload_tip">上传中，请稍候...</string>
+    <string name="upload_head_failed">头像上传失败</string>
+    <string name="upload_settings_failed">信息上传失败</string>
+    <string name="upload_failed">上传失败</string>
+
+    <string name="is_close_receive">是否关闭接收通知?</string>
+    <string name="is_open_receive">是否开启接收通知?</string>
+
+    <string name="version_name">Version</string>
+    <string name="can_not_find_version_name">无法获得版本号</string>
+    <!--语言版本-->
+    <string name="language_version">语言版本</string>
+    <string name="version_en">英文</string>
+    <string name="version_ch">中文</string>
+    <string name="version_double">双语</string>
+    <string name="version_compare">句对</string>
+    <!--语言难度-->
+    <string name="language_grade">语言难度</string>
+    <string name="grade_primary">美国小学</string>
+    <string name="grade_middle">美国初中</string>
+    <string name="grade_high">美国高中</string>
+    <string name="grade_University">美国大学</string>
+    <string name="subject">学科</string>
+
+
+    <string name="author_default">暂无作者介绍。</string>
+    <string name="book_default">暂无图书简介。</string>
+
+    <string name="login_please">请先登陆</string>
+
+    <string name="sign">马上签到</string>
+
+
+    <!--云书架-->
+    <string name="book_all">全部</string>
+    <string name="book_notdownload">未下载</string>
+    <string name="book_downloading">下载中</string>
+    <string name="book_downloaded">已下载</string>
+    <string name="book_notread">未读</string>
+    <string name="book_readed">已读</string>
+
+    <string name="review_list">读后感列表</string>
+    <string name="reader_flip_down">手指下滑\n切换语言</string>
+    <string name="reader_flip_center">点击中间\n呼出菜单</string>
+    <string name="reader_flip_left">点击左侧\n向上翻页</string>
+    <string name="reader_flip_right">点击右侧\n向下翻页</string>
+    <!-- WXPayEntryActivity -->
+    <string name="pay_result_tip">这个界面用于显示第三方app通过微信支付的结果</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+    <string name="app_tip">提示</string>
+    <!--Alipay-->
+    <string name="order_title">爱洋葱安卓支付</string>
+    <string name="video_player_activity">video_player_activity</string>
+    <string name="hint_input_content">请输入您要回复的内容</string>
+
+    <string name="book_has_removed">本书已下架</string>
+    <string name="sofa">快去抢个沙发吧~</string>
+    <string name="hint_book_enName">暂无英文名称</string>
+
+    <!--意见反馈-->
+    <string name="suggestion_choice">反馈意见类型</string>
+    <string name="preson_phone">联系方式</string>
+    <!--个人主页-->
+    <string name="uncare_somebody">已取消关注</string>
+    <string name="care_somebody">关注了</string>
+    <string name="already_care">已关注</string>
+    <string name="plus_care">加关注</string>
+    <string name="mutual_care">相互关注</string>
+    <string name="care_failed">关注失败</string>
+    <string name="uncare_failed">取消关注失败</string>
+
+    <string name="empty_shelf">书架空空~</string>
+    <string name="go_bookmarket">去书城找好书</string>
+    <string name="faxianjingcai">赶紧去书城发现更多精彩吧~</string>
+    <string name="make_sure_internet_is_ok">请确保您的手机已经联网</string>
+    <string name="load_again">重新加载 </string>
+    <string name="remote_database_error">服务器数据错误</string>
+    <string name="circle_name_limited_length">输入圈子名称（1-20个字）</string>
+    <string name="addpicture">添加图片</string>
+    <string name="input_title">请输入标题（不超过20个字）</string>
+    <string name="post_new_topic">发表新话题</string>
+    <string name="add_to_already_know">已添加到我的收藏</string>
+    <string name="has_already_be_cancelled">已取消收藏</string>
+    <string name="others">其他</string>
+    <string name="translation">释义：</string>
+    <string name="no_data">没有数据了</string>
+    <string name="no_content">暂时没有内容</string>
+    <string name="rest_time">剩余时长:</string>
+    <string name="upload_word_failure">单词上传失败</string>
+    <string name="upload_word_success">单词上传成功</string>
+    <string name="open">公开</string>
+    <string name="edit_note">你对这段内容的看法...</string>
+    <string name="get_category_failure">请求类别信息失败</string>
+    <string name="load_url_failure">加载数据出问题，请稍后再试</string>
+
+    <string name="permission">权限(permission)</string>
+    <string name="no_permissions">应用需要必要的运行权限</string>
+
+    <string name="agreeuse">同意</string>
+    <string name="refuseuse">暂不使用</string>
+
+    <string name="settings">设置</string>
+    <string name="help">帮助</string>
+    <string name="string_help_text">当前应用缺少必要权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。\n\n最后点击两次后退按钮，即可返回。</string>
+    <string name="quit">退出</string>
+    <string name="edit_circle">编辑圈子</string>
+    <string name="input_email">请输入您要绑定的邮箱</string>
+    <string name="code">验证码</string>
+    <string name="input_email_account">请输入邮箱帐号</string>
+    <string name="code_has_send">验证码已发送</string>
+    <string name="add_to_circle">是否加入圈子:</string>
+    <string name="accept">接受</string>
+    <string name="refuse">拒绝</string>
+    <string name="input_content">请输入内容（不得超过200个汉字）</string>
+    <string name="send_you_private_message">向你发送了一条私信</string>
+    <string name="title">标题：</string>
+    <string name="content">内容：</string>
+    <string name="buy_now">立即购买</string>
+    <string name="input_bind_phone">请输入您要绑定的手机号</string>
+    <string name="dynamic_update">动态更新</string>
+    <string name="public_house">版权方：</string>
+    <string name="today_push_free">限时免费 先抢先得</string>
+    <string name="today_push_free_tittle">今日免费</string>
+    <string name="today_push_hot">畅销好书 权威力荐</string>
+    <string name="today_push_hot_tittle">热门推荐</string>
+    <string name="today_push_tongshi">学科经典 人文熏陶</string>
+    <string name="today_push_tongshi_tittle">通识读物</string>
+    <string name="suggestion_phone_tips">手机号、QQ等，便于我们及时联系您</string>
+    <string name="write_down_telephone">请输入联系方式，便于我们联系到您哦</string>
+    <string name="delete">删除</string>
+    <string name="you_cannot_delete_otherones_comment">您无法删除不是自己撰写的评论</string>
+    <string name="testDecodeStr">Kb9cVfLOELRJDPRq3QxMKlBRmS+BcyMnHdYb9fPUarsigbWnH3SOK4JcsTWq2OwHPqd/A9/Wa1L8
+NhpTSOSQ/5g53sICPSBhfFskUEsKKlUqSA70K37xkMIk8DCgmPuHxNeBiWZ3LwwyVq1QX4N1LEod
+ri0QdAfAEmUQmYIhTL+mblAuj5pebgUx3j2TOuTe
+</string>
+    <string name="unzipping">下载完成,解压中...</string>
+
+    <string name="input_note_comment">请输入笔记内容</string>
+    <string name="note_comment_cannot_empty">不可以添加内容为空的笔记</string>
+    <string name="note_too_long">笔记内容不能超过1000字，请修改！</string>
+    <string name="addnote_failed">添加失败</string>
+    <string name="unzip_failled">解压失败</string>
+    <string name="content_not_demand">密码仅支持数字字母下划线</string>
+
+    <string name="title_activity_wbshare">WBShareActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="scan_failed">扫描失败</string>
+    <string name="scan_notsupport">不支持当前二维码</string>
+    <string name="thirdpart_beiwaionline_xueli">北外网院电子图书馆</string>
+    <string name="test_qustion">The little prince broke _____ a lovely peal of laughter, which irritated me very much.</string>
+    <string name="test_answer_analysis">broke into 为单词短语的固定搭配, 其他组合都是错误的用法, 例如hieves broke into the manor at night. 小偷晚上闯进了庄园。《柯林斯高阶英汉双解学习词典》。Two robbers broke into her home, held a knife to her throat and stole her savings. 两个盗贼闯进了她的家, 把刀架在她的脖子上, 抢走了她的积蓄。\n因此, 正确答案是B。</string>
+</resources>

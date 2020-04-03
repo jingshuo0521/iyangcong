@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutFooter"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/main_footer_bg">
+
+    <View
+        android:id="@+id/viewSplit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_0.5"
+        android:background="@drawable/line_divide" />
+
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/foot_book_market"
+            style="@style/main_footer_bar_radio"
+            android:checked="true"
+            android:drawableTop="@drawable/widget_bar_book_market"
+            android:text="@string/main_book_market" />
+
+        <RadioButton
+            android:id="@+id/foot_book_shelf"
+            style="@style/main_footer_bar_radio"
+            android:drawableTop="@drawable/widget_bar_book_shelf"
+            android:text="@string/main_book_shelf" />
+
+        <RadioButton
+            android:id="@+id/foot_discover"
+            style="@style/main_footer_bar_radio"
+            android:drawableTop="@drawable/widget_bar_discover"
+            android:text="@string/main_discover" />
+
+        <RadioButton
+            android:id="@+id/main_footbar_mine"
+            style="@style/main_footer_bar_radio"
+            android:drawableTop="@drawable/widget_bar_mine"
+            android:text="@string/main_mine" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@null"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/space_0"
+            android:layout_height="@dimen/space_0"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="@dimen/space_0"
+            android:layout_height="@dimen/space_0"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="@dimen/space_0"
+            android:layout_height="@dimen/space_0"
+            android:layout_weight="1" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/space_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null">
+
+            <View
+                android:id="@+id/viewSplitLine"
+                android:layout_width="@dimen/space_1"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:background="@null" />
+
+            <!--<TextView-->
+                <!--android:id="@+id/textUnreadLabel"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:layout_marginLeft="@dimen/space_2"-->
+                <!--android:layout_marginTop="@dimen/space_2"-->
+                <!--android:layout_toEndOf="@+id/viewSplitLine"-->
+                <!--android:layout_toRightOf="@+id/viewSplitLine"-->
+                <!--android:background="@drawable/ic_bg_unread_count"-->
+                <!--android:gravity="center"-->
+                <!--android:text="1"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="@dimen/text_size_13" />-->
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

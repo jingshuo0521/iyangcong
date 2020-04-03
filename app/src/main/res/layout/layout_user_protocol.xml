@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_user_protocol"
+    android:layout_width="match_parent"
+    android:layout_height="51dip"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:background="@color/graywhite" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50"
+        android:background="@color/white"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cb_user_protocol"
+            style="@style/text_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_30" />
+
+        <TextView
+            android:id="@+id/tv_user_protocol_tip"
+            style="@style/text_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我已经阅读并同意" />
+
+        <TextView
+            android:id="@+id/tv_user_protocol_title"
+            style="@style/text_small"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="包月协议"
+            android:textColor="@color/main_color" />
+
+        <TextView
+            android:id="@+id/tv_shop_now"
+            style="@style/text_small"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/buy_now" />
+    </LinearLayout>
+
+</LinearLayout>

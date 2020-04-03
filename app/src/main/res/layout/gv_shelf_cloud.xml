@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_5"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/space_5"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="@dimen/space_15"
+            android:layout_height="@dimen/space_15"
+            android:layout_marginLeft="@dimen/space_5"
+            android:src="@drawable/icon_plus" />
+
+        <TextView
+            android:id="@+id/tv_category_name"
+            style="@style/text_large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_5"
+            android:text="历史哲学" />
+
+    </LinearLayout>
+
+    <com.iyangcong.reader.ui.MyGridView
+        android:id="@+id/gv_book_cloud"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/space_10"
+        android:layout_marginLeft="@dimen/space_5"
+        android:layout_marginRight="@dimen/space_5"
+        android:layout_marginTop="@dimen/space_10"
+        android:background="@color/white"
+        android:numColumns="3" />
+
+</LinearLayout>

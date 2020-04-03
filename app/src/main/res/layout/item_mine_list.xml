@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/settingitem_height"
+    android:background="@drawable/bg_selector"
+    android:baselineAligned="false"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingRight="@dimen/space_12">
+
+    <ImageView
+        android:id="@+id/iv_settingItem_image"
+        android:layout_width="@dimen/settingitem_image_heightandwidth"
+        android:layout_height="@dimen/settingitem_image_heightandwidth"
+        android:layout_marginRight="@dimen/space_6"
+        android:layout_marginLeft="@dimen/space_6"
+        android:padding="@dimen/space_9"
+        android:src="@drawable/ic__mine_book_purchased"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/settingitem_text_height"
+                android:gravity="left|center"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/space_8">
+
+                <TextView
+                    android:id="@android:id/title"
+                    style="@style/text_middle_large"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@android:id/summary"
+                    style="@style/text_middle"
+                    android:paddingBottom="@dimen/space_8"
+                    android:paddingRight="@dimen/space_8"
+                    android:paddingTop="@dimen/space_8"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/space_12"
+                android:layout_weight="1.0"
+                android:duplicateParentState="true"
+                android:gravity="right|center_vertical">
+
+                <CheckedTextView
+                    android:id="@+id/accessory_checked"
+                    android:gravity="center_vertical"
+                    android:layout_width="135dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/space_15"
+                    android:singleLine="true"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/text_size_12" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tv_hint"
+                    android:gravity="right|center_vertical"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:layout_marginRight="@dimen/space_10"/>
+                <TextView
+                    android:id="@+id/text_tv_one"
+                    style="@style/UnreadCountTipsStyle"
+                    android:text=""
+                    android:lines="1"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/item_bottom_divider"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/space_1"
+            android:background="@drawable/line_divide" />
+    </LinearLayout>
+
+</LinearLayout>

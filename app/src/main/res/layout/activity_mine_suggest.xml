@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mine_suggest"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    tools:context="com.iyangcong.reader.activity.MineSuggestActivity">
+
+    <include layout="@layout/layout_main_header"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_selector"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edit_Suggest"
+            style="@style/text_large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="top"
+            android:hint="请输入遇到的问题或建议..."
+            android:minLines="7"
+            android:paddingBottom="@dimen/space_5"
+            android:paddingLeft="@dimen/space_15"
+            android:paddingRight="@dimen/space_15"
+            android:paddingTop="@dimen/space_15"
+            android:textColorHint="@color/text_color_hint" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_Suggest_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:choiceMode="singleChoice"
+                android:divider="@null"
+                android:fadingEdge="none"
+                android:listSelector="@android:color/transparent"
+                android:paddingBottom="@dimen/space_10"
+                android:paddingLeft="@dimen/space_10"
+                android:paddingTop="@dimen/space_5"
+                android:scrollbarStyle="outsideOverlay"
+                app:layoutManager="android.support.v7.widget.GridLayoutManager"
+                app:spanCount="4"
+                tools:listitem="@layout/item_list_img"
+
+                ></android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/settingitem_height"
+        android:layout_marginTop="@dimen/space_10"
+        android:background="@drawable/bg_selector"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/space_12">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/settingitem_text_height"
+            android:gravity="left|center"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/space_15">
+
+            <TextView
+                style="@style/text_middle_large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="left|center"
+                android:orientation="vertical"
+                android:singleLine="true"
+                android:text="@string/suggestion_choice" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_suggest_choice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/space_12"
+            android:layout_weight="1.0"
+            android:duplicateParentState="true"
+            android:gravity="right|center_vertical">
+
+            <TextView
+                android:id="@+id/tv_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/space_10"
+                android:gravity="right|center_vertical"
+                android:lines="1"
+                android:text="点击选择反馈问题" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="2dip"
+                android:gravity="center_vertical"
+                android:src="@drawable/ic_arrow_gray" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/settingitem_height"
+        android:layout_marginTop="@dimen/space_10"
+        android:background="@drawable/bg_selector"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/space_12">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/settingitem_text_height"
+            android:gravity="left|center"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/space_15">
+
+            <TextView
+                style="@style/text_middle_large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="left|center"
+                android:orientation="vertical"
+                android:singleLine="true"
+                android:text="@string/preson_phone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/space_12"
+            android:layout_weight="1.0"
+            android:duplicateParentState="true"
+            android:gravity="left|center_vertical">
+
+            <EditText
+                android:id="@+id/et_phone"
+                style="@style/text_middle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/space_10"
+                android:background="@color/white"
+                android:gravity="left|center_vertical"
+                android:hint="@string/suggestion_phone_tips"
+                android:lines="1" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.iyangcong.reader.ui.button.FlatButton
+            android:id="@+id/fb_submit"
+            android:layout_width="match_parent"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_height="@dimen/space_40"
+            android:layout_marginLeft="@dimen/space_20"
+            android:layout_marginRight="@dimen/space_20"
+            android:layout_marginTop="@dimen/space_20"
+            android:text="提 交"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</LinearLayout>

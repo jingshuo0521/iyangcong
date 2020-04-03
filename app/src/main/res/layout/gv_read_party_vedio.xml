@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_read_party_video"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/space_10">
+
+    <LinearLayout
+        android:id="@+id/layout_more_activity"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginBottom="@dimen/space_10"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_more_divide"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_1"
+            android:paddingLeft="@dimen/space_10"
+            android:paddingRight="@dimen/space_10"
+            android:src="@drawable/line_divide" />
+
+        <LinearLayout
+            android:id="@+id/ll_see_more"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text_middle_large"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/text_color_lightgray"
+                android:text="查看更多活动" />
+
+            <ImageView
+                android:layout_width="@dimen/space_5"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/space_10"
+                android:src="@drawable/ic_more_main_color" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/rl_title_bar" />
+
+    <com.iyangcong.reader.ui.MyGridView
+        android:id="@+id/gv_discover_read_party_vedio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:numColumns="2" />
+</LinearLayout>

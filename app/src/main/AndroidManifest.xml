@@ -1,0 +1,1062 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.iyangcong.reader">
+
+    <uses-sdk tools:overrideLibrary="com.anarchy.classify,fm.jiecao.jcvideoplayer_lib" />
+    <!-- 配置联网权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!-- Push service 运行需要的权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+
+    <!-- 富媒体需要声明的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+
+<!--    在发送广播的APP 的 Manifest.xml文件中添加自定义权限-->
+    <uses-permission android:name="com.iyangcong.custom.permission" />
+    <permission
+        android:name="com.iyangcong.custom.permission"
+        android:protectionLevel="normal"></permission>
+
+    <!-- 适配Android N系统必需的ContentProvider写权限声明，写权限包含应用包名 -->
+<!--    <uses-permission android:name="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.iyangcong.reader" />
+
+    <permission
+        android:name="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.iyangcong.reader"
+        android:protectionLevel="signature" />-->
+
+    <application
+        android:name=".app.AppContext"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.PermissionsActivity" />
+
+        <!-- 友盟第三方登录相关 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5954bc1f717c1910a900198a" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Iyangcong" />
+
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.umeng.socialize.media.WBShareCallBackActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.sina.weibo.sdk.web.WeiboSdkWebActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.sina.weibo.sdk.share.WbShareTransActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!--<activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />-->
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.umeng.socialize.editorpage.ShareActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.UMDefault" />
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <service
+            android:name="com.sina.weibo.sdk.net.DownloadService"
+            android:exported="false" />
+
+        <!-- push service start -->
+        <!-- 用于接收系统消息以保证PushService正常运行 -->
+<!--        <receiver-->
+<!--            android:name="com.baidu.android.pushservice.PushServiceReceiver"-->
+<!--            android:process=":bdservice_v1">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.BOOT_COMPLETED" />-->
+<!--                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />-->
+<!--                <action android:name="com.baidu.android.pushservice.action.notification.SHOW" />-->
+<!--                <action android:name="com.baidu.android.pushservice.action.media.CLICK" />-->
+<!--                &lt;!&ndash; 以下四项为可选的action声明，可大大提高service存活率和消息到达速度 &ndash;&gt;-->
+<!--                <action android:name="android.intent.action.MEDIA_MOUNTED" />-->
+<!--                <action android:name="android.intent.action.USER_PRESENT" />-->
+<!--                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />-->
+<!--                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />-->
+<!--            </intent-filter>-->
+<!--        </receiver>-->
+        <!-- Push服务接收客户端发送的各种请求 -->
+<!--        <receiver-->
+<!--            android:name="com.baidu.android.pushservice.RegistrationReceiver"-->
+<!--            android:process=":bdservice_v1">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="com.baidu.android.pushservice.action.METHOD" />-->
+<!--                <action android:name="com.baidu.android.pushservice.action.BIND_SYNC" />-->
+<!--            </intent-filter>-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.PACKAGE_REMOVED" />-->
+
+<!--                <data android:scheme="package" />-->
+<!--            </intent-filter>-->
+<!--        </receiver>-->
+
+<!--        <service-->
+<!--            android:name="com.baidu.android.pushservice.PushService"-->
+<!--            android:exported="true"-->
+<!--            android:process=":bdservice_v1">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="com.baidu.android.pushservice.action.PUSH_SERVICE" />-->
+<!--            </intent-filter>-->
+<!--        </service>-->
+
+<!--        &lt;!&ndash; 4.4版本新增的CommandService声明，提升小米和魅族手机上的实际推送到达率 &ndash;&gt;-->
+<!--        <service-->
+<!--            android:name="com.baidu.android.pushservice.CommandService"-->
+<!--            android:exported="true" />-->
+
+<!--        &lt;!&ndash; 适配Android N系统必需的ContentProvider声明，写权限包含应用包名 &ndash;&gt;-->
+<!--        <provider-->
+<!--            android:name="com.baidu.android.pushservice.PushInfoProvider"-->
+<!--            android:authorities="com.iyangcong.reader.bdpush"-->
+<!--            android:exported="true"-->
+<!--            android:protectionLevel="signature"-->
+<!--            android:writePermission="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.iyangcong.reader" />-->
+
+<!--        &lt;!&ndash; push结束 &ndash;&gt;-->
+
+
+<!--        &lt;!&ndash; 此处Receiver名字修改为当前包名路径 &ndash;&gt;-->
+<!--        <receiver android:name=".receiver.BaiduPushMessageRecevier">-->
+<!--            <intent-filter>-->
+
+<!--                &lt;!&ndash; 接收push消息 &ndash;&gt;-->
+<!--                <action android:name="com.baidu.android.pushservice.action.MESSAGE" />-->
+<!--                &lt;!&ndash; 接收bind、setTags等method的返回结果 &ndash;&gt;-->
+<!--                <action android:name="com.baidu.android.pushservice.action.RECEIVE" />-->
+<!--                &lt;!&ndash; 接收通知点击事件，和通知自定义内容 &ndash;&gt;-->
+<!--                <action android:name="com.baidu.android.pushservice.action.notification.CLICK" />-->
+<!--            </intent-filter>-->
+<!--        </receiver>-->
+
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.MinePurchasedActivity" />
+        <activity android:name=".activity.CommentEditActivity" />
+        <activity android:name=".activity.MineExchangeActivity" />
+        <activity android:name=".activity.MineShoppingActivity" />
+        <activity android:name=".activity.MineCollectionActivity" />
+        <activity android:name=".activity.MineHistoryActivity" />
+        <activity android:name=".activity.SemesterBooksActivity" />
+        <activity android:name=".activity.MinePayActivity" />
+        <activity android:name=".activity.SignCalendarActivity" />
+        <activity android:name=".activity.ReciteWordActivity" />
+        <activity android:name=".activity.MinePersonSettingActivity" />
+        <activity android:name=".activity.MineExperienceActivity" />
+        <activity android:name=".activity.MineFriendsActivity" />
+        <activity android:name=".activity.BookMarketClassificationActivity" />
+        <activity android:name=".activity.BookMarketBookListActivity" />
+        <activity android:name=".activity.BookMarketSearchActivity" />
+        <activity android:name=".activity.BookMarketAboutAuthorActivity" />
+        <activity android:name=".activity.BookMarketBookDetailsActivity" />
+        <activity android:name=".activity.BookMarketSpecialTopicActivity" />
+        <!--
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme.NoActionBar" />
+        -->
+        <activity android:name=".activity.MineDictionaryActivity" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.ShelfCloudActivity" />
+        <activity
+            android:name=".activity.MineSuggestActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".activity.DiscoverCircleDetailActivity" />
+        <activity android:name=".activity.MineSettingActivity" />
+        <activity android:name=".activity.LetterEditActivity" />
+        <activity android:name=".activity.ModifyPassWordActivity" />
+        <activity android:name=".activity.NewMaeesageActivity" />
+        <activity android:name=".activity.MineSettingBindActivity" />
+        <activity android:name=".activity.MineAboutProductsActivity" />
+        <activity android:name=".activity.DiscoverBookReviewDetailActivity" />
+        <activity android:name=".activity.DiscoverCircleActivity" />
+        <activity android:name=".activity.MinePageActivity" />
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".activity.FindPassWordActivity" />
+        <activity android:name=".activity.BookMarketGeneralBookActivity" />
+        <activity android:name=".activity.DiscoverNewCircle" />
+        <activity android:name=".activity.DiscoverNewCircle2" />
+        <activity android:name=".activity.DiscoverySearchActivity" />
+        <activity android:name=".activity.DiscoverNewCircle3" />
+        <activity android:name=".activity.DiscoverNewCircleInviteFriends" />
+        <activity android:name=".activity.DiscoverNewCircleChooseBook" />
+        <activity android:name=".activity.DiscoverReadingPartyActivity" />
+        <activity android:name=".activity.DiscoverReadingPartyDetailsActivity" />
+        <activity android:name=".activity.DiscoverTopicListActivity" />
+        <activity android:name=".activity.DiscoverCooperationUnitActivity" />
+        <activity android:name=".activity.MineNewWordActivity" />
+
+        <service android:name=".service.PostWordsToRemoteDatabase" />
+
+        <activity android:name=".activity.ReciteWordIndexActivity" />
+        <activity android:name=".activity.AllWordActivity" />
+        <activity android:name=".activity.SearchHistoryActivity" />
+        <activity android:name=".activity.SearchHistoryDetailActivity" />
+        <activity android:name=".activity.ReadyReciteIndexActivity" />
+        <activity android:name=".activity.ReciteAlreadyKnowActivity" />
+        <activity android:name=".activity.ReciteMyFavoriteActivity" />
+        <activity android:name=".activity.MembershipPointActivity" />
+        <activity android:name="io.github.xudaojie.qrcodelib.CaptureActivity" />
+        <activity android:name=".activity.SimpleCaptureActivity" />
+        <!-- android:screenOrientation="portrait"/> -->
+
+
+        <!-- 阅读器 -->
+        <activity
+            android:name="org.geometerplus.android.fbreader.error.BookReadingErrorActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:process=":error"
+            android:theme="@style/FBReader.Dialog">
+            <intent-filter>
+                <action android:name="android.fbreader.action.ERROR" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="BookReadingException" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.geometerplus.zlibrary.ui.android.error.BugReportActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:label="FBReader crash"
+            android:process=":crash"
+            android:theme="@style/FBReader.Activity" />
+        <activity
+            android:name="org.geometerplus.android.fbreader.crash.FixBooksDirectoryActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:process=":crash"
+            android:theme="@style/FBReader.Dialog">
+            <intent-filter>
+                <action android:name="android.fbreader.action.CRASH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="CachedCharStorageException" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.geometerplus.android.fbreader.crash.MissingNativeLibraryActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:process=":crash"
+            android:theme="@style/FBReader.Dialog">
+            <intent-filter>
+                <action android:name="android.fbreader.action.CRASH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="ExceptionInInitializerError" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.fbreader.action.CRASH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="UnsatisfiedLinkError" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="org.geometerplus.android.fbreader.api.ApiService"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.fbreader.action.API" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="org.geometerplus.android.fbreader.FBReader"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:theme="@style/FBReader.Activity">
+            <intent-filter>
+                <action android:name="android.fbreader.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.fbreader.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="file" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="fbreader-action" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.fbreader.action.PLUGIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host=""
+                    android:scheme="file" />
+                <data android:pathPattern=".*\\.epub" />
+                <data android:pathPattern=".*\\.oeb" />
+                <data android:pathPattern=".*\\.fb2" />
+                <data android:pathPattern=".*\\.fb2\\.zip" />
+                <data android:pathPattern=".*\\.mobi" />
+                <data android:pathPattern=".*\\.prc" />
+                <data android:pathPattern=".*\\.txt" />
+                <data android:pathPattern=".*\\.rtf" />
+                <data android:pathPattern=".*\\.pdf" />
+                <data android:pathPattern=".*\\.djvu" />
+                <data android:pathPattern=".*\\.cbr" />
+                <data android:pathPattern=".*\\.cbz" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host=""
+                    android:mimeType="text/plain"
+                    android:scheme="file" />
+                <data android:pathPattern=".*\\.epub" />
+                <data android:pathPattern=".*\\.oeb" />
+                <data android:pathPattern=".*\\.fb2" />
+                <data android:pathPattern=".*\\.mobi" />
+                <data android:pathPattern=".*\\.prc" />
+                <data android:pathPattern=".*\\.txt" />
+                <data android:pathPattern=".*\\.rtf" />
+                <data android:pathPattern=".*\\.pdf" />
+                <data android:pathPattern=".*\\.djvu" />
+                <data android:pathPattern=".*\\.cbr" />
+                <data android:pathPattern=".*\\.cbz" />
+            </intent-filter>
+            <!--
+            intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="content" android:pathPattern=".*\\.fb2"/>
+            </intent-filter
+            -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host=""
+                    android:scheme="file" />
+                <data android:mimeType="application/epub+zip" />
+                <data android:mimeType="application/x-pilot-prc" />
+                <data android:mimeType="application/x-mobipocket-ebook" />
+                <data android:mimeType="application/x-fictionbook+xml" />
+                <data android:mimeType="application/x-fictionbook" />
+                <data android:mimeType="application/pdf" />
+                <data android:mimeType="application/x-pdf" />
+                <data android:mimeType="application/djvu" />
+                <data android:mimeType="application/x-djvu" />
+                <data android:mimeType="application/x-cbr" />
+                <data android:mimeType="application/x-cbz" />
+                <data android:mimeType="image/vnd.djvu" />
+                <data android:mimeType="image/x-djvu" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
+            <intent-filter>
+                <action android:name="android.fbreader.action.CLOSE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.fbreader.action.PLUGIN_CRASH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.geometerplus.android.fbreader.dict.DictionaryNotInstalledActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:theme="@style/FBReader.Dialog" />
+        <activity
+            android:name="org.geometerplus.android.fbreader.CancelActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/FBReader.Dialog">
+            <intent-filter>
+                <action android:name="android.fbreader.action.CANCEL_MENU" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.geometerplus.android.fbreader.PluginListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/FBReader.Dialog" />
+        <activity
+            android:name="org.geometerplus.android.fbreader.bookmark.BookmarksActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:process=":bookmarks"
+            android:theme="@style/FBReader.Activity.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
+            <intent-filter>
+                <action android:name="android.fbreader.action.BOOKMARKS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.geometerplus.android.fbreader.bookmark.EditBookmarkActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/FBReader.Dialog">
+            <intent-filter>
+                <action android:name="android.fbreader.action.EDIT_BOOKMARK" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.geometerplus.android.fbreader.bookmark.EditStyleActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/FBReader.Dialog">
+            <intent-filter>
+                <action android:name="android.fbreader.action.EDIT_STYLES" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.geometerplus.android.fbreader.image.ImageViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:process=":imageView"
+            android:theme="@style/FBReader.Activity" />
+
+        <service
+            android:name="org.geometerplus.android.fbreader.libraryService.LibraryService"
+            android:launchMode="singleTask"
+            android:process=":libraryService">
+            <intent-filter>
+                <action android:name="android.fbreader.action.LIBRARY_SERVICE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="org.geometerplus.android.fbreader.config.ConfigService"
+            android:launchMode="singleTask"
+            android:process=":configService">
+            <intent-filter>
+                <action android:name="android.fbreader.action.CONFIG_SERVICE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="org.geometerplus.android.fbreader.sync.SyncService"
+            android:launchMode="singleTask"
+            android:process=":synchroniser">
+            <intent-filter>
+                <action android:name="android.fbreader.action.sync.START" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.fbreader.action.sync.QUICK_SYNC" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="org.geometerplus.fbreader.formats.oeb.function.EpubService"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="com.iyangcong.reader.epubservice" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="org.geometerplus.android.fbreader.library.BookInfoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:process=":library"
+            android:theme="@style/FBReader.Activity">
+            <intent-filter>
+                <action android:name="android.fbreader.action.BOOK_INFO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.geometerplus.android.fbreader.library.LibrarySearchActivity"
+            android:process=":library"
+            android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name="org.geometerplus.android.fbreader.library.LibraryActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:process=":library"
+            android:theme="@style/FBReader.Activity">
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value="org.geometerplus.android.fbreader.library.LibrarySearchActivity" />
+
+            <intent-filter>
+                <action android:name="android.fbreader.action.LIBRARY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.geometerplus.android.fbreader.TOCActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/FBReader.Activity" />
+        <activity
+            android:name="org.geometerplus.android.fbreader.preferences.PreferenceActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:process=":preferences"
+            android:theme="@style/FBReader.Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="fbreader-preferences" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.fbreader.action.PREFERENCES" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.geometerplus.android.fbreader.preferences.EditBookInfoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:process=":library"
+            android:theme="@style/FBReader.Activity" />
+        <activity
+            android:name="org.geometerplus.android.fbreader.sync.MissingBookActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:process=":networkLibrary"
+            android:theme="@style/FBReader.Dialog" />
+        <activity
+            android:name="org.geometerplus.android.fbreader.network.BookDownloader"
+            android:process=":networkLibrary"
+            android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="*"
+                    android:scheme="http" />
+                <data android:pathPattern=".*\\.epub" />
+                <data android:pathPattern=".*\\.oeb" />
+                <data android:pathPattern=".*\\.fb2" />
+                <data android:pathPattern=".*\\.fb2\\.zip" />
+                <data android:pathPattern=".*\\.mobi" />
+                <data android:pathPattern=".*\\.prc" />
+                <data android:pathPattern=".*\\.txt" />
+                <data android:pathPattern=".*\\.rtf" />
+                <data android:pathPattern=".*\\.djvu" />
+                <data android:pathPattern=".*\\.cbr" />
+                <data android:pathPattern=".*\\.cbz" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="*"
+                    android:scheme="http" />
+                <data android:mimeType="application/epub+zip" />
+                <data android:mimeType="application/x-pilot-prc" />
+                <data android:mimeType="application/x-mobipocket-ebook" />
+                <data android:mimeType="application/x-fictionbook+xml" />
+                <data android:mimeType="application/x-fictionbook" />
+                <data android:mimeType="application/djvu" />
+                <data android:mimeType="application/x-djvu" />
+                <data android:mimeType="application/x-cbr" />
+                <data android:mimeType="application/x-cbz" />
+                <data android:mimeType="image/vnd.djvu" />
+                <data android:mimeType="image/x-djvu" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="*rus.ec"
+                    android:mimeType="application/zip"
+                    android:scheme="http" />
+                <data
+                    android:host="lib.ololo.cc"
+                    android:mimeType="application/zip"
+                    android:scheme="http" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="*"
+                    android:scheme="book" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="*"
+                    android:scheme="epub" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="org.geometerplus.android.fbreader.network.BookDownloaderService"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:process=":networkLibrary" />
+
+        <activity
+            android:name="org.geometerplus.android.fbreader.network.NetworkSearchActivity"
+            android:process=":networkLibrary"
+            android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name="org.geometerplus.android.fbreader.network.auth.WebAuthorisationScreen"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:process=":networkLibrary"
+            android:theme="@style/FBReader.Activity" />
+        <activity
+            android:name="org.geometerplus.android.fbreader.network.NetworkLibraryPrimaryActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:process=":networkLibrary"
+            android:theme="@style/FBReader.Activity">
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value="org.geometerplus.android.fbreader.network.NetworkSearchActivity" />
+
+            <intent-filter>
+                <action android:name="android.fbreader.action.OPEN_NETWORK_CATALOG" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="*"
+                    android:scheme="http" />
+                <data
+                    android:host="*"
+                    android:scheme="https" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.fbreader.action.NETWORK_LIBRARY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.geometerplus.android.fbreader.network.NetworkLibrarySecondaryActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:process=":networkLibrary"
+            android:theme="@style/FBReader.Activity" />
+        <activity
+            android:name="org.geometerplus.android.fbreader.network.AuthenticationActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:process=":networkLibrary"
+            android:theme="@style/FBReader.Dialog" />
+        <activity
+            android:name="org.geometerplus.android.fbreader.network.BuyBooksActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:process=":networkLibrary"
+            android:theme="@style/FBReader.Dialog" />
+        <activity
+            android:name="org.geometerplus.android.fbreader.network.AddCatalogMenuActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:process=":networkLibrary"
+            android:theme="@style/FBReader.Dialog" />
+        <activity
+            android:name="org.geometerplus.android.fbreader.network.AddCustomCatalogActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:process=":networkLibrary"
+            android:theme="@style/FBReader.Dialog">
+            <intent-filter>
+                <action android:name="android.fbreader.action.ADD_OPDS_CATALOG" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="data.fbreader.org"
+                    android:path="/add_catalog/editUrl"
+                    android:scheme="http" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="*"
+                    android:scheme="opds" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.fbreader.action.ADD_OPDS_CATALOG_URL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="*"
+                    android:scheme="http" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.fbreader.action.ADD_OPDS_CATALOG_URL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="*"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.geometerplus.android.fbreader.network.AuthorisationMenuActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:process=":networkLibrary"
+            android:theme="@style/FBReader.Dialog" />
+        <activity
+            android:name="org.geometerplus.android.fbreader.network.litres.UserRegistrationActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:process=":networkLibrary"
+            android:theme="@style/FBReader.Dialog" />
+        <activity
+            android:name="org.geometerplus.android.fbreader.network.litres.AutoRegistrationActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:process=":networkLibrary"
+            android:theme="@style/FBReader.Dialog" />
+        <activity
+            android:name="org.geometerplus.android.fbreader.network.TopupMenuActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:process=":networkLibrary"
+            android:theme="@style/FBReader.Dialog" />
+        <activity
+            android:name="org.geometerplus.android.fbreader.network.NetworkBookInfoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:process=":networkLibrary"
+            android:theme="@style/FBReader.Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="*"
+                    android:scheme="litres-book" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.geometerplus.android.fbreader.network.CatalogManagerActivity"
+            android:process=":networkLibrary"
+            android:theme="@style/FBReader.Activity" />
+
+        <receiver
+            android:name="org.geometerplus.android.fbreader.network.ListenerCallback"
+            android:process=":networkLibrary"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.fbreader.action.network.SIGNIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".broadcast.NetBroadcastReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="data_error_from_remote_database" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".broadcast.VideoPlayerBroadcastReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="data_error_for_video" />
+            </intent-filter>
+        </receiver>
+
+
+
+      <!--  <receiver
+            android:name=".MainActivity$MyReceiver" >
+            <intent-filter>
+                &lt;!&ndash; 动作设置为发送的广播动作 &ndash;&gt;
+                <action android:name="com.iyangcong.reader.loginactivity.statechange"/>
+            </intent-filter>
+        </receiver>
+-->
+
+
+        <activity
+            android:name="org.geometerplus.android.fbreader.tips.TipsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/FBReader.Dialog" />
+        <activity
+            android:name="com.paragon.dictionary.fbreader.OpenDictionaryActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/FBReader.Transparent" />
+
+        <service
+            android:name="org.geometerplus.android.fbreader.httpd.DataService"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:process=":dataService" />
+        <service
+            android:name="group.pals.android.lib.ui.filechooser.services.LocalFileProvider"
+            android:exported="false" />
+
+        <activity
+            android:name="group.pals.android.lib.ui.filechooser.FileChooserActivity"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:exported="false"
+            android:theme="@style/FBReader.Dialog" />
+        <activity
+            android:name="org.geometerplus.android.fbreader.preferences.background.Chooser"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:exported="false"
+            android:theme="@style/FBReader.Dialog" />
+        <activity
+            android:name="org.geometerplus.android.fbreader.preferences.background.PredefinedImages"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:exported="false"
+            android:theme="@style/FBReader.Dialog" />
+        <activity
+            android:name="org.geometerplus.android.util.FolderListDialogActivity"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:exported="false"
+            android:theme="@style/FBReader.Dialog" />
+        <activity
+            android:name="org.geometerplus.android.util.EditTagsDialogActivity"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:exported="false"
+            android:theme="@style/FBReader.Dialog" />
+        <activity
+            android:name="org.geometerplus.android.util.EditAuthorsDialogActivity"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:exported="false"
+            android:theme="@style/FBReader.Dialog" />
+        <activity
+            android:name="com.lzy.imagepicker.ui.ImagePreviewDelActivity"
+            android:theme="@style/ImagePickerThemeFullScreen" />
+        <activity android:name=".activity.ImagePreviewsActivity" />
+        <activity android:name=".activity.DiscoverTopicActivity" />
+        <activity android:name=".activity.ReadingPartyListAcitivity" />
+        <activity
+            android:name=".activity.VideoPlayerActivity"
+            android:configChanges="orientation|keyboardHidden|screenLayout|screenSize"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.ReviewListAcitivity" />
+        <activity android:name=".activity.CatalogActivity" />
+        <activity android:name=".activity.RichTextActivity" />
+        <activity android:name=".activity.ReadyReciteActivity" />
+        <activity android:name=".activity.AbsMonthlyBookActivity" />
+        <activity android:name=".activity.MonthlyBookDetailActivity" />
+        <activity
+            android:name="org.geometerplus.android.fbreader.bookmark.EditNoteActivity"
+            android:screenOrientation="portrait" />
+        <!-- <activity android:name=".activity.MineMonthlyBookPayActivity" /> -->
+        <activity android:name=".activity.DiscoverReadPartyVideoListActivity" />
+        <activity
+            android:name=".activity.MineExperienceAcitivity2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BannerUrlAcitivty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AgreementActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BindEmailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ActivationActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".service.PostReadingRecorderService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity android:name=".activity.ReplyPrivateMessageActivity" />
+        <activity
+            android:name=".activity.DiscoverModifyCircleBook"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DiscoverFriendsListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BookMarketMonlyBookActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MineMonthlyBookActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.NormalQuestionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.NewNormalQuestionActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.MineFansListActivity" />
+        <activity android:name=".activity.FansActivity" />
+        <activity android:name=".activity.AttentionActivity"></activity>
+        <activity android:name=".activity.GuideActivity" android:exported="true"></activity>
+        <activity android:name=".activity.ThridPartActivateActivity"/>
+        <activity
+            android:name=".activity.ChapterTestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AnswerSheetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TestResultActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".activity.MineFriendsAndFansActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.MineQuestionsRecordActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

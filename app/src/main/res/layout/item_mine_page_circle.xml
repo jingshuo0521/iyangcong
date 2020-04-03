@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+    <com.iyangcong.reader.ui.customtablayout.widget.SegmentTabLayout
+        android:id="@+id/seg_tab_circle"
+        android:layout_width="350dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        app:tl_bar_color="#ffffff"
+        app:tl_indicator_anim_enable="true"
+        app:tl_indicator_color="@color/main_color"
+        app:tl_indicator_margin_bottom="2dp"
+        app:tl_indicator_margin_left="2dp"
+        app:tl_indicator_margin_right="2dp"
+        app:tl_indicator_margin_top="2dp"
+        app:tl_textBold="SELECT"/>
+
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10"
+        android:src="@drawable/line_divide" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:id="@+id/rv_mine_page_circle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

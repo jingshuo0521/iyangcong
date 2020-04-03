@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="5.5dp"
+    android:paddingTop="5.5dp"
+    android:paddingLeft="@dimen/space_15"
+    android:paddingRight="@dimen/space_15">
+
+
+        <LinearLayout
+            android:id="@+id/front"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:background="@drawable/reciteword_item_shape_corner"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_word"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:text="word" />
+
+            <TextView
+                android:id="@+id/word_explain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:layout_weight="1"
+                android:paddingLeft="10dip"
+                android:singleLine="true"
+                android:text="/word/" />
+
+            <ImageView
+                android:id="@+id/search_examine"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="@dimen/space_10"
+                android:layout_marginLeft="@dimen/space_10"
+                android:src="@drawable/search_examine" />
+
+        </LinearLayout>
+
+
+
+</LinearLayout>

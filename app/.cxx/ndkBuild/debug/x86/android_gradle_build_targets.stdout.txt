@@ -1,0 +1,4 @@
+make: Nothing to be done for `DeflatingDecompressor-v3'.
+make: Nothing to be done for `LineBreak-v2'.
+[x86] Compile++      : NativeFormats-v4 <= XHTMLReader.cpp
+[x86] SharedLibrary  : libNativeFormats-v4.so

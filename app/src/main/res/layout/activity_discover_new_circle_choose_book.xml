@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_discover_new_circle_choose_book"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.iyangcong.reader.activity.DiscoverNewCircleChooseBook"
+    android:orientation="vertical"
+    android:background="@color/click_bg">
+    <include layout="@layout/layout_main_header"></include>
+    <include layout="@layout/ll_search_bar"></include>
+    <com.iyangcong.reader.ui.CustomPtrClassicFrameLayout
+        xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/book_ptrClassicFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        cube_ptr:ptr_duration_to_close="200"
+        cube_ptr:ptr_duration_to_close_header="700"
+        cube_ptr:ptr_keep_header_when_refresh="true"
+        cube_ptr:ptr_pull_to_fresh="false"
+        cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+        cube_ptr:ptr_resistance="1.8">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_books"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_color"/>
+    </com.iyangcong.reader.ui.CustomPtrClassicFrameLayout>
+
+
+</LinearLayout>

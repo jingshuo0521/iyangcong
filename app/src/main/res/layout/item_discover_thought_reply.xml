@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_comment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="@dimen/space_0">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/space_12"
+        android:paddingRight="@dimen/space_12">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_user_image"
+                android:layout_width="45dip"
+                android:layout_height="45dip"
+                android:layout_margin="@dimen/space_8"
+                android:src="@drawable/ic_head_default" />
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                style="@style/text_middle"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_5"
+                android:layout_marginTop="@dimen/space_5"
+                android:layout_weight="1"
+                android:text="中山大学节日活动" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_comment_content"
+            style="@style/text_large"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="我们就像渴望被驯顺的狐狸的一样，我先说一下我的表现，我再一天之内把那本书读完了，并且到现在为止我读了那本书四遍。" />
+
+        <TextView
+            android:id="@+id/tv_deliver_time"
+            style="@style/text_middle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/space_7"
+            android:text="2015-07-06 16:30:00" />
+
+        <View
+            android:id="@+id/v_comment_diliver"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_0.5"
+            android:background="@drawable/line_divide" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

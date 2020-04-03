@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_item_monthly_booklist"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_selector"
+    android:paddingLeft="@dimen/space_10"
+    android:orientation="vertical"
+    android:paddingRight="@dimen/space_10">
+    <!--android:background="@drawable/bg_selector""-->
+    <ImageView
+        android:id="@+id/iv_monthly_book_introduction_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_120"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/space_10"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:scaleType="fitXY" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/space_5"
+    android:orientation="horizontal"
+    >
+    <TextView
+        android:id="@+id/tv_monthly_book_name"
+        style="@style/monthly_booklist_style"
+        android:layout_marginLeft="0dp"
+        android:layout_width="0dp"
+        android:layout_weight="2.5"
+        android:layout_height="wrap_content"
+        android:maxEms="10"
+        android:gravity="left"
+        android:text="包月包月包月压缩的"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/text_size_14" />
+    <TextView
+        android:id="@+id/tv_monthly_book_present_price"
+        style="@style/monthly_booklist_style"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_marginRight="0dp"
+        android:gravity="right"
+        android:textSize="@dimen/text_size_13"
+        android:textColor="@color/text_color"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_monthly_book_original_price"
+        android:text="包月价：0.01"
+        />
+</LinearLayout>
+
+
+    <com.iyangcong.reader.ui.RatingBar
+        android:id="@+id/rb_level"
+        style="@style/monthly_booklist_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/space_6"
+        android:layout_toRightOf="@id/tv_monthly_book_name"
+        android:gravity="right"
+        android:visibility="gone"
+        app:clickable="true"
+        app:starCount="5"
+        app:starEmpty="@drawable/ic_star_empty"
+        app:starFill="@drawable/ic_star_fill"
+        app:starImageSize="@dimen/text_size_14" />
+
+    <TextView
+        android:id="@+id/tv_book_origintime"
+        style="@style/monthly_booklist_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_monthly_book_guid"
+        android:layout_marginTop="@dimen/space_6"
+        android:layout_toRightOf="@id/iv_monthly_book_introduction_image"
+        android:visibility="gone"
+        tools:text="包月起始时间：2017-03-05" />
+
+    <TextView
+        android:id="@+id/tv_book_endtime"
+        style="@style/monthly_booklist_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_book_origintime"
+        android:layout_marginTop="@dimen/space_6"
+        android:layout_toRightOf="@id/iv_monthly_book_introduction_image"
+        android:lineSpacingExtra="@dimen/space_3"
+        android:visibility="gone"
+        tools:text="包月到期时间：2017-04-05" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_5"
+        android:padding="0dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/tv_monthly_book_guid"
+            style="@style/monthly_booklist_style"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2.5"
+            android:gravity="left"
+            android:layout_marginLeft="0dp"
+            android:text="爱施德换手机啊德哈卡世纪大厦看"
+            android:maxLines="2" />
+    <TextView
+        android:id="@+id/tv_monthly_book_original_price"
+        style="@style/monthly_booklist_style"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_weight="1"
+        android:text="原价：99"
+        android:gravity="right" />
+    </LinearLayout>
+
+
+
+
+    <!--<com.iyangcong.reader.ui.TagGroup-->
+    <!--style="@style/TagGroup.Beauty_Gray"-->
+    <!--android:layout_marginTop="@dimen/space_0"-->
+    <!--app:atg_textSize="@dimen/text_size_10"-->
+    <!--android:layout_below="@id/tv_monthly_book_original_price"-->
+    <!--android:layout_toRightOf="@id/iv_monthly_book_introduction_image"-->
+    <!--android:visibility="gone"-->
+    <!--android:id="@+id/rl_introduction_type"/>-->
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:layout_marginTop="@dimen/space_5"
+        android:layout_marginBottom="@dimen/space_5"
+        android:background="@drawable/line_divide" />
+
+</LinearLayout>

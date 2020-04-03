@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@drawable/image_main_head_bg"
+        >
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            style="@style/title_base_button"
+            android:visibility="visible"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_0"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/textHeadTitle"
+            style="@style/text_tittle"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:ellipsize="marquee"
+            android:paddingBottom="@dimen/space_8"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:maxWidth="180dp"
+            android:singleLine="true"
+            android:text="@string/app_name"
+            android:textColor="@color/white"/>
+
+        <ImageButton
+            android:id="@+id/btnFunction"
+            style="@style/title_base_button"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentBottom="true"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color">
+
+        <LinearLayout
+            android:id="@+id/ll_search_word"
+            android:layout_marginTop="@dimen/space_15"
+            android:layout_width="match_parent"
+            android:layout_marginRight="@dimen/space_10"
+            android:layout_marginLeft="@dimen/space_10"
+            android:orientation="horizontal"
+            android:elevation="@dimen/space_2"
+            android:paddingLeft="@dimen/space_10"
+            android:paddingTop="@dimen/space_5"
+            android:paddingBottom="@dimen/space_5"
+            android:background="@color/white"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content">
+            <!--<ImageView-->
+                <!--android:id="@+id/btnBack"-->
+                <!--android:layout_width="@dimen/space_50"-->
+                <!--android:layout_height="@dimen/space_35"-->
+                <!--android:gravity="center"-->
+                <!--android:padding="@dimen/space_8"-->
+                <!--android:src="@drawable/search_back"-->
+                <!--/>-->
+
+            <com.iyangcong.reader.ui.ClearEditText
+                android:id="@+id/et_inputWord"
+                android:layout_width="@dimen/space_0"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:backgroundTint="@color/click_bg"
+                android:cursorVisible="true"
+                android:drawableRight="@drawable/cancle"
+                android:foregroundGravity="center_vertical"
+                android:hint="输入查询单词"
+                android:imeOptions="actionNone"
+                android:inputType="text"
+                android:paddingRight="@dimen/space_15"
+                android:singleLine="true"
+                android:textColor="@color/dark"
+                android:textColorHint="@color/text_color_lightgray"
+                android:textSize="@dimen/text_size_18" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="|"
+                android:textSize="@dimen/space_22" />
+
+            <ImageView
+                android:id="@+id/bt_query_word"
+                android:layout_width="@dimen/space_50"
+                android:layout_height="@dimen/space_35"
+                android:gravity="center"
+                android:padding="@dimen/space_7"
+                android:src="@drawable/word_search"
+                />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:layout_below="@id/ll_search_word">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:id="@+id/llword_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_edittext_normal"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:layout_marginRight="@dimen/space_10"
+                    android:layout_marginLeft="@dimen/space_10"
+                    >
+
+
+                    <TextView
+                        android:id="@+id/tv_word"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/space_20"
+                        android:layout_marginTop="@dimen/space_15"
+                        android:layout_marginLeft="@dimen/space_20"
+                        android:text="divtionary"
+                        android:textStyle="bold"
+                        android:textColor="@color/main_color"
+                        android:textSize="@dimen/space_25" />
+
+                    <TextView
+                        android:id="@+id/gradeLevel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/space_20"
+                        android:layout_marginLeft="@dimen/space_20"
+                        android:text="GRE/四级"/>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_uk"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/uk_phonetic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/space_20"
+                            android:layout_marginLeft="@dimen/space_20"
+                            android:text="英 [ˈdɪkʃənri]" />
+                        <ImageView
+                            android:id="@+id/img_trumpet"
+                            android:layout_width="@dimen/space_20"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/uk_phonetic"
+                            android:layout_alignBottom="@+id/uk_phonetic"
+                            android:layout_marginLeft="@dimen/space_10"
+                            android:layout_toRightOf="@+id/uk_phonetic"
+                            android:src="@drawable/fayin" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_us"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/us_phonetic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/space_20"
+                            android:layout_marginLeft="@dimen/space_20"
+                            android:text="美 [ˈdɪkʃənri]" />
+                        <ImageView
+                            android:id="@+id/img_trumpet1"
+                            android:layout_width="@dimen/space_20"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/us_phonetic"
+                            android:layout_alignBottom="@+id/us_phonetic"
+                            android:layout_marginLeft="@dimen/space_10"
+                            android:layout_toRightOf="@+id/us_phonetic"
+                            android:src="@drawable/fayin" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/explains"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/space_20"
+                        android:layout_marginLeft="@dimen/space_20"
+                        android:layout_marginRight="@dimen/space_20"
+                        android:maxLines="2"
+                        android:textSize="@dimen/space_15"
+                        android:text="n.词典;字典;辞书;专业术语大全;专业词典;电子词典" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_sentence"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/space_20"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_marginRight="@dimen/space_10"
+                    android:visibility="gone"
+                    android:background="@drawable/bg_edittext_normal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_sentence"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="n.词典;字典;辞书;专业术语大全;专业词典;电子词典词典;字典;辞书;专业术语大全;专业词典;电子词典" />
+
+                    <TextView
+                        android:id="@+id/tv_bookName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="《小王子》"
+                        android:textColor="@color/main_color"/>
+                    <LinearLayout
+                        android:id="@+id/ll_varient"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="变形单词"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/tv_variant"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/space_10"
+                            android:text="adv helloooo"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_20"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_marginRight="@dimen/space_10"
+                    android:background="@drawable/bg_edittext_normal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="推荐图书"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="@dimen/space_20"
+                        android:textSize="20dp"
+                        android:layout_marginTop="@dimen/space_10"
+                        android:layout_marginBottom="@dimen/space_5"/>
+                    <com.iyangcong.reader.ui.MyGridView
+                        android:id="@+id/gv_recommended_book"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_5"
+                        android:layout_marginRight="@dimen/space_5"
+                        android:layout_marginTop="@dimen/space_5"
+                        android:paddingBottom="@dimen/space_10"
+                        android:numColumns="3" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/ll_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_search_word"
+            android:background="@color/background_color"
+            >
+
+            <ListView
+                android:id="@+id/local_wordlist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_10"
+                android:layout_marginTop="@dimen/space_10"
+                android:layout_marginRight="@dimen/space_10"
+                android:background="@color/white"
+                android:overScrollMode="never"
+                android:paddingLeft="@dimen/space_15"
+                android:paddingRight="@dimen/space_15"
+                android:scrollbars="none">
+
+
+            </ListView>
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

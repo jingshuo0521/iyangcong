@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+        <include layout="@layout/layout_main_header" />
+        <ImageView
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/space_20"
+            android:src="@drawable/ic_launcher" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@null"
+            android:textSize="@dimen/font_large"
+            android:id="@+id/thirdpartfrom"
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/space_5"/>
+        <ImageView
+            android:layout_width="270dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@color/main_color"
+            android:layout_marginTop="@dimen/space_20"/>
+        <LinearLayout
+            android:layout_width="260dp"
+            android:layout_height="@dimen/space_50"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_phone" />
+
+            <EditText
+                android:id="@+id/register_phone_number_or_email"
+                style="@style/text_middle_large"
+                android:layout_width="250dip"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/space_25"
+                android:background="@null"
+                android:hint="@string/please_input_phone_number_or_email"
+                android:ellipsize="middle"
+                android:singleLine="true"
+                android:text="@null"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="270dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@color/main_color" />
+        <LinearLayout
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_defense" />
+
+            <EditText
+                android:id="@+id/random_code_et"
+                style="@style/text_middle_large"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/space_25"
+                android:background="@null"
+                android:hint="@string/please_input_code"
+                android:inputType="number"
+                android:lines="1"
+                />
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/line_devide1" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="270dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@color/main_color" />
+
+        <LinearLayout
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_defense" />
+
+            <EditText
+                android:id="@+id/activate_code"
+                style="@style/text_middle_large"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/space_25"
+                android:background="@null"
+                android:hint="@string/please_input_code"
+                android:inputType="number"
+                android:lines="1"
+                android:text="@null"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:src="@drawable/line_devide1" />
+
+            <TextView
+                android:id="@+id/activate_send_code"
+                style="@style/text_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="@string/send_code"
+                android:textColor="@color/main_color" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@color/main_color" />
+
+        <LinearLayout
+            android:id="@+id/register_password_1_container"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_lock" />
+
+            <com.iyangcong.reader.ui.LimitedEdittext
+                android:id="@+id/register_password_1"
+                style="@style/text_middle_large"
+                android:layout_width="250dip"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/space_25"
+                android:background="@null"
+                android:hint="@string/please_input_password"
+                android:inputType="textPassword"
+                android:ellipsize="middle"
+                android:singleLine="true"
+                android:text="@null"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@color/main_color" />
+
+        <LinearLayout
+            android:id="@+id/register_password_2_container"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_lock" />
+
+            <com.iyangcong.reader.ui.LimitedEdittext
+                android:id="@+id/register_password_2"
+                style="@style/text_middle_large"
+                android:layout_width="250dip"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/space_25"
+                android:background="@null"
+                android:hint="@string/please_input_password2"
+                android:inputType="textPassword"
+                android:ellipsize="middle"
+                android:singleLine="true"
+                android:text="@null"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="270dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@color/main_color" />
+
+        <com.iyangcong.reader.ui.button.FlatButton
+            android:id="@+id/register_button"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="@dimen/main_button_width"
+            android:layout_height="@dimen/space_40"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/space_22"
+            android:text="@string/activate"
+            android:textColor="@color/white"
+            app:cub_color="@color/button_color"
+            app:cub_hover_color="@color/status_bar_bg"
+            app:cub_riple_effect="false"
+            app:shadowEnabled="false" />
+
+        <LinearLayout
+            android:id="@+id/binding_introduction_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_20"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/space_5">
+
+            <TextView
+                style="@style/text_tittle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_15"
+                android:layout_marginLeft="@dimen/space_10"
+                android:layout_marginTop="@dimen/space_15"
+                android:text="@string/activatetitle"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_agreement"
+                style="@style/text_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_20"
+                android:lineSpacingExtra="@dimen/space_5"
+                android:scrollbars="vertical"
+                android:text="@string/activatecontent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_agreement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_10"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/space_10">
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/text_middle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/readandaccept_activate"
+                android:textColor="@color/dark" />
+
+            <TextView
+                android:id="@+id/tv_agreement_dialog"
+                style="@style/text_middle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/user_rules"
+                android:textColor="@color/main_color" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_agreement_hind"
+            android:layout_width="match_parent"
+            android:layout_height="200dip"
+            android:layout_marginTop="@dimen/space_10"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+

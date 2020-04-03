@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/space_15"
+    android:paddingRight="@dimen/space_15">
+
+    <ImageView
+        android:id="@+id/bookmark_item_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:singleLine="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical|left"
+        android:minHeight="?android:attr/listPreferredItemHeight"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/bookmark_booktitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            tools:text="StanzastoAugusta"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/gray4"
+            android:layout_marginTop="@dimen/space_6"
+            android:layout_marginBottom="@dimen/space_3"/>
+
+        <TextView
+            android:id="@+id/bookmark_item_booktitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:text=""
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            tools:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/bookmark_item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|left"
+            android:singleLine="false"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            tools:text="internal strife"
+            android:textColor="@color/gray"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_3"
+            android:layout_marginBottom="@dimen/space_6"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:textColor="@color/main_color"
+                android:text="Note："
+                />
+            <TextView
+                android:id="@+id/bookmark_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                tools:text="你斤斤计较"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

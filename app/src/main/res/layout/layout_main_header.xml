@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_header"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_height"
+    android:background="@color/main_color"
+    android:orientation="horizontal">
+
+    <!-- 返回按钮 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/image_main_head_bg">
+
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            style="@style/title_base_button"
+            android:layout_alignParentBottom="true"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/textHeadTitle"
+            style="@style/text_tittle"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:maxWidth="180dp"
+            android:paddingBottom="@dimen/space_8"
+            android:singleLine="true"
+            android:text="@string/app_name"
+            android:textColor="@color/white" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_35"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_marginRight="@dimen/space_10"
+            android:id="@+id/search_bar_home"
+            android:background="@drawable/bg_trans_color_selector"
+            android:layout_marginBottom="@dimen/space_2"
+            android:layout_toLeftOf="@+id/btnFunction"
+            android:visibility="gone"
+            >
+            <ImageView
+                android:id="@+id/btn_search"
+                style="@style/title_base_button"
+                android:layout_alignParentLeft="true"
+                android:padding="@dimen/space_8"
+                android:src="@drawable/ic_search"
+                android:layout_alignParentBottom="true"
+                android:visibility="visible"
+                />
+            <TextView
+                style="@style/text_middle"
+                android:id="@+id/search_tips"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/category_btn_height"
+                android:layout_toRightOf ="@+id/btn_search"
+                android:layout_alignParentTop="@+id/btn_search"
+                android:text="@string/search_book"/>
+            <ImageButton
+                android:id="@+id/ibSign"
+                style="@style/title_base_button"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/space_5"
+                android:layout_alignParentBottom="true"
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+
+
+
+        <ImageButton
+            android:id="@+id/btnFunction"
+            style="@style/title_base_button"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/tv_goods_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/btnFunction"
+            android:layout_alignTop="@+id/btnFunction"
+            android:layout_marginBottom="@dimen/space_20"
+            android:background="@drawable/ic_bg_unread_count"
+            android:gravity="center"
+            android:padding="@dimen/space_2"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_10"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/btnFunction1"
+            style="@style/title_base_button"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/btnFunction"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_goods_num1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/space_20"
+            android:layout_toLeftOf="@+id/btnFunction"
+            android:background="@drawable/ic_bg_unread_count"
+            android:gravity="center"
+            android:padding="@dimen/space_2"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_10"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/halftransparent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <com.fang.dashview.DashView
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="140dp"
+                android:layout_marginBottom="140dp"
+                app:dashWidth="3dp"
+                app:lineWidth="5dp"
+                app:lineColor="@color/text_color_light_orange"
+                app:dashOrientation="1"
+                app:lineHeight="2dp"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <com.fang.dashview.DashView
+                android:layout_width="wrap_content"
+                android:layout_marginRight="@dimen/space_20"
+                android:layout_marginTop="140dp"
+                android:layout_marginBottom="140dp"
+                android:layout_height="match_parent"
+                app:dashWidth="3dp"
+                app:lineWidth="5dp"
+                app:lineColor="@color/text_color_light_orange"
+                app:dashOrientation="1"
+                app:lineHeight="2dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="140dp">
+            <com.example.breatheview.BreatheView
+                android:id="@+id/brvtop"
+                app:duration="2000"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_80" />
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:textColor="@color/text_color_lightgray"
+                android:layout_height="wrap_content"
+                android:text="@string/reader_flip_down"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <com.example.breatheview.BreatheView
+                    android:id="@+id/brvleft"
+                    app:duration="2000"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_80" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/text_color_lightgray"
+                    android:layout_height="wrap_content"
+                    android:text="@string/reader_flip_left"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1.6"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <com.example.breatheview.BreatheView
+                    android:id="@+id/brvcenter"
+                    app:duration="2000"
+                    android:layout_marginTop="@dimen/space_80"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_80" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/text_color_lightgray"
+                    android:layout_height="wrap_content"
+                    android:text="@string/reader_flip_center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <com.example.breatheview.BreatheView
+                    android:id="@+id/brvright"
+                    app:duration="2000"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_80" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/text_color_lightgray"
+                    android:layout_height="wrap_content"
+                    android:text="@string/reader_flip_right"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </FrameLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center">
+            <com.iyangcong.reader.ui.TagGroup
+                android:id="@+id/bt_closereadertip"
+                style="@style/TagGroup.Beauty_Large_Orange"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                app:atg_horizontalSpacing="0dp"
+                app:atg_horizontalPadding="30dp"
+                app:atg_verticalPadding="10dp"
+                app:atg_textSize="@dimen/text_size_14" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_book_type"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/space_7"
+    android:paddingLeft="@dimen/space_7"
+    android:paddingRight="@dimen/space_7"
+    android:paddingTop="@dimen/space_5">
+
+
+    <ImageView
+        android:id="@+id/iv_book_type"
+        android:layout_width="@dimen/space_55"
+        android:layout_height="@dimen/space_55"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        />
+
+    <ImageView
+        android:id="@+id/iv_is_class"
+        android:layout_width="@dimen/space_50"
+        android:layout_height="@dimen/space_50"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/class_sign"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_book_type2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/iv_book_type"
+        android:src="@drawable/ic_head_default"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_book_type"
+        style="@style/text_middle"
+        android:layout_width="@dimen/space_60"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_book_type2"
+        android:layout_marginTop="@dimen/space_4"
+        android:ellipsize="end"
+        android:gravity="left|top"
+        android:lines="2"
+        android:maxEms="5"
+        android:maxLines="2"
+        android:singleLine="false" />
+</RelativeLayout>

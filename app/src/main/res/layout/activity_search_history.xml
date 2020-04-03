@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@drawable/image_main_head_bg"
+        >
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            style="@style/title_base_button"
+            android:visibility="visible"
+            android:src="@drawable/btn_back"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_0"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/textHeadTitle"
+            style="@style/text_tittle"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:paddingBottom="@dimen/space_8"
+            android:focusableInTouchMode="true"
+            android:maxWidth="180dp"
+            android:singleLine="true"
+            android:text="搜索历史"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:background="@color/transparent"
+        android:id="@+id/rv_history_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

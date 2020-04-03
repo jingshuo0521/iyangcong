@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_margin="7dp"
+        android:id="@+id/tv_search"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/space_5"
+        android:paddingTop="@dimen/space_5"
+        android:gravity="center"
+        android:textColor="#FF692E"
+        android:text="管理"/>
+
+</LinearLayout>

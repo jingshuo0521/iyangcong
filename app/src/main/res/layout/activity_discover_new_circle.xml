@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_discover_new_circle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.iyangcong.reader.activity.DiscoverNewCircle"
+    android:orientation="vertical">
+    <include layout="@layout/layout_main_header" ></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout_discover_new_circle"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="@dimen/space_30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="选择圈子类型"
+            style="@style/text_large"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/category_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/space_20"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="隐私设置"
+            android:layout_marginTop="@dimen/space_50"
+            android:gravity="center"/>
+        <RadioGroup
+            android:id="@+id/rg_permission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/space_10"
+            android:layout_marginLeft="@dimen/space_30">
+            <RadioButton
+                android:id="@+id/rb_private"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@drawable/selector_mine_shopping_cb"
+                android:text="隐私（只有班级可用）"/>
+            <RadioButton
+                android:id="@+id/rb_private_partly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@drawable/selector_mine_shopping_cb"
+                android:text="半公开（所有用户可查看，仅本班可发言）"/>
+            <RadioButton
+                android:id="@+id/rb_public"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@drawable/selector_mine_shopping_cb"
+                android:text="公开（所有用户可查看可发言）"/>
+        </RadioGroup>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

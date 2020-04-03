@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ll_topic1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+        <TextView
+        android:gravity="center"
+        android:text="置顶"
+        android:textSize="@dimen/space_20"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_60" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#C0C0C0"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_topic2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+        <TextView
+            android:gravity="center"
+            android:text="取消置顶"
+            android:textSize="@dimen/space_20"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_60" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#C0C0C0"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_topic3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+        <TextView
+            android:gravity="center"
+            android:text="删除"
+            android:textSize="@dimen/space_20"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_60" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#C0C0C0"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_topic4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+        <TextView
+            android:gravity="center"
+            android:text="编辑"
+            android:textSize="@dimen/space_20"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_60" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#C0C0C0"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_topic5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <TextView
+            android:gravity="center"
+            android:text="举报"
+            android:textSize="@dimen/space_20"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_60" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#C0C0C0"/>
+
+    </LinearLayout>
+
+</LinearLayout>

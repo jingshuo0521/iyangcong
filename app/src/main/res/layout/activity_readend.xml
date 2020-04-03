@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/read_bg_color"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText">
+
+    <TextView
+        android:id="@+id/tv_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="试读已结束"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_32" />
+
+    <Button
+        android:id="@+id/btn_gotobuy"
+        android:layout_width="213dip"
+        android:layout_height="33dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/btn_login_selecter"
+        android:text="购买全书"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_15" />
+
+    <Button
+        android:id="@+id/btn_writereview"
+        android:layout_width="213dip"
+        android:layout_height="33dip"
+        android:layout_marginTop="30dip"
+        android:background="@drawable/btn_login_selecter"
+        android:text="撰写书评"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_15" />
+
+    <Button
+        android:id="@+id/btn_gotobookcity"
+        android:layout_width="213dip"
+        android:layout_height="33dip"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_login_selecter"
+        android:text="去书城看看"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_15"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btn_gotobookshelf"
+        android:layout_width="213dip"
+        android:layout_height="33dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/btn_login_selecter"
+        android:text="返回书架"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_15" />
+
+</LinearLayout>

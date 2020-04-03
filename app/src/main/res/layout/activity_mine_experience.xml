@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mine_experience"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MineExperienceActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <include layout="@layout/layout_main_header" />
+
+    <com.iyangcong.reader.ui.IYangCongWebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.iyangcong.reader.ui.IYangCongWebView>
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@drawable/line_divide" />
+    <item>
+        <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:right="@dimen/space_0">
+                <shape android:shape="rectangle" >
+                    <solid android:color="#E5E5E5" />
+                </shape>
+            </item>
+            <item android:right="@dimen/space_0" android:top="@dimen/space_0.5" android:left="@dimen/space_0" android:bottom="@dimen/space_0.5">
+                <shape android:shape="rectangle" >
+                    <solid android:color="@color/white" />
+                </shape>
+            </item>
+            <item android:right="@dimen/space_0" android:top="@dimen/space_6" android:left="@dimen/space_0" android:bottom="@dimen/space_6">
+                <shape android:shape="rectangle" >
+                    <solid android:color="#E5E5E5" />
+                </shape>
+            </item>
+            <item android:right="0.8dip" android:top="@dimen/space_6" android:left="@dimen/space_0" android:bottom="@dimen/space_6">
+                <shape android:shape="rectangle" >
+                    <solid android:color="@color/white" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

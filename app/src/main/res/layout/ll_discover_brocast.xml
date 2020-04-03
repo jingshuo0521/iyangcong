@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_text_ad"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/space_60"
+    android:background="@color/background_color"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iv_text_ad"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/market_brocast_image_height"
+        android:layout_marginLeft="@dimen/space_11"
+        android:layout_marginRight="@dimen/space_3"
+        android:padding="@dimen/space_4"
+        android:src="@drawable/ic_discover_brocast" />
+
+        <View
+            android:layout_width="@dimen/space_0.5"
+            android:layout_height="@dimen/space_20"
+            android:layout_marginRight="@dimen/space_2"
+            android:layout_marginLeft="@dimen/space_2"
+            android:background="@color/lightgray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.iyangcong.reader.ui.textview.MarqueeView
+            android:id="@+id/tv_text_ad"
+            style="@style/text_middle_large"
+            android:layout_marginLeft="@dimen/space_13"
+            android:background="@color/white"
+            android:ellipsize="marquee"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/space_10"
+            android:singleLine="true"
+            android:text=""
+            app:mvTextSize="@dimen/text_size_14"
+            app:mvTextColor="@color/text_color_black"
+            app:mvAnimDuration="1000"
+            app:mvInterval="3000"/>
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_text_ad2"-->
+            <!--style="@style/text_middle"-->
+            <!--android:layout_marginLeft="@dimen/space_10"-->
+            <!--android:background="@color/background_color"-->
+            <!--android:ellipsize="marquee"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:paddingRight="@dimen/space_10"-->
+            <!--android:singleLine="true"-->
+            <!--android:text="《鲍勃.迪伦传》2016年诺贝尔文学奖得主首次来华" />-->
+
+    </RelativeLayout>
+</LinearLayout>
+</LinearLayout>
