@@ -33,10 +33,10 @@ public class OnClickWrapper implements SuperToast.OnClickListener {
     private Parcelable mToken;
 
     /**
-     *  Creates an OnClickWrapper.
+     * Creates an OnClickWrapper.
      *
-     *  @param tag {@link CharSequence} Must be unique to this listener
-     *  @param onClickListener {@link com.github.johnpersano.supertoasts.SuperToast.OnClickListener}
+     * @param tag             {@link CharSequence} Must be unique to this listener
+     * @param onClickListener {@link com.github.johnpersano.supertoasts.SuperToast.OnClickListener}
      */
     public OnClickWrapper(String tag, SuperToast.OnClickListener onClickListener) {
 
@@ -46,10 +46,10 @@ public class OnClickWrapper implements SuperToast.OnClickListener {
     }
 
     /**
-     *  Returns the tag associated with this OnClickWrapper. This is used to
-     *  reattach {@link com.github.johnpersano.supertoasts.SuperToast.OnClickListener}.
+     * Returns the tag associated with this OnClickWrapper. This is used to
+     * reattach {@link com.github.johnpersano.supertoasts.SuperToast.OnClickListener}.
      *
-     *  @return {@link String}
+     * @return {@link String}
      */
     public String getTag() {
 
@@ -58,8 +58,8 @@ public class OnClickWrapper implements SuperToast.OnClickListener {
     }
 
     /**
-     *  This is used during SuperActivityToast/SuperCardToast recreation and should
-     *  never be called by the developer.
+     * This is used during SuperActivityToast/SuperCardToast recreation and should
+     * never be called by the developer.
      */
     public void setToken(Parcelable token) {
 
@@ -74,4 +74,21 @@ public class OnClickWrapper implements SuperToast.OnClickListener {
 
     }
 
+    public abstract static class OnMultiClickListener implements View.OnClickListener {
+        // 两次点击按钮之间的点击间隔不能少于1000毫秒
+        private static final int MIN_CLICK_DELAY_TIME = 1000;
+        private static long lastClickTime;
+
+        public abstract void onMultiClick(View v);
+
+        @Override
+        public void onClick(View v) {
+            long curClickTime = System.currentTimeMillis();
+            if ((curClickTime - lastClickTime) >= MIN_CLICK_DELAY_TIME) {
+                // 超过点击间隔后再将lastClickTime重置为当前点击时间
+                lastClickTime = curClickTime;
+                onMultiClick(v);
+            }
+        }
+    }
 }

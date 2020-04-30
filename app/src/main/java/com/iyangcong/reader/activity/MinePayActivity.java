@@ -2,7 +2,9 @@ package com.iyangcong.reader.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
+import android.webkit.WebView;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -44,6 +46,7 @@ public class MinePayActivity extends SwipeBackActivity {
     @BindView(R.id.tv_tip2)
     TextView tvTip2;
 
+
     private String bookIds;
     private int count;
     private double price;
@@ -60,14 +63,18 @@ public class MinePayActivity extends SwipeBackActivity {
     private boolean isMonthBook = false;
     private String priceString;
 
+
     @OnClick({R.id.btnBack, R.id.btnFunction, R.id.ti_weixin, R.id.ti_alipay})
     void onBtnClick(View view) {
         switch (view.getId()) {
             case R.id.btnBack:
+                Intent backIntent = new Intent(MinePayActivity.this, MineShoppingActivity.class);
+                startActivity(backIntent);
                 finish();
+               // finish();
                 break;
             case R.id.btnFunction:
-                break;
+
             case R.id.ti_weixin:
                 changeButtonBackground(false);
                 payUtils.wechatPayProcess();
@@ -86,6 +93,7 @@ public class MinePayActivity extends SwipeBackActivity {
         ButterKnife.bind(this);
         setMainHeadView();
         initView();
+
 
     }
 
@@ -163,7 +171,20 @@ public class MinePayActivity extends SwipeBackActivity {
     }
 
     @Override
-    protected void onResume() {
-        super.onResume();
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if(keyCode== KeyEvent.KEYCODE_BACK){
+            Intent sEIntent = new Intent(MinePayActivity.this, MineShoppingActivity.class);
+            startActivity(sEIntent);
+            finish();
+         /*R.anim.enter:新的Activity进入时的动画
+        R.anim.edit：旧的Activity出去时的动画*/
+           // overridePendingTransition(R.anim.enter, R.anim.edit);
+        }
+        return true;
+
     }
+
+
+
 }
+

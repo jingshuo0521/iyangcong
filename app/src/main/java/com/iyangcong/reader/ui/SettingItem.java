@@ -33,17 +33,9 @@ import com.iyangcong.reader.R;
  */
 public class SettingItem extends RelativeLayout {
 
-    /**
-     * 切换按钮
-     */
-    public static final int ACCESSORY_TYPE_NONE = 0;
     public static final int ACCESSORY_TYPE_CHECKBOX = 2;
     public static final int ACCESSORY_TYPE_ARROW = 1;
 
-    /**
-     * Item内容区域
-     */
-    private LinearLayout mContent;
     /**
      * ImageVIew
      */
@@ -78,10 +70,6 @@ public class SettingItem extends RelativeLayout {
      */
     private boolean mShowDivider;
     /**
-     * 标题
-     */
-    private String mTitleText;
-    /**
      * 概要文字
      */
     private String mSummaryText;
@@ -95,14 +83,14 @@ public class SettingItem extends RelativeLayout {
         super(context, attrs);
         LayoutInflater.from(context).inflate(R.layout.item_mine_list, this, true);
 
-        mContent = (LinearLayout) findViewById(R.id.content);
-        mTitle = (TextView) findViewById(android.R.id.title);
+        LinearLayout mContent = findViewById(R.id.content);
+        mTitle = findViewById(android.R.id.title);
         mTitle.setTextColor(getResources().getColor(R.color.text_color));
-        ivSettingItem = (ImageView) findViewById(R.id.iv_settingItem_image);
-        tvhint = (TextView) findViewById(R.id.tv_hint) ;
-        mSummary = (TextView) findViewById(android.R.id.summary);
-        mNewUpdate = (TextView) findViewById(R.id.text_tv_one);
-        mCheckedTextView = (CheckedTextView) findViewById(R.id.accessory_checked);
+        ivSettingItem = findViewById(R.id.iv_settingItem_image);
+        tvhint = findViewById(R.id.tv_hint);
+        mSummary = findViewById(android.R.id.summary);
+        mNewUpdate = findViewById(R.id.text_tv_one);
+        mCheckedTextView = findViewById(R.id.accessory_checked);
         mDividerView = findViewById(R.id.item_bottom_divider);
 
         TypedArray localTypedArray = context.obtainStyledAttributes(attrs, R.styleable.setting_info);
@@ -135,12 +123,14 @@ public class SettingItem extends RelativeLayout {
      * @param text
      */
     public void setTitleText(String text) {
-        mTitleText = text;
+        /**
+         * 标题
+         */
         if (text == null) {
             mTitle.setText("");
             return;
         }
-        mTitle.setText(mTitleText);
+        mTitle.setText(text);
     }
 
     public void setCheckText(String text) {
@@ -205,18 +195,6 @@ public class SettingItem extends RelativeLayout {
             linearParams.height = 40;
             linearParams.width = 40;
             mNewUpdate.setLayoutParams(linearParams);
-            setNewUpdateVisibility(visibility);
-        }
-    }
-
-    /**
-     * 显示隐藏带文字的小红点
-     *
-     * @param visibility
-     */
-    public void setTextNewUpdateVisibility(boolean visibility, String text) {
-        if (mNewUpdate != null) {
-            mNewUpdate.setText(text);
             setNewUpdateVisibility(visibility);
         }
     }
@@ -347,4 +325,5 @@ public class SettingItem extends RelativeLayout {
             mNewUpdate.setVisibility(VISIBLE);
         }
     }
+
 }

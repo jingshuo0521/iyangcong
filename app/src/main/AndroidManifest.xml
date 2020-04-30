@@ -221,7 +221,7 @@
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTask"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
         <activity android:name=".activity.MinePurchasedActivity" />
         <activity android:name=".activity.CommentEditActivity" />
         <activity android:name=".activity.MineExchangeActivity" />
@@ -229,7 +229,9 @@
         <activity android:name=".activity.MineCollectionActivity" />
         <activity android:name=".activity.MineHistoryActivity" />
         <activity android:name=".activity.SemesterBooksActivity" />
-        <activity android:name=".activity.MinePayActivity" />
+        <activity android:name=".activity.MinePayActivity"
+            android:label= "sencondactivity"
+            android:parentActivityName=".activity.MineShoppingActivity"/>
         <activity android:name=".activity.SignCalendarActivity" />
         <activity android:name=".activity.ReciteWordActivity" />
         <activity android:name=".activity.MinePersonSettingActivity" />
@@ -248,7 +250,7 @@
         <activity android:name=".activity.MineDictionaryActivity" />
         <activity
             android:name=".activity.LoginActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
         <activity android:name=".activity.ShelfCloudActivity" />
         <activity
             android:name=".activity.MineSuggestActivity"
@@ -995,24 +997,24 @@
         <activity android:name=".activity.MonthlyBookDetailActivity" />
         <activity
             android:name="org.geometerplus.android.fbreader.bookmark.EditNoteActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
         <!-- <activity android:name=".activity.MineMonthlyBookPayActivity" /> -->
         <activity android:name=".activity.DiscoverReadPartyVideoListActivity" />
         <activity
             android:name=".activity.MineExperienceAcitivity2"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
         <activity
             android:name=".activity.BannerUrlAcitivty"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
         <activity
             android:name=".activity.AgreementActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
         <activity
             android:name=".activity.BindEmailActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
         <activity
             android:name=".activity.ActivationActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
 
         <service
             android:name=".service.PostReadingRecorderService"
@@ -1022,22 +1024,22 @@
         <activity android:name=".activity.ReplyPrivateMessageActivity" />
         <activity
             android:name=".activity.DiscoverModifyCircleBook"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
         <activity
             android:name=".activity.DiscoverFriendsListActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
         <activity
             android:name=".activity.BookMarketMonlyBookActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
         <activity
             android:name=".activity.MineMonthlyBookActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
         <activity
             android:name=".activity.NormalQuestionActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
         <activity
             android:name=".activity.NewNormalQuestionActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
         <activity android:name=".activity.MineFansListActivity" />
         <activity android:name=".activity.FansActivity" />
         <activity android:name=".activity.AttentionActivity"></activity>
@@ -1045,18 +1047,18 @@
         <activity android:name=".activity.ThridPartActivateActivity"/>
         <activity
             android:name=".activity.ChapterTestActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
         <activity
             android:name=".activity.AnswerSheetActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
         <activity
             android:name=".activity.TestResultActivity"
-            android:screenOrientation="portrait"
+            android:screenOrientation="fullSensor"
             />
         <activity android:name=".activity.MineFriendsAndFansActivity"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="fullSensor"/>
         <activity android:name=".activity.MineQuestionsRecordActivity"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="fullSensor"/>
     </application>
 
 </manifest>

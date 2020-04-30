@@ -136,7 +136,6 @@
             android:textColor="@color/white"
             app:buttonColor="@color/blue2" />
 
-
     </LinearLayout>
 
 

@@ -1,0 +1,64 @@
+C:/Users/ASUS/Desktop/iyangcong/app/src/main/jni/NativeFormats/zlibrary/core/src/xml/ZLXMLReader.cpp: In member function 'bool ZLXMLReader::readDocument(shared_ptr<ZLInputStream>)':
+C:/Users/ASUS/Desktop/iyangcong/app/src/main/jni/NativeFormats/zlibrary/core/src/xml/ZLXMLReader.cpp:208:39: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+     static char *charsetWindows1252 = "windows-1252";
+                                       ^
+C:/Users/ASUS/Desktop/iyangcong/app/src/main/jni/NativeFormats/zlibrary/core/src/xml/ZLXMLReader.cpp:278:99: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                 if (startIndexTmp >= 0 && endIndexTmp >= 0 && (startIndexTmp + startTag.length()) < endIndexTmp) {
+                                                                                                   ^
+C:/Users/ASUS/Desktop/iyangcong/app/src/main/jni/NativeFormats/zlibrary/core/src/xml/ZLXMLReader.cpp:219:19: warning: unused variable 'key' [-Wunused-variable]
+     unsigned char key[] = "hsylgwk-20120101";
+                   ^
+C:/Users/ASUS/Desktop/iyangcong/app/src/main/jni/NativeFormats/zlibrary/core/src/xml/ZLXMLReader.cpp: In function 'const string callJavaMethod(JNIEnv*, const char*)':
+C:/Users/ASUS/Desktop/iyangcong/app/src/main/jni/NativeFormats/zlibrary/core/src/xml/ZLXMLReader.cpp:178:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+C:/Users/ASUS/Desktop/iyangcong/app/src/main/jni/NativeFormats/zlibrary/core/src/xml/ZLXMLReader.cpp: At global scope:
+C:/Users/ASUS/Desktop/iyangcong/app/src/main/jni/NativeFormats/zlibrary/core/src/xml/ZLXMLReader.cpp:105:19: warning: 'const void watchDog(JNIEnv*)' defined but not used [-Wunused-function]
+ static const void watchDog(JNIEnv *env){
+                   ^
+C:/Users/ASUS/Desktop/iyangcong/app/src/main/jni/NativeFormats/zlibrary/core/src/xml/ZLXMLReader.cpp:182:26: warning: 'const string jstring2str(JNIEnv*, jstring)' defined but not used [-Wunused-function]
+ static const std::string jstring2str(JNIEnv *env, jstring jstr) {
+                          ^
+C:/Users/ASUS/Desktop/iyangcong/app/src/main/jni/NativeFormats/zlibrary/ui/src/android/filesystem/ZLAndroidFSManager.cpp: In member function 'virtual ZLInputStream* ZLAndroidFSManager::createPlainInputStream(const string&) const':
+C:/Users/ASUS/Desktop/iyangcong/app/src/main/jni/NativeFormats/zlibrary/ui/src/android/filesystem/ZLAndroidFSManager.cpp:126:13: warning: unused variable 'env' [-Wunused-variable]
+     JNIEnv *env = AndroidUtil::getEnv();
+             ^
+In file included from C:/Users/ASUS/Desktop/iyangcong/app/src/main/jni/NativeFormats/util/AndroidUtil.h:28:0,
+                 from C:/Users/ASUS/Desktop/iyangcong/app/src/main/jni/NativeFormats/fbreader/src/bookmodel/BookModel.cpp:20:
+C:/Users/ASUS/Desktop/iyangcong/app/src/main/jni/NativeFormats/zlibrary/core/src/util/shared_ptr.h: In instantiation of 'void shared_ptr_storage<T>::removeReference() [with T = BookModel::HyperlinkMatcher]':
+C:/Users/ASUS/Desktop/iyangcong/app/src/main/jni/NativeFormats/zlibrary/core/src/util/shared_ptr.h:226:4:   required from 'const shared_ptr<T>& shared_ptr<T>::operator=(const shared_ptr<T>&) [with T = BookModel::HyperlinkMatcher]'
+C:/Users/ASUS/Desktop/iyangcong/app/src/main/jni/NativeFormats/fbreader/src/bookmodel/BookModel.cpp:47:21:   required from here
+C:/Users/ASUS/Desktop/iyangcong/app/src/main/jni/NativeFormats/zlibrary/core/src/util/shared_ptr.h:147:3: warning: deleting object of abstract class type 'BookModel::HyperlinkMatcher' which has non-virtual destructor will cause undefined behaviour [-Wdelete-non-virtual-dtor]
+   delete ptr;
+   ^
+C:/Users/ASUS/Desktop/iyangcong/app/src/main/jni/NativeFormats/fbreader/src/formats/oeb/OEBBookReader.cpp: In member function 'bool OEBBookReader::readBook(const ZLFile&)':
+C:/Users/ASUS/Desktop/iyangcong/app/src/main/jni/NativeFormats/fbreader/src/formats/oeb/OEBBookReader.cpp:191:13: warning: unused variable 'env' [-Wunused-variable]
+     JNIEnv *env = AndroidUtil::getEnv();
+             ^
+C:/Users/ASUS/Desktop/iyangcong/app/src/main/jni/NativeFormats/fbreader/src/formats/pdb/PalmDocStream.cpp: In member function 'virtual size_t PalmDocCssStream::sizeOfOpened()':
+C:/Users/ASUS/Desktop/iyangcong/app/src/main/jni/NativeFormats/fbreader/src/formats/pdb/PalmDocStream.cpp:204:28: warning: integer overflow in expression [-Woverflow]
+  return (size_t)((1 << 31) - 1);
+                            ^
+C:/Users/ASUS/Desktop/iyangcong/app/src/main/jni/NativeFormats/fbreader/src/formats/txt/PlainTextFormat.cpp: In member function 'void PlainTextFormatDetector::detect(ZLInputStream&, PlainTextFormat&)':
+C:/Users/ASUS/Desktop/iyangcong/app/src/main/jni/NativeFormats/fbreader/src/formats/txt/PlainTextFormat.cpp:103:7: warning: variable 'previous' set but not used [-Wunused-but-set-variable]
+  char previous = 0;
+       ^
+In file included from C:/Users/ASUS/Desktop/iyangcong/app/src/main/jni/NativeFormats/zlibrary/core/src/filesystem/ZLInputStream.h:25:0,
+                 from C:/Users/ASUS/Desktop/iyangcong/app/src/main/jni/NativeFormats/fbreader/src/formats/txt/TxtReader.cpp:22:
+C:/Users/ASUS/Desktop/iyangcong/app/src/main/jni/NativeFormats/zlibrary/core/src/util/shared_ptr.h: In instantiation of 'void shared_ptr_storage<T>::removeReference() [with T = TxtReaderCore]':
+C:/Users/ASUS/Desktop/iyangcong/app/src/main/jni/NativeFormats/zlibrary/core/src/util/shared_ptr.h:178:4:   required from 'void shared_ptr<T>::detachStorage() [with T = TxtReaderCore]'
+C:/Users/ASUS/Desktop/iyangcong/app/src/main/jni/NativeFormats/zlibrary/core/src/util/shared_ptr.h:208:16:   required from 'shared_ptr<T>::~shared_ptr() [with T = TxtReaderCore]'
+C:/Users/ASUS/Desktop/iyangcong/app/src/main/jni/NativeFormats/fbreader/src/formats/txt/TxtReader.cpp:67:79:   required from here
+C:/Users/ASUS/Desktop/iyangcong/app/src/main/jni/NativeFormats/zlibrary/core/src/util/shared_ptr.h:147:3: warning: deleting object of polymorphic class type 'TxtReaderCore' which has non-virtual destructor might cause undefined behaviour [-Wdelete-non-virtual-dtor]
+   delete ptr;
+   ^
+In file included from C:/Users/ASUS/Desktop/iyangcong/app/src/main/jni/NativeFormats/zlibrary/core/src/filesystem/ZLFile.h:25:0,
+                 from C:/Users/ASUS/Desktop/iyangcong/app/src/main/jni/NativeFormats/fbreader/src/formats/doc/DocStreams.h:23,
+                 from C:/Users/ASUS/Desktop/iyangcong/app/src/main/jni/NativeFormats/fbreader/src/formats/doc/DocStreams.cpp:24:
+C:/Users/ASUS/Desktop/iyangcong/app/src/main/jni/NativeFormats/zlibrary/core/src/util/shared_ptr.h: In instantiation of 'void shared_ptr_storage<T>::removeReference() [with T = DocReader]':
+C:/Users/ASUS/Desktop/iyangcong/app/src/main/jni/NativeFormats/zlibrary/core/src/util/shared_ptr.h:178:4:   required from 'void shared_ptr<T>::detachStorage() [with T = DocReader]'
+C:/Users/ASUS/Desktop/iyangcong/app/src/main/jni/NativeFormats/zlibrary/core/src/util/shared_ptr.h:208:16:   required from 'shared_ptr<T>::~shared_ptr() [with T = DocReader]'
+C:/Users/ASUS/Desktop/iyangcong/app/src/main/jni/NativeFormats/fbreader/src/formats/doc/DocStreams.cpp:140:62:   required from here
+C:/Users/ASUS/Desktop/iyangcong/app/src/main/jni/NativeFormats/zlibrary/core/src/util/shared_ptr.h:147:3: warning: deleting object of polymorphic class type 'DocReader' which has non-virtual destructor might cause undefined behaviour [-Wdelete-non-virtual-dtor]
+   delete ptr;
+   ^

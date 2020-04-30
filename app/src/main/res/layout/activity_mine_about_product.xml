@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="166dp"
+            android:layout_marginTop="350dp"
             android:gravity="center_horizontal"
             android:text="阅读改变世界" />
         <TextView
@@ -36,7 +36,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="V1.0.0 版本"
-            android:layout_marginTop="195dp"
+            android:layout_marginTop="400dp"
 
 
             android:gravity="center_horizontal" />

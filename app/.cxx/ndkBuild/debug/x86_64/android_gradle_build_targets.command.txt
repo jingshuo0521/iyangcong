@@ -1,0 +1,16 @@
+Executable : C:\Users\ASUS\android\android-ndk-r12b\ndk-build.cmd
+arguments : 
+NDK_PROJECT_PATH=null
+APP_BUILD_SCRIPT=C:\Users\ASUS\Desktop\iyangcong\app\src\main\jni\Android.mk
+NDK_APPLICATION_MK=C:\Users\ASUS\Desktop\iyangcong\app\src\main\jni\Application.mk
+APP_ABI=x86_64
+NDK_ALL_ABIS=x86_64
+NDK_DEBUG=1
+APP_PLATFORM=android-21
+NDK_OUT=C:/Users/ASUS/Desktop/iyangcong/app/build/intermediates/ndkBuild/debug/obj
+NDK_LIBS_OUT=C:\Users\ASUS\Desktop\iyangcong\app\build\intermediates\ndkBuild\debug\lib
+DeflatingDecompressor-v3
+LineBreak-v2
+NativeFormats-v4
+jvmArgs : 
+

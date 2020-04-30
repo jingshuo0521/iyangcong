@@ -29,6 +29,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import com.github.johnpersano.supertoasts.util.Style;
 
+import java.util.Calendar;
+
 /**
  * SuperToasts are designed to replace stock Android Toasts.
  * If you need to display a SuperToast inside of an Activity
@@ -48,6 +50,28 @@ public class SuperToast {
      * SuperActivityToasts/SuperCardToasts must use this with an
      * {@link com.github.johnpersano.supertoasts.util.OnClickWrapper}
      */
+    /**
+     * 防止多次点击
+     * Created by qi on 2016/7/20.
+     */
+    public abstract class NoDoubleClickListener implements View.OnClickListener{
+
+        public static final int MIN_CLICK_DELAY_TIME = 1000;   //点击时间间隔
+        private long lastClickTime = 0;
+
+        @Override
+        public void onClick(View view) {
+            long currentTime = Calendar.getInstance().getTimeInMillis();
+            if( (currentTime-lastClickTime) > MIN_CLICK_DELAY_TIME ){
+                lastClickTime = currentTime;
+                onNoDoubleClick(view);
+            }
+        }
+
+        public abstract void onNoDoubleClick(View view);
+
+    }
+
     public interface OnClickListener {
 
         public void onClick(View view, Parcelable token);

@@ -14,6 +14,7 @@ import android.widget.Toast;
 
 import com.flyco.dialog.listener.OnBtnClickL;
 import com.flyco.dialog.widget.NormalDialog;
+import com.github.johnpersano.supertoasts.util.OnClickWrapper;
 import com.github.mikephil.charting.charts.PieChart;
 import com.github.mikephil.charting.components.Legend;
 import com.github.mikephil.charting.data.Entry;
@@ -37,6 +38,7 @@ import com.lzy.okgo.OkGo;
 import com.orhanobut.logger.Logger;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 import butterknife.BindView;
@@ -315,7 +317,8 @@ public class MineNewWordActivity extends SwipeBackActivity {
 	}
 
 	@OnClick({R.id.reciteword, R.id.readyrecite, R.id.Iknow, R.id.myfavorite})
-	public void onClick(View view) {
+	public void onMulticlick(View view) {
+
 		switch (view.getId()) {
 			case R.id.reciteword:
 				Intent intent = new Intent(this, ReciteWordIndexActivity.class);

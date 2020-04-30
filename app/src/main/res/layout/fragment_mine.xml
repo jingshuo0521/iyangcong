@@ -432,10 +432,10 @@
                 android:gravity="center">
 
                 <ImageView
-                    android:layout_width="@dimen/space_30"
-                    android:layout_height="@dimen/space_30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/space_12"
-                    android:src="@drawable/ic_mine_monthly_book"/>
+                    android:src="@drawable/ic_mine_monthly_book" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/space_20"
